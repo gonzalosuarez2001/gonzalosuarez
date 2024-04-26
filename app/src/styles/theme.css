@@ -1,0 +1,27 @@
+.container_theme {
+  transition: 0.2s;
+}
+
+.container_dark {
+  background-color: #1d2436;
+}
+
+.container_light {
+  background-color: #ffffff;
+}
+
+.text_dark {
+  color: #ffffff;
+}
+
+.text_light {
+  color: #1d2436;
+}
+
+.button_dark:hover {
+  color: #ffffff;
+}
+
+.button_light:hover {
+  color: #ffffff;
+}
