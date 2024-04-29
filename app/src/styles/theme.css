@@ -18,10 +18,25 @@
   color: #1d2436;
 }
 
-.button_dark:hover {
+.button_dark,
+.button_light {
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.button_dark:hover,
+.button_light:hover {
+  color: #ffffff;
+  background-color: #4070f4;
+}
+
+.button_dark {
   color: #ffffff;
 }
 
-.button_light:hover {
-  color: #ffffff;
+.button_light {
+  color: #1d2436;
 }

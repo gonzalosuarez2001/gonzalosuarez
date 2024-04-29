@@ -1,3 +1,16 @@
+.nav_mobile {
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.nav_open {
+  height: 370px;
+}
+
+.nav_close {
+  height: 70px;
+}
+
 .nav_menu {
   font-size: 26px;
   cursor: pointer;
@@ -9,17 +22,3 @@
   transition: 0.2s;
   font-size: 16px;
 }
-
-.nav_item {
-  cursor: pointer;
-  transition: 0.2s;
-  border-radius: 15px;
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.nav_item:hover {
-  background-color: #4070f4;
-}
-
-
