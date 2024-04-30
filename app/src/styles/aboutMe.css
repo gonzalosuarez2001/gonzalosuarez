@@ -1,3 +1,29 @@
 .about_container {
-  height: 1500px;
+  height: 650px;
+}
+
+.about_text {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.about_span {
+  color: #4070f4;
+}
+
+.about_img {
+  max-width: 500px;
+}
+
+@media screen and (max-width: 991px) {
+  .about_text {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about_text {
+    font-size: 35px;
+  }
 }

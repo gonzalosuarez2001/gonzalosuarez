@@ -23,7 +23,7 @@ export default function NavMobile() {
       ref={navRef}
       className={`${
         menuOpen ? "nav_open" : "nav_close"
-      } nav_mobile position-fixed container-fluid d-flex flex-column align-items-center shadow-sm p-0 m-0 py-3`}
+      } container_${theme} nav_mobile position-fixed container-fluid d-flex flex-column align-items-center shadow p-0 m-0 py-3`}
     >
       <div className="row col-10 col-md-8">
         <NavHeader />

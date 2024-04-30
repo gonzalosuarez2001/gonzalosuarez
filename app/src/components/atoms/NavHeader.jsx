@@ -1,7 +1,7 @@
 import { useTheme } from "../../contexts/ThemeContext";
 
 export default function NavHeader() {
-  const theme = useTheme();
+  const { theme } = useTheme();
 
   return (
     <header

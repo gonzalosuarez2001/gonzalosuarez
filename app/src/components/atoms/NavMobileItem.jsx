@@ -5,7 +5,7 @@ export default function NavMobileItem(props) {
 
   return (
     <div onClick={() => props.setMenuOpen(false)}>
-      <p className={`button_${theme} p-3 m-0`}>{props.name}</p>
+      <p className={`navitem_${theme} p-3 m-0`}>{props.name}</p>
     </div>
   );
 }

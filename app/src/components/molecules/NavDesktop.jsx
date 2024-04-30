@@ -7,8 +7,7 @@ export default function NavDesktop() {
 
   return (
     <nav
-      style={{ transition: ".2s" }}
-      className="position-fixed container-fluid d-flex justify-content-center shadow-sm p-0 m-0 py-3"
+      className={`container_${theme} position-fixed container-fluid d-flex justify-content-center shadow-sm p-0 m-0 py-3`}
     >
       <div className="row col-10 col-md-8 col-lg-12 col-xl-10 col-xxl-9 px-lg-4">
         <NavHeader />
