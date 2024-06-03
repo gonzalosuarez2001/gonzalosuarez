@@ -17,10 +17,10 @@ export default function ProjectWebCard({ title, text, video, technologies }) {
   }, []);
 
   return (
-    <div className="col-12 col-sm-10 col-md-12 col-lg-5 mb-5 p-0">
+    <div className="col-12 col-lg-5 mb-5 p-0">
       <div className="mb-4 rounded-2">
         <video
-          className="rounded-2 projects_card_video"
+          className="projects_card_video rounded-2"
           ref={videoRef}
           autoPlay
           muted
@@ -32,6 +32,7 @@ export default function ProjectWebCard({ title, text, video, technologies }) {
         title={title}
         text={text}
         technologies={technologies}
+        type="Web"
       />
     </div>
   );

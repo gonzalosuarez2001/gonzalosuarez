@@ -18,7 +18,7 @@ export default function ProjectMobileCard({ title, text, web, technologies }) {
   }, []);
 
   return (
-    <div className="col-12 col-sm-10 col-md-12 col-lg-5 mb-5 p-0">
+    <div className="col-12 col-lg-5 mb-5 p-0">
       <div className="col-12 rounded-2 d-flex mb-4 justify-content-between">
         <div className="col-5">
           <video
@@ -41,7 +41,12 @@ export default function ProjectMobileCard({ title, text, web, technologies }) {
           </video>
         </div>
       </div>
-      <ProjectDescription title={title} text={text} technologies={technologies}/>
+      <ProjectDescription
+        title={title}
+        text={text}
+        technologies={technologies}
+        type="Android / IOS"
+      />
     </div>
   );
 }

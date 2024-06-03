@@ -1,3 +1,39 @@
 .certifications_container {
   margin-bottom: 100px;
 }
+
+.certifications_card {
+  width: 47.5%;
+}
+
+.a {
+  overflow: hidden;
+}
+
+.certifications_card_img {
+  width: 100%;
+  scale: 1.2;
+}
+
+.certifications_card_title {
+  color: #4071f4;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.certifications_card_subtitle {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.certifications_card_date {
+  font-size: 14px;
+  color: #939393;
+}
+
+@media screen and (max-width: 991px) {
+  .certifications_card {
+    width: auto;
+  }
+}

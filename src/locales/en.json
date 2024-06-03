@@ -55,7 +55,7 @@
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
     },
     "credential": {
-      "title": "Credencial UTN",
+      "title": "Credencial",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
     },
     "ripalive": {
@@ -64,7 +64,37 @@
     }
   },
   "certifications": {
-    "title": "Certifications"
+    "title": "Certifications",
+    "fullstack": {
+      "title": "Full Stack Diploma",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "19 May 2023"
+    },
+    "db": {
+      "title": "Database Diploma",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "27 Oct 2023"
+    },
+    "react": {
+      "title": "Development in React",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "30 Nov 2023"
+    },
+    "js": {
+      "title": "Development in JavaScript",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "16 Jun 2023"
+    },
+    "devops": {
+      "title": "DevOps (CI/CD)",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "In progress..."
+    },
+    "docker": {
+      "title": "Docker and Kubernetes",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "In progress..."
+    }
   },
   "stack": {}
 }

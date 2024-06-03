@@ -12,8 +12,9 @@
   font-size: 14px;
 }
 
-.projects_card_video {
+.projects_card_video{
   width: 100%;
+  box-shadow: 2px 3px 10px 0px rgba(62, 62, 62, 0.2);
 }
 
 .projects_tag_name {
