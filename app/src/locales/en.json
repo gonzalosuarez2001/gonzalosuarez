@@ -1,7 +1,70 @@
 {
-  "abouteMe": "hello",
-  "experience": {},
-  "proyects": {},
-  "courses": {},
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "courses": "Courses",
+    "technologies": "Technologies"
+  },
+  "aboutMe": {
+    "title": {
+      "1": "Hi!",
+      "2": "I'm",
+      "3": "Web Developer"
+    },
+    "contact": "Contact Me",
+    "download": "Download"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "developer": {
+      "title": "Developer",
+      "subtitle": "Universidad Tecnológica Nacional",
+      "date": "February 2024 - Present",
+      "text": "As a Fullstack developer, I focus on resolving errors to optimize performance and enhance user experience. Additionally, I handle the implementation of new features, modules, and functionalities in existing applications. I also specialize in developing applications from scratch, accurately completing each stage of the development process."
+    },
+    "analyst": {
+      "title": "Functional Analyst",
+      "subtitle": "Universidad Tecnológica Nacional",
+      "date": "April 2023 - January 2024",
+      "text": "Responsible for analyzing and determining requirements for software development projects. Focused on generating use cases and user stories, as well as creating various diagrams that comprised the analysis and design stages. In addition, I carried out QA testing tasks to guarantee the quality of the developed software."
+    },
+    "support": {
+      "title": "Application Support",
+      "subtitle": "Universidad Tecnológica Nacional",
+      "date": "August 2022 - March 2023",
+      "text": "As a Fullstack developer, I focus on resolving errors to optimize performance and enhance user experience. Additionally, I handle the implementation of new features, modules, and functionalities in existing applications. I also specialize in developing applications from scratch, accurately completing each stage of the development process."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "samay": {
+      "title": "Samay Wayra",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "poke": {
+      "title": "Poke Team",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "notes": {
+      "title": "Notes App",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "credential": {
+      "title": "Credencial UTN",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "ripalive": {
+      "title": "RIP Alive",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    }
+  },
+  "certifications": {
+    "title": "Certifications"
+  },
   "stack": {}
 }

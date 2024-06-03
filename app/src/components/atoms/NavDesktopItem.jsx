@@ -5,7 +5,7 @@ export default function NavDesktopItem(props) {
 
   return (
     <>
-      <div className={`navitem_${theme} col-2 p-2 mx-1 text-center`}>
+      <div className={`navitem_${theme} text_${theme} language py-2 px-3 mx-1 text-center`}>
         {props.name}
       </div>
     </>

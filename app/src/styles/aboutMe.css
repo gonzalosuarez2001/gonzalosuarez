@@ -1,10 +1,14 @@
 .about_container {
-  height: 650px;
+  height: calc(100vh - 70px);
+}
+
+.about_subcontainer {
+  padding-bottom: 50px;
 }
 
 .about_text {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 42.5px;
 }
 
 .about_span {
@@ -24,6 +28,6 @@
 
 @media screen and (max-width: 767px) {
   .about_text {
-    font-size: 35px;
+    font-size: 29px;
   }
 }

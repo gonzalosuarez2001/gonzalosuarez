@@ -1,5 +1,5 @@
 .container_theme {
-  transition: 0.2s;
+  transition: background-color 0.2s;
 }
 
 .container_dark {
@@ -21,8 +21,7 @@
 .navitem_dark,
 .navitem_light {
   cursor: pointer;
-  transition: 0.2s;
-  border-radius: 15px;
+  border-radius: 0.375rem;
   font-weight: 700;
   font-size: 16px;
 }
@@ -33,12 +32,14 @@
   background-color: #4070f4;
 }
 
-.navitem_dark {
-  color: #ffffff;
+.background_secondary_light {
+  background-color: #f6f6f6;
+  transition: background-color 0.2s;
 }
 
-.navitem_light {
-  color: #1d2436;
+.background_secondary_dark {
+  background-color: #262f47;
+  transition: background-color 0.2s;
 }
 
 .button_dark,
@@ -46,8 +47,7 @@
   background-color: #4070f4;
   border: 2px solid #4070f4;
   color: #ffffff;
-  border-radius: 15px;
-  transition: 0.2s;
+  border-radius: 0.375rem;
   padding: 10px 0;
   font-weight: 700;
 }
@@ -56,15 +56,13 @@
 .button_light:hover {
   background-color: #2d5cba;
   border: 2px solid #2d5cba;
-
 }
 
 .button_secondary_dark,
 .button_secondary_light {
   border: 2px solid #4070f4;
   color: #4070f4;
-  border-radius: 15px;
-  transition: .2s;
+  border-radius: 0.375rem;
   padding: 10px 0;
   font-weight: 700;
 }
@@ -81,4 +79,8 @@
 
 .button_secondary_light {
   background-color: #ffffff;
+}
+
+.language {
+  transition: opacity 0.2s, background-color 0.2s, border 0.2s;
 }

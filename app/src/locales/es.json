@@ -1,8 +1,70 @@
 {
-    "abouteMe": "hola",
-    "experience": {},
-    "proyects": {},
-    "courses": {},
-    "stack": {}
-  }
-  
+  "nav": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "courses": "Cursos",
+    "technologies": "Tecnologías"
+  },
+  "aboutMe": {
+    "title": {
+      "1": "¡Hola!",
+      "2": "Soy",
+      "3": "Desarrollador Web"
+    },
+    "contact": "Contáctame",
+    "download": "Descargar"
+  },
+  "experience": {
+    "title": "Experiencia Laboral",
+    "developer": {
+      "title": "Desarrollador",
+      "subtitle": "Universidad Tecnológica Nacional",
+      "date": "Febrero 2024 - Actualidad",
+      "text": "Como desarrollador Fullstack, me dedico a resolver errores con el fin de optimizar el rendimiento y mejorar la experiencia del usuario. Además, me encargo de implementar nuevas características, módulos y funcionalidades en las aplicaciones existentes. También me especializo en el desarrollo de aplicaciones desde cero, cumpliendo con precisión cada etapa del proceso de desarrollo."
+    },
+    "analyst": {
+      "title": "Analista Funcional",
+      "subtitle": "Universidad Tecnológica Nacional",
+      "date": "Abril 2023 - Enero 2024",
+      "text": "Encargado del análisis y relevamiento de requisitos para proyectos de desarrollo de software. Enfocado en la generación de casos de uso e historias de usuario, así como en la creación de diversos diagramas que conformaban las etapas de análisis y diseño. Además, realizaba tareas de testing QA para garantizar la calidad del software desarrollado."
+    },
+    "support": {
+      "title": "Soporte Aplicaciones",
+      "subtitle": "Universidad Tecnológica Nacional",
+      "date": "Agosto 2022 - Marzo 2023",
+      "text": "Como desarrollador Fullstack, me dedico a resolver errores con el fin de optimizar el rendimiento y mejorar la experiencia del usuario. Además, me encargo de implementar nuevas características, módulos y funcionalidades en las aplicaciones existentes. También me especializo en el desarrollo de aplicaciones desde cero, cumpliendo con precisión cada etapa del proceso de desarrollo."
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "samay": {
+      "title": "Samay Wayra",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "poke": {
+      "title": "Poke Team",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "notes": {
+      "title": "Notes App",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "credential": {
+      "title": "Credencial UTN",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "ripalive": {
+      "title": "RIP Alive",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    }
+  },
+  "certifications": {
+    "title": "Certificaciones"
+  },
+  "stack": {}
+}

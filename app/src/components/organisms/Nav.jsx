@@ -14,8 +14,8 @@ export default function Nav() {
   }, []);
 
   return (
-    <div className="nav_container">
+    <section className="nav_container">
       {screenWidth >= desktopBreakpoint ? <NavDesktop /> : <NavMobile />}
-    </div>
+    </section>
   );
 }

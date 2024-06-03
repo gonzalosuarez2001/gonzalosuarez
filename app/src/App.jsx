@@ -1,14 +1,19 @@
 import { ThemeContextProvider } from "./contexts/ThemeContext";
-import AbouteMe from "./components/organisms/AboutMe";
 import Nav from "./components/organisms/Nav";
-import HandleTheme from "./components/atoms/HandleTheme";
+import AbouteMe from "./components/organisms/AboutMe";
+import Experience from "./components/organisms/Experience";
+import Projects from "./components/organisms/Projects";
+import Certifications from "./components/organisms/Certifications";
 
 function App() {
   return (
     <ThemeContextProvider>
       <Nav />
       <AbouteMe />
-      <HandleTheme />
+      <Experience />
+      <Projects />
+      <Certifications />
+      <div style={{ height: "500px" }}></div>
     </ThemeContextProvider>
   );
 }
