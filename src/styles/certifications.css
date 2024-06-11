@@ -2,10 +2,6 @@
   margin-bottom: 100px;
 }
 
-.certifications_card {
-  width: 47.5%;
-}
-
 .a {
   overflow: hidden;
 }
@@ -34,6 +30,6 @@
 
 @media screen and (max-width: 991px) {
   .certifications_card {
-    width: auto;
+    width: auto ;
   }
 }

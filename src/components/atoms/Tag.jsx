@@ -22,7 +22,7 @@ const tagList = {
   git: { name: "Git", icon: gitIcon },
 };
 
-export default function ProyectsTag({ tag }) {
+export default function Tag({ tag }) {
   const { theme } = useTheme();
 
   return (

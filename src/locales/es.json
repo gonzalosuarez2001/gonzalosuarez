@@ -70,7 +70,12 @@
       "place": "Universidad Tecnológica Nacional",
       "date": "19 May 2023"
     },
-    "db": {
+    "dbf": {
+      "title": "Fundamentos Bases de Datos",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "27 Oct 2023"
+    },
+    "dbd": {
       "title": "Diplomatura Bases de Datos",
       "place": "Universidad Tecnológica Nacional",
       "date": "27 Oct 2023"
@@ -94,7 +99,14 @@
       "title": "Docker y Kubernetes",
       "place": "Universidad Tecnológica Nacional",
       "date": "En curso..."
+    },
+    "bootcamp": {
+      "title": "Bootcamp Credencial UTN",
+      "place": "Universidad Tecnológica Nacional",
+      "date": "20 Mar 2024"
     }
   },
-  "stack": {}
+  "stack": {
+    "title": "Stack Tecnológico"
+  }
 }

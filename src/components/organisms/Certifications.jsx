@@ -7,6 +7,9 @@ import cert_dbd from "../../assets/images/DiplomaturaDB.webp";
 import cert_fs from "../../assets/images/DiplomaturaFullStack.webp";
 import cert_dr from "../../assets/images/DesarrolloReact.webp";
 import cert_dj from "../../assets/images/DesarrolloJS.webp";
+import cert_inProgress from "../../assets/images/inProgress.webp";
+import cert_dbf from "../../assets/images/FundamentosDB.webp";
+import cert_bc from "../../assets/images/BootcampUTN.webp";
 
 export default function Certifications() {
   const { theme } = useTheme();
@@ -24,12 +27,17 @@ export default function Certifications() {
             date={t("certifications.fullstack.date")}
           />
           <CertificationCard
-            cert={cert_dbd}
-            title={t("certifications.db.title")}
-            subtitle={t("certifications.db.place")}
-            date={t("certifications.db.date")}
+            cert={cert_dbf}
+            title={t("certifications.dbf.title")}
+            subtitle={t("certifications.dbf.place")}
+            date={t("certifications.dbf.date")}
           />
-
+          <CertificationCard
+            cert={cert_dbd}
+            title={t("certifications.dbd.title")}
+            subtitle={t("certifications.dbd.place")}
+            date={t("certifications.dbd.date")}
+          />
           <CertificationCard
             cert={cert_dr}
             title={t("certifications.react.title")}
@@ -43,13 +51,19 @@ export default function Certifications() {
             date={t("certifications.js.date")}
           />
           <CertificationCard
-            cert={cert_fs}
+            cert={cert_bc}
+            title={t("certifications.bootcamp.title")}
+            subtitle={t("certifications.bootcamp.place")}
+            date={t("certifications.bootcamp.date")}
+          />
+          <CertificationCard
+            cert={cert_inProgress}
             title={t("certifications.devops.title")}
             subtitle={t("certifications.devops.place")}
             date={t("certifications.devops.date")}
           />
           <CertificationCard
-            cert={cert_fs}
+            cert={cert_inProgress}
             title={t("certifications.docker.title")}
             subtitle={t("certifications.docker.place")}
             date={t("certifications.docker.date")}

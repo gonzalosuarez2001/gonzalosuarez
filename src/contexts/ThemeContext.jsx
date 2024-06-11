@@ -35,7 +35,7 @@ export function ThemeContextProvider({ children }) {
   useEffect(() => {
     validThemes.includes(localStorage.getItem("theme"))
       ? setTheme(localStorage.getItem("theme"))
-      : setTheme("light");
+      : setTheme("dark");
   }, []);
 
   return (
