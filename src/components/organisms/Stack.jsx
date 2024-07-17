@@ -1,12 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../../contexts/ThemeContext";
 import SectionTitle from "../atoms/SectionTitle";
 import "../../styles/stack.css";
-import StackTechnologie from "../atoms/StackTechnologie";
 import StackTechnologieContainer from "../molecules/StackTechnologieContainer";
 
 export default function Stack() {
-  const { theme } = useTheme();
   const { t } = useTranslation();
   const frontTags = [
     "html",

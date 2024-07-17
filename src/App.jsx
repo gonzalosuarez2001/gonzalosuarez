@@ -5,6 +5,7 @@ import Experience from "./components/organisms/Experience";
 import Projects from "./components/organisms/Projects";
 import Certifications from "./components/organisms/Certifications";
 import Stack from "./components/organisms/Stack";
+import Footer from "./components/organisms/Footer";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Projects />
       <Certifications />
       <Stack />
-      <div style={{ height: "500px" }}></div>
+      <Footer />
     </ThemeContextProvider>
   );
 }

@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../../contexts/ThemeContext";
 import SectionTitle from "../atoms/SectionTitle";
 import "../../styles/certifications.css";
 import CertificationCard from "../molecules/CertificationCard.jsx";
@@ -12,7 +11,6 @@ import cert_dbf from "../../assets/images/FundamentosDB.webp";
 import cert_bc from "../../assets/images/BootcampUTN.webp";
 
 export default function Certifications() {
-  const { theme } = useTheme();
   const { t } = useTranslation();
 
   return (

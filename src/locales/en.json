@@ -108,5 +108,8 @@
   },
   "stack": {
     "title": "Technology Stack"
+  },
+  "footer": {
+    "title": "Developed by Gonzalo Suarez"
   }
 }

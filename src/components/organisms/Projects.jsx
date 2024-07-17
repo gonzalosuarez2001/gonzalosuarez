@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../../contexts/ThemeContext";
 import SectionTitle from "../atoms/SectionTitle";
 import ProjectWebCard from "../molecules/ProjectWebCard";
 import ProjectMobileCard from "../molecules/ProjectMobileCard"
@@ -9,7 +8,6 @@ import samayweb from "../../assets/videos/samayweb.mp4";
 import cel from "../../assets/videos/cel.mp4";
 
 export default function Projects() {
-  const { theme } = useTheme();
   const { t } = useTranslation();
 
   return (

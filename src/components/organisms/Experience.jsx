@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../../contexts/ThemeContext";
 import ExperienceItem from "../atoms/ExperienceItem";
 import SectionTitle from "../atoms/SectionTitle";
 import "../../styles/experience.css";
 
 export default function Experience() {
-  const { theme } = useTheme();
   const { t } = useTranslation();
 
   return (

@@ -1,5 +1,5 @@
 .certifications_container {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 
 .a {
@@ -26,10 +26,4 @@
 .certifications_card_date {
   font-size: 14px;
   color: #939393;
-}
-
-@media screen and (max-width: 991px) {
-  .certifications_card {
-    width: auto ;
-  }
 }
