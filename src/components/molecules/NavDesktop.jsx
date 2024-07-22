@@ -1,22 +1,22 @@
-import { useEffect, useState } from "react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { useTranslation } from "react-i18next";
 import NavDesktopItem from "../atoms/NavDesktopItem";
 import NavHeader from "../atoms/NavHeader";
 import NavTools from "../atoms/NavTools";
+import { useScroll } from "../../contexts/ScrollContext";
 
 export default function NavDesktop() {
   const { theme } = useTheme();
   const { t } = useTranslation();
-  const [scrollY, setScrollY] = useState(0);
-
-  function handleScrollY() {
-    setScrollY(window.scrollY);
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScrollY);
-  }, []);
+  const {
+    scrollY,
+    scrollToElement,
+    home,
+    experience,
+    projects,
+    certifications,
+    stack,
+  } = useScroll();
 
   return (
     <>
@@ -30,11 +30,36 @@ export default function NavDesktop() {
           <div
             className={`col-7 col-lg-10 col-xl-9 col-xxl-8 p-0 m-0 d-flex flex-row justify-content-end`}
           >
-            <NavDesktopItem name={t(`nav.home`)} />
-            <NavDesktopItem name={t(`nav.experience`)} />
-            <NavDesktopItem name={t(`nav.projects`)} />
-            <NavDesktopItem name={t(`nav.courses`)} />
-            <NavDesktopItem name={t(`nav.technologies`)} />
+            <NavDesktopItem
+              onClick={() => {
+                scrollToElement(home);
+              }}
+              name={t(`nav.home`)}
+            />
+            <NavDesktopItem
+              onClick={() => {
+                scrollToElement(experience);
+              }}
+              name={t(`nav.experience`)}
+            />
+            <NavDesktopItem
+              onClick={() => {
+                scrollToElement(projects);
+              }}
+              name={t(`nav.projects`)}
+            />
+            <NavDesktopItem
+              onClick={() => {
+                scrollToElement(certifications);
+              }}
+              name={t(`nav.certifications`)}
+            />
+            <NavDesktopItem
+              onClick={() => {
+                scrollToElement(stack);
+              }}
+              name={t(`nav.technologies`)}
+            />
           </div>
         </div>
       </nav>

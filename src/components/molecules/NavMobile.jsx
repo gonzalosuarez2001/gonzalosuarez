@@ -5,12 +5,22 @@ import NavMobileItem from "../atoms/NavMobileItem";
 import NavHeader from "../atoms/NavHeader";
 import NavTools from "../atoms/NavTools";
 import NavMobileMenu from "../atoms/NavMobileMenu";
+import { useScroll } from "../../contexts/ScrollContext";
 
 export default function NavMobile() {
   const { theme } = useTheme();
   const { t } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef(null);
+  const {
+    scrollY,
+    scrollToElement,
+    home,
+    experience,
+    projects,
+    certifications,
+    stack,
+  } = useScroll();
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -24,9 +34,9 @@ export default function NavMobile() {
   return (
     <nav
       ref={navRef}
-      className={`${
-        menuOpen ? "nav_open" : "nav_close"
-      } container_${theme} nav_mobile position-fixed container-fluid d-flex flex-column align-items-center shadow-sm p-0 m-0 py-3`}
+      className={`${menuOpen ? "nav_open" : "nav_close"} ${
+        scrollY == 0 && !menuOpen ? "shadow_invisible" : "shadow_visible"
+      } container_${theme} nav_mobile position-fixed container-fluid d-flex flex-column align-items-center p-0 m-0 py-3`}
     >
       <div className="row col-10 col-md-8">
         <NavHeader />
@@ -38,11 +48,41 @@ export default function NavMobile() {
         </div>
       </div>
       <div className="col-10 col-10 col-md-8 my-3 d-flex flex-column">
-        <NavMobileItem name={t(`nav.home`)} setMenuOpen={setMenuOpen} />
-        <NavMobileItem name={t(`nav.experience`)} setMenuOpen={setMenuOpen} />
-        <NavMobileItem name={t(`nav.projects`)} setMenuOpen={setMenuOpen} />
-        <NavMobileItem name={t(`nav.courses`)} setMenuOpen={setMenuOpen} />
-        <NavMobileItem name={t(`nav.technologies`)} setMenuOpen={setMenuOpen} />
+        <NavMobileItem
+          onClick={() => {
+            scrollToElement(home);
+            setMenuOpen(false);
+          }}
+          name={t(`nav.home`)}
+        />
+        <NavMobileItem
+          onClick={() => {
+            scrollToElement(experience);
+            setMenuOpen(false);
+          }}
+          name={t(`nav.experience`)}
+        />
+        <NavMobileItem
+          onClick={() => {
+            scrollToElement(projects);
+            setMenuOpen(false);
+          }}
+          name={t(`nav.projects`)}
+        />
+        <NavMobileItem
+          onClick={() => {
+            scrollToElement(certifications);
+            setMenuOpen(false);
+          }}
+          name={t(`nav.certifications`)}
+        />
+        <NavMobileItem
+          onClick={() => {
+            scrollToElement(stack);
+            setMenuOpen(false);
+          }}
+          name={t(`nav.technologies`)}
+        />
       </div>
     </nav>
   );

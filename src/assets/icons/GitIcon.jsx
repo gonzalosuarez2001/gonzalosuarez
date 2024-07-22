@@ -10,9 +10,7 @@ export default function GitIcon({
       height={height}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke={
-        color == "dark" ? "#ffffff" : color == "light" ? "#1d2436" : color
-      }
+      stroke="#8aa9ff"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"

@@ -6,12 +6,19 @@
   padding-bottom: 50px;
 }
 
-.about_text {
+.about_text_hi {
   font-weight: 700;
-  font-size: 42.5px;
+  font-size: 25px;
 }
 
-.about_span {
+.about_text_name {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.about_text_info {
+  font-weight: 700;
+  font-size: 35px;
   color: #4070f4;
 }
 
@@ -20,14 +27,17 @@
 }
 
 @media screen and (max-width: 991px) {
-  .about_text {
-    font-size: 40px;
+  .about_text_hi {
+    font-size: 20px;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .about_text {
-    font-size: 29px;
+  .about_text_name {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+  }
+  .about_text_info {
+    font-size: 30px;
+    text-align: center;
   }
 }

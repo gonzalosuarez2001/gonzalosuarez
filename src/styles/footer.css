@@ -1,9 +1,10 @@
 .footer_title {
   font-size: 16px;
   line-height: 1.5;
+  color:#8aa9ff;
+  transition: opacity 0.2s;
 }
 
 .footer_icon {
   cursor: pointer;
-  transition: 0.2s;
 }

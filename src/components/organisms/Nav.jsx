@@ -2,16 +2,11 @@ import { useState, useEffect } from "react";
 import NavDesktop from "../molecules/NavDesktop";
 import NavMobile from "../molecules/NavMobile";
 import "../../styles/nav.css";
+import { useScroll } from "../../contexts/ScrollContext";
 
 export default function Nav() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [desktopBreakpoint, setdesktopBreakpoint] = useState(992);
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setScreenWidth(window.innerWidth);
-    });
-  }, []);
+  const { screenWidth } = useScroll();
 
   return (
     <section className="nav_container">

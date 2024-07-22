@@ -32,7 +32,10 @@ export default function Footer() {
             >
               <GitIcon color={theme} width={26} height={26} />
             </div>
-            <span className="border border-right border-secondary mx-4 py-2"></span>
+            <span
+              style={{ borderRight: "2px solid #8aa9ff" }}
+              className="mx-4 py-2"
+            ></span>
             <div
               className="footer_icon mx-2 cursor-pointer"
               onClick={() =>

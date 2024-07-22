@@ -8,12 +8,16 @@
   font-weight: 700;
 }
 
+.projects_card_video_container {
+  cursor: pointer;
+}
+
 .projects_card_text {
   font-size: 14px;
   text-wrap: pretty;
 }
 
-.projects_card_video{
+.projects_card_video {
   width: 100%;
   box-shadow: 2px 3px 10px 0px rgba(62, 62, 62, 0.2);
 }

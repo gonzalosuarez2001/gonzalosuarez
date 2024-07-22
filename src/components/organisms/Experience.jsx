@@ -1,13 +1,24 @@
 import { useTranslation } from "react-i18next";
 import ExperienceItem from "../atoms/ExperienceItem";
 import SectionTitle from "../atoms/SectionTitle";
+import { useRef, useEffect } from "react";
+import { useScroll } from "../../contexts/ScrollContext";
 import "../../styles/experience.css";
 
 export default function Experience() {
   const { t } = useTranslation();
+  const experienceRef = useRef();
+  const { setExperience } = useScroll();
+
+  useEffect(() => {
+    setExperience(experienceRef);
+  }, []);
 
   return (
-    <section className="experience_container container-fluid d-flex flex-column align-items-center px-5 py-0">
+    <section
+      ref={experienceRef}
+      className="experience_container container-fluid d-flex flex-column align-items-center px-5 py-0"
+    >
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
         <SectionTitle title={t(`experience.title`)} />
         <div className="experience_items_container d-flex">

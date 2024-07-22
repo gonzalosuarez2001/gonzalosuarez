@@ -27,3 +27,7 @@
   font-size: 14px;
   color: #939393;
 }
+
+.cursor_pointer {
+  cursor: pointer;
+}

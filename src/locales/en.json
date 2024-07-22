@@ -3,17 +3,17 @@
     "home": "Home",
     "experience": "Experience",
     "projects": "Projects",
-    "courses": "Courses",
+    "certifications": "Certifications",
     "technologies": "Technologies"
   },
   "aboutMe": {
     "title": {
-      "1": "Hi!",
+      "1": "Hi there!",
       "2": "I'm",
       "3": "Web Developer"
     },
     "contact": "Contact Me",
-    "download": "Download"
+    "download": "Download CV"
   },
   "experience": {
     "title": "Work Experience",
@@ -33,7 +33,7 @@
       "title": "Application Support",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "August 2022 - March 2023",
-      "text": "As a Fullstack developer, I focus on resolving errors to optimize performance and enhance user experience. Additionally, I handle the implementation of new features, modules, and functionalities in existing applications. I also specialize in developing applications from scratch, accurately completing each stage of the development process."
+      "text": "My role consisted of identifying and resolving errors in university applications both from the administrator interface and through database queries when necessary. Additionally, I managed app permissions and kept in touch with users to help them resolve issues."
     }
   },
   "projects": {
@@ -107,7 +107,13 @@
     }
   },
   "stack": {
-    "title": "Technology Stack"
+    "title": "Technology Stack",
+    "subtitle": {
+      "1": "Frontend",
+      "2": "Backend",
+      "3": "Tools",
+      "4": "Learning"
+    }
   },
   "footer": {
     "title": "Developed by Gonzalo Suarez"

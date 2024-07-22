@@ -1,7 +1,13 @@
 import { useRef, useEffect } from "react";
 import ProjectDescription from "./ProjectDescription";
 
-export default function ProjectWebCard({ title, text, video, technologies }) {
+export default function ProjectWebCard({
+  url,
+  title,
+  text,
+  video,
+  technologies,
+}) {
   const videoRef = useRef(null);
 
   function handleVideoEnded() {
@@ -18,7 +24,12 @@ export default function ProjectWebCard({ title, text, video, technologies }) {
 
   return (
     <div className="col-12 col-lg-5 mb-5 p-0">
-      <div className="mb-4 rounded-2">
+      <div
+        onClick={() => {
+          window.open(url, "_blank");
+        }}
+        className="projects_card_video_container mb-4 rounded-2"
+      >
         <video
           className="projects_card_video rounded-2"
           ref={videoRef}

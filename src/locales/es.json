@@ -3,7 +3,7 @@
     "home": "Inicio",
     "experience": "Experiencia",
     "projects": "Proyectos",
-    "courses": "Cursos",
+    "certifications": "Certificaciones",
     "technologies": "Tecnologías"
   },
   "aboutMe": {
@@ -13,7 +13,7 @@
       "3": "Desarrollador Web"
     },
     "contact": "Contáctame",
-    "download": "Descargar"
+    "download": "Descargar CV"
   },
   "experience": {
     "title": "Experiencia Laboral",
@@ -33,7 +33,7 @@
       "title": "Soporte Aplicaciones",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "Agosto 2022 - Marzo 2023",
-      "text": "Como desarrollador Fullstack, me dedico a resolver errores con el fin de optimizar el rendimiento y mejorar la experiencia del usuario. Además, me encargo de implementar nuevas características, módulos y funcionalidades en las aplicaciones existentes. También me especializo en el desarrollo de aplicaciones desde cero, cumpliendo con precisión cada etapa del proceso de desarrollo."
+      "text": "Mi rol consistía en identificar y resolver errores en las aplicaciones universitarias tanto desde la interfaz de administrador como mediante consultas en las bases de datos en caso de ser necesario. Además, gestionaba los permisos de las aplicaciones y mantenía contacto con los usuarios para asistirlos en la resolución de problemas."
     }
   },
   "projects": {
@@ -107,7 +107,13 @@
     }
   },
   "stack": {
-    "title": "Stack Tecnológico"
+    "title": "Stack Tecnológico",
+    "subtitle": {
+      "1": "Frontend",
+      "2": "Backend",
+      "3": "Herramientas",
+      "4": "Aprendiendo"
+    }
   },
   "footer": {
     "title": "Desarrollado por Gonzalo Suarez"
