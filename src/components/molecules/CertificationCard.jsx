@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useTheme } from "../../contexts/ThemeContext";
+import pdfd from "../../assets/pdf/BootcampUTN.pdf";
 
 export default function CertificationCard({
   cert,
@@ -10,6 +11,15 @@ export default function CertificationCard({
 }) {
   const { theme } = useTheme();
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = pdfd;
+    link.download = "BootcampUTN.pdf"; // Nombre del archivo a descargar
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   function handleCertificate() {
     window.open(window.location + "src/assets/pdf/" + pdf, "_blank");
   }
@@ -17,7 +27,7 @@ export default function CertificationCard({
   return (
     <div
       onClick={() => {
-        pdf ? handleCertificate() : null;
+        pdf ? handleDownload() : null;
       }}
       className={`${
         pdf ? "cursor_pointer" : ""
