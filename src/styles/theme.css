@@ -93,7 +93,7 @@
   }
   .button_secondary_dark:hover,
   .button_secondary_light:hover {
-    background-color: #1d2436;
+    background-color: transparent;
     color: #4070f4;
   }
 }

@@ -30,10 +30,6 @@
   cursor: pointer;
 }
 
-.about_icon:hover {
-  opacity: .75;
-}
-
 @media screen and (max-width: 991px) {
   .about_text_hi {
     font-size: 20px;
