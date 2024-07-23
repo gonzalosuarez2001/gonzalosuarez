@@ -3,6 +3,7 @@ import { useTheme } from "../../contexts/ThemeContext";
 import AboutMeImage from "../../assets/images/me.png";
 import { useScroll } from "../../contexts/ScrollContext";
 import { useEffect, useRef } from "react";
+import cv from "../../assets/pdf/CV.pdf";
 import "../../styles/aboutMe.css";
 
 export default function AboutMe() {
@@ -44,12 +45,7 @@ export default function AboutMe() {
                 {t(`aboutMe.contact`)}
               </button>
               <button
-                onClick={() =>
-                  window.open(
-                    window.location + "src/assets/pdf/CV.pdf",
-                    "_blank"
-                  )
-                }
+                onClick={() => window.open(cv, "_blank")}
                 className={`button_secondary_${theme} language col-5 px-1`}
               >
                 {t(`aboutMe.download`)}

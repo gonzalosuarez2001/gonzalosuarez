@@ -34,42 +34,42 @@ export default function Certifications() {
             title={t("certifications.fullstack.title")}
             subtitle={t("certifications.fullstack.place")}
             date={t("certifications.fullstack.date")}
-            pdf="DiplomaturaFullStack.pdf"
+            pdf="fullstack"
           />
           <CertificationCard
             cert={cert_dbf}
             title={t("certifications.dbf.title")}
             subtitle={t("certifications.dbf.place")}
             date={t("certifications.dbf.date")}
-            pdf="FundamentosDB.pdf"
+            pdf="dbf"
           />
           <CertificationCard
             cert={cert_dbd}
             title={t("certifications.dbd.title")}
             subtitle={t("certifications.dbd.place")}
             date={t("certifications.dbd.date")}
-            pdf="DiplomaturaDB.pdf"
+            pdf="dbd"
           />
           <CertificationCard
             cert={cert_dr}
             title={t("certifications.react.title")}
             subtitle={t("certifications.react.place")}
             date={t("certifications.react.date")}
-            pdf="DesarrolloReact.pdf"
+            pdf="react"
           />
           <CertificationCard
             cert={cert_dj}
             title={t("certifications.js.title")}
             subtitle={t("certifications.js.place")}
             date={t("certifications.js.date")}
-            pdf="DesarrolloJS.pdf"
+            pdf="js"
           />
           <CertificationCard
             cert={cert_bc}
             title={t("certifications.bootcamp.title")}
             subtitle={t("certifications.bootcamp.place")}
             date={t("certifications.bootcamp.date")}
-            pdf="BootcampUTN.pdf"
+            pdf="bootcamp"
           />
           <CertificationCard
             cert={cert_inProgress}
