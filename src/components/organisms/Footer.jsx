@@ -30,7 +30,7 @@ export default function Footer() {
                 handleClick("https://github.com/gonzalosuarez2001")
               }
             >
-              <GitIcon color={theme} width={26} height={26} />
+              <GitIcon width={26} height={26} />
             </div>
             <span
               style={{ borderRight: "2px solid #8aa9ff" }}
@@ -42,7 +42,7 @@ export default function Footer() {
                 handleClick("https://www.linkedin.com/in/suarez-gonzalo/")
               }
             >
-              <LinkedIcon color={theme} width={28} height={28} />
+              <LinkedIcon width={28} height={28} />
             </div>
           </div>
         </div>

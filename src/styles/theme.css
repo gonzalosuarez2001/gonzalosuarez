@@ -84,3 +84,16 @@
 .language {
   transition: opacity 0.2s, background-color 0.2s, border 0.2s;
 }
+
+@media (width <= 991px) {
+  .button_dark:hover,
+  .button_light:hover {
+    background-color: #4070f4;
+    border: 2px solid #4070f4;
+  }
+  .button_secondary_dark:hover,
+  .button_secondary_light:hover {
+    background-color: #1d2436;
+    color: #4070f4;
+  }
+}

@@ -1,7 +1,7 @@
 export default function GitIcon({
   width = 24,
   height = 24,
-  color = "#1d2436",
+  color = "#8aa9ff",
 }) {
   return (
     <svg
@@ -10,7 +10,7 @@ export default function GitIcon({
       height={height}
       viewBox="0 0 24 24"
       strokeWidth="1.5"
-      stroke="#8aa9ff"
+      stroke={color}
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"

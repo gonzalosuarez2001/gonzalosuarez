@@ -5,12 +5,18 @@ import { useScroll } from "../../contexts/ScrollContext";
 import { useEffect, useRef } from "react";
 import cv from "../../assets/pdf/CV.pdf";
 import "../../styles/aboutMe.css";
+import LinkedIcon from "../../assets/icons/LinkedIcon";
+import GitIcon from "../../assets/icons/GitIcon";
 
 export default function AboutMe() {
   const { theme } = useTheme();
   const { t } = useTranslation();
   const { setHome } = useScroll();
   const homeRef = useRef();
+
+  function handleClick(link) {
+    window.open(link, "_blank");
+  }
 
   useEffect(() => {
     setHome(homeRef);
@@ -35,21 +41,39 @@ export default function AboutMe() {
                 {t(`aboutMe.title.3`)}
               </p>
             </div>
-            <div className="col-12 col-sm-10 mt-5 d-flex justify-content-around justify-content-lg-start">
+            <div className="col-12 col-sm-10 mt-4 d-flex align-items-center justify-content-around justify-content-lg-start">
               <button
                 onClick={() => {
                   window.location.href = "mailto:gonzalosuarez9977@gmail.com";
                 }}
-                className={`button_${theme} language me-lg-4 col-5 px-1`}
+                className={`button_${theme} language me-lg-4 col-5 col-lg-4 px-1`}
               >
                 {t(`aboutMe.contact`)}
               </button>
               <button
                 onClick={() => window.open(cv, "_blank")}
-                className={`button_secondary_${theme} language col-5 px-1`}
+                className={`button_secondary_${theme} language me-lg-4 col-5 col-lg-4 px-1`}
               >
                 {t(`aboutMe.download`)}
               </button>
+            </div>
+            <div className="col-12 col-sm-10 mt-5 d-flex align-items-center justify-content-center justify-content-lg-start">
+              <div
+                onClick={() =>
+                  handleClick("https://www.linkedin.com/in/suarez-gonzalo/")
+                }
+                className={`about_icon language col-2 px-1 d-flex justify-content-center justify-content-lg-start`}
+              >
+                <LinkedIcon width={30} height={30} />
+              </div>
+              <div
+                onClick={() =>
+                  handleClick("https://github.com/gonzalosuarez2001")
+                }
+                className={`about_icon language col-2 px-1 d-flex justify-content-center justify-content-lg-start`}
+              >
+                <GitIcon width={28} height={28} />
+              </div>
             </div>
           </div>
         </div>
