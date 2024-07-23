@@ -12,12 +12,7 @@ export default function CertificationCard({
   const { theme } = useTheme();
 
   const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = pdfd;
-    link.download = "BootcampUTN.pdf"; // Nombre del archivo a descargar
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open(pdfd, "_blank");
   };
 
   function handleCertificate() {
