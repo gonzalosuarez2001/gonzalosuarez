@@ -28,7 +28,13 @@
 
 .about_icon {
   cursor: pointer;
+  transition: scale .1s;
 }
+
+.about_icon:hover {
+  scale: 1.1;
+}
+
 
 @media screen and (max-width: 991px) {
   .about_text_hi {
@@ -43,5 +49,8 @@
   .about_text_info {
     font-size: 30px;
     text-align: center;
+  }
+  .about_icon:hover {
+    scale: 1;
   }
 }

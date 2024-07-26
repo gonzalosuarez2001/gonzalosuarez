@@ -1,19 +1,39 @@
 import { useRef, useEffect } from "react";
-import cel from "../../assets/videos/cel.mp4";
 import ProjectDescription from "./ProjectDescription";
 
-export default function ProjectMobileCard({ title, text, web, technologies }) {
-  const videoRef = useRef(null);
+export default function ProjectMobileCard({
+  title,
+  text,
+  technologies,
+  video1,
+  video2,
+}) {
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
 
-  function handleVideoEnded() {
-    videoRef.current.currentTime = 0;
-    videoRef.current.play();
+  function handleVideoEnded(ref) {
+    return () => {
+      ref.current.currentTime = 0;
+      ref.current.play();
+    };
   }
 
   useEffect(() => {
-    videoRef.current.addEventListener("ended", handleVideoEnded);
+    const video1RefCurrent = videoRef1.current;
+    const video2RefCurrent = videoRef2.current;
+
+    video1RefCurrent.addEventListener("ended", handleVideoEnded(videoRef1));
+    video2RefCurrent.addEventListener("ended", handleVideoEnded(videoRef2));
+
     return () => {
-      videoRef.current.removeEventListener("ended", handleVideoEnded);
+      video1RefCurrent.removeEventListener(
+        "ended",
+        handleVideoEnded(videoRef1)
+      );
+      video2RefCurrent.removeEventListener(
+        "ended",
+        handleVideoEnded(videoRef2)
+      );
     };
   }, []);
 
@@ -23,21 +43,21 @@ export default function ProjectMobileCard({ title, text, web, technologies }) {
         <div className="col-5">
           <video
             className="rounded-2 projects_card_video"
-            ref={videoRef}
+            ref={videoRef1}
             autoPlay
             muted
           >
-            <source src={cel} type="video/mp4" />
+            <source src={video1} type="video/mp4" />
           </video>
         </div>
         <div className="col-5">
           <video
             className="rounded-2 projects_card_video"
-            ref={videoRef}
+            ref={videoRef2}
             autoPlay
             muted
           >
-            <source src={cel} type="video/mp4" />
+            <source src={video2} type="video/mp4" />
           </video>
         </div>
       </div>
@@ -45,7 +65,7 @@ export default function ProjectMobileCard({ title, text, web, technologies }) {
         title={title}
         text={text}
         technologies={technologies}
-        type="Android / IOS"
+        type="Mobile"
       />
     </div>
   );

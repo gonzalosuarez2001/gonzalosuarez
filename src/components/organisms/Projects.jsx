@@ -2,9 +2,16 @@ import { useTranslation } from "react-i18next";
 import SectionTitle from "../atoms/SectionTitle";
 import ProjectWebCard from "../molecules/ProjectWebCard";
 import ProjectMobileCard from "../molecules/ProjectMobileCard";
-import pokeweb from "../../assets/videos/pokeweb.mp4";
-import samayweb from "../../assets/videos/samayweb.mp4";
-import cel from "../../assets/videos/cel.mp4";
+import poke from "../../assets/videos/poke.webm";
+import samay from "../../assets/videos/samay.webm";
+import notes from "../../assets/videos/notes.webm";
+import ripadmin from "../../assets/videos/ripadmin.webm";
+import credencial1 from "../../assets/videos/credencial1.webm";
+import credencial2 from "../../assets/videos/credencial2.webm";
+import ripalive1 from "../../assets/videos/ripalive1.webm";
+import ripalive2 from "../../assets/videos/ripalive2.webm";
+import amigoscole1 from "../../assets/videos/amigoscole1.webm";
+import amigoscole2 from "../../assets/videos/amigoscole2.webm";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import "../../styles/projects.css";
@@ -28,21 +35,21 @@ export default function Projects() {
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <ProjectWebCard
             url=""
-            video={pokeweb}
+            video={samay}
             title={t("projects.samay.title")}
             text={t("projects.samay.text")}
             technologies={["git", "html", "css", "js", "bootstrap"]}
           />
           <ProjectWebCard
             url=""
-            video={samayweb}
+            video={poke}
             title={t("projects.poke.title")}
             text={t("projects.poke.text")}
             technologies={["git", "react", "html", "css", "js", "bootstrap"]}
           />
           <ProjectWebCard
             url=""
-            video={samayweb}
+            video={notes}
             title={t("projects.notes.title")}
             text={t("projects.notes.text")}
             technologies={[
@@ -58,30 +65,39 @@ export default function Projects() {
           />
           <ProjectWebCard
             url=""
-            video={pokeweb}
-            title={t("projects.portfolio.title")}
-            text={t("projects.portfolio.text")}
-            technologies={[
-              "git",
-              "docker",
-              "react",
-              "html",
-              "css",
-              "js",
-              "bootstrap",
-            ]}
+            video={ripadmin}
+            title={t("projects.ripadmin.title")}
+            text={t("projects.ripadmin.text")}
+            technologies={["git", "react", "html", "css", "js", "bootstrap"]}
           />
           <ProjectMobileCard
-            video={cel}
+            video1={credencial1}
+            video2={credencial2}
             title={t("projects.credential.title")}
             text={t("projects.credential.text")}
             technologies={["git", "docker", "css", "reactNative", "js", "node"]}
           />
           <ProjectMobileCard
-            video={cel}
+            video1={ripalive1}
+            video2={ripalive2}
             title={t("projects.ripalive.title")}
             text={t("projects.ripalive.text")}
             technologies={["git", "reactNative", "css", "js"]}
+          />
+          <ProjectMobileCard
+            video1={amigoscole1}
+            video2={amigoscole2}
+            title={t("projects.amigoscole.title")}
+            text={t("projects.amigoscole.text")}
+            technologies={[
+              "git",
+              "docker",
+              "reactNative",
+              "css",
+              "js",
+              "node",
+              "sql",
+            ]}
           />
         </div>
       </div>

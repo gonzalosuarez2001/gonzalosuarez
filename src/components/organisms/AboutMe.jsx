@@ -62,7 +62,7 @@ export default function AboutMe() {
                 onClick={() =>
                   handleClick("https://www.linkedin.com/in/suarez-gonzalo/")
                 }
-                className={`about_icon language col-2 px-1 d-flex justify-content-center justify-content-lg-start`}
+                className={`about_icon language col-2 col-lg-1 px-1 d-flex justify-content-center justify-content-lg-start`}
               >
                 <LinkedIcon width={30} height={30} />
               </div>
@@ -70,7 +70,7 @@ export default function AboutMe() {
                 onClick={() =>
                   handleClick("https://github.com/gonzalosuarez2001")
                 }
-                className={`about_icon language col-2 px-1 d-flex justify-content-center justify-content-lg-start`}
+                className={`about_icon language col-2 col-lg-1 px-1 d-flex justify-content-center justify-content-lg-start`}
               >
                 <GitIcon width={28} height={28} />
               </div>
