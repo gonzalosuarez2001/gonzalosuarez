@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../contexts/ThemeContext";
-import AboutMeImage from "../../assets/images/linea.png";
+import AboutMeImage from "../../assets/images/2.png";
 import { useScroll } from "../../contexts/ScrollContext";
 import { useEffect, useRef } from "react";
 import cv from "../../assets/pdf/CV.pdf";
