@@ -39,7 +39,11 @@ export default function NavMobile() {
       } container_${theme} nav_mobile position-fixed container-fluid d-flex flex-column align-items-center p-0 m-0 py-3`}
     >
       <div className="row col-10 col-md-8">
-        <NavHeader />
+        <NavHeader
+          onClick={() => {
+            scrollToElement(home);
+          }}
+        />
         <div
           className={`text_${theme} col-5 col-sm-7 col-md-7 p-0 m-0 align-items-center justify-content-end d-flex`}
         >

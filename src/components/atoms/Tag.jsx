@@ -8,6 +8,8 @@ import cssIcon from "../../assets/icons/css.webp";
 import jsIcon from "../../assets/icons/js.webp";
 import bootstrapIcon from "../../assets/icons/bootstrap.webp";
 import gitIcon from "../../assets/icons/git.webp";
+import chakraIcon from "../../assets/icons/chakra.webp";
+import mongoIcon from "../../assets/icons/mongo.webp";
 
 const tagList = {
   react: { name: "React", icon: reactIcon },
@@ -20,6 +22,8 @@ const tagList = {
   js: { name: "JavaScript", icon: jsIcon },
   bootstrap: { name: "Bootstrap", icon: bootstrapIcon },
   git: { name: "Git", icon: gitIcon },
+  chakra: { name: "Chakra", icon: chakraIcon },
+  mongo: { name: "MongoDB", icon: mongoIcon },
 };
 
 export default function Tag({ tag }) {

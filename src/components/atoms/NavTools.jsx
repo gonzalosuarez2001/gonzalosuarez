@@ -1,5 +1,6 @@
 import { useTheme } from "../../contexts/ThemeContext";
 import { useTranslation } from "react-i18next";
+import { FiMoon, FiSun } from "react-icons/fi";
 
 export default function NavTools() {
   const { theme, handleTheme, handleLanguage } = useTheme();
@@ -25,9 +26,9 @@ export default function NavTools() {
         onClick={() => {
           handleTheme(), changeIcon("theme");
         }}
-        className={`text_${theme} nav_tools_thememode material-symbols-outlined`}
+        className={`text_${theme} nav_tools_thememode`}
       >
-        {theme == "light" ? "wb_sunny" : "dark_mode"}
+        {theme == "light" ? <FiSun /> : <FiMoon />}
       </span>
       <button
         onClick={() => {

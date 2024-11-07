@@ -6,6 +6,7 @@ import poke from "../../assets/videos/poke.webm";
 import samay from "../../assets/videos/samay.webm";
 import notes from "../../assets/videos/notes.webm";
 import ripadmin from "../../assets/videos/ripadmin.webm";
+import pap from "../../assets/videos/pap.webm";
 import credencial1 from "../../assets/videos/credencial1.webm";
 import credencial2 from "../../assets/videos/credencial2.webm";
 import ripalive1 from "../../assets/videos/ripalive1.webm";
@@ -65,10 +66,52 @@ export default function Projects() {
           />
           <ProjectWebCard
             url=""
+            video={pap}
+            title={t("projects.pap.title")}
+            text={t("projects.pap.text")}
+            technologies={[
+              "git",
+              "docker",
+              "react",
+              "html",
+              "css",
+              "js",
+              "chakra",
+              "node",
+              "sql",
+            ]}
+          />
+          <ProjectWebCard
+            url=""
+            video={ripadmin}
+            title={t("projects.traducciones.title")}
+            text={t("projects.traducciones.text")}
+            technologies={[
+              "git",
+              "docker",
+              "react",
+              "html",
+              "css",
+              "js",
+              "node",
+              "sql",
+            ]}
+          />
+          <ProjectWebCard
+            url=""
             video={ripadmin}
             title={t("projects.ripadmin.title")}
             text={t("projects.ripadmin.text")}
-            technologies={["git", "react", "html", "css", "js", "bootstrap"]}
+            technologies={[
+              "git",
+              "react",
+              "html",
+              "css",
+              "js",
+              "bootstrap",
+              "node",
+              "mongo",
+            ]}
           />
           <ProjectMobileCard
             video1={credencial1}
@@ -82,7 +125,7 @@ export default function Projects() {
             video2={ripalive2}
             title={t("projects.ripalive.title")}
             text={t("projects.ripalive.text")}
-            technologies={["git", "reactNative", "css", "js"]}
+            technologies={["git", "reactNative", "css", "js", "node", "mongo"]}
           />
           <ProjectMobileCard
             video1={amigoscole1}

@@ -73,15 +73,15 @@ export default function Certifications() {
           />
           <CertificationCard
             cert={cert_inProgress}
-            title={t("certifications.devops.title")}
-            subtitle={t("certifications.devops.place")}
-            date={t("certifications.devops.date")}
-          />
-          <CertificationCard
-            cert={cert_inProgress}
             title={t("certifications.docker.title")}
             subtitle={t("certifications.docker.place")}
             date={t("certifications.docker.date")}
+          />
+           <CertificationCard
+            cert={cert_inProgress}
+            title={t("certifications.ia.title")}
+            subtitle={t("certifications.ia.place")}
+            date={t("certifications.ia.date")}
           />
         </div>
       </div>

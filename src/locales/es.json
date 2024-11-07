@@ -10,7 +10,7 @@
     "title": {
       "1": "¡Hola!",
       "2": "Soy",
-      "3": "Desarrollador Web"
+      "3": "Desarrollador"
     },
     "contact": "Contáctame",
     "download": "Descargar CV"
@@ -50,16 +50,24 @@
       "title": "Notes App",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
     },
+    "pap": {
+      "title": "Paso a Paso",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "traducciones": {
+      "title": "Traducciones",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
     "ripadmin": {
       "title": "RIP Admin",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
     },
-    "credential": {
-      "title": "Credencial UTN",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
-    },
     "ripalive": {
       "title": "RIP Alive",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+    },
+    "credential": {
+      "title": "Credencial UTN",
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
     },
     "amigoscole": {

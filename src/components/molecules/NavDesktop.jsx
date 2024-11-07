@@ -26,7 +26,11 @@ export default function NavDesktop() {
         } container_${theme} nav_desktop position-fixed container-fluid d-flex justify-content-center p-0 m-0 py-3`}
       >
         <div className="row col-10 col-md-8 col-lg-12 col-xl-10 col-xxl-8 px-lg-4">
-          <NavHeader />
+          <NavHeader
+            onClick={() => {
+              scrollToElement(home);
+            }}
+          />
           <div
             className={`col-7 col-lg-10 col-xl-9 col-xxl-8 p-0 m-0 d-flex flex-row justify-content-end`}
           >

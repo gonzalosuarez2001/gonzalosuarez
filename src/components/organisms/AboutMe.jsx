@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../contexts/ThemeContext";
-import AboutMeImage from "../../assets/images/me.png";
+import AboutMeImage from "../../assets/images/1.png";
 import { useScroll } from "../../contexts/ScrollContext";
 import { useEffect, useRef } from "react";
 import cv from "../../assets/pdf/CV.pdf";
@@ -79,7 +79,7 @@ export default function AboutMe() {
         </div>
         <div className="p-0 p-sm-3 col-12 col-lg-6 d-flex justify-content-center align-items-center mt-0 mt-sm-4 mt-lg-0 order-1 order-lg-1">
           <img
-            className="about_img col-10 col-sm-8 col-lg-10"
+            className="about_img col-11 col-sm-9 col-lg-11"
             src={AboutMeImage}
           />
         </div>
