@@ -18,6 +18,7 @@ import figma from "../../assets/images/figma.webp";
 import gitlab from "../../assets/images/gitlab.webp";
 import ts from "../../assets/images/ts.webp";
 import mongo from "../../assets/images/mongo.webp";
+import chakra from "../../assets/images/chakra.webp";
 
 const tagList = {
   react: { name: "React", img: react },
@@ -40,6 +41,7 @@ const tagList = {
   gitlab: { name: "Gitlab", img: gitlab },
   ts: { name: "TypeScript", img: ts },
   mongo: { name: "MongoDB", img: mongo },
+  chakra: { name: "Chakra", img: chakra },
 };
 
 export default function StackTechnologie({ tag }) {

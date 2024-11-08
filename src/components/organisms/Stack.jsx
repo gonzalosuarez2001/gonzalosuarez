@@ -3,10 +3,13 @@ import SectionTitle from "../atoms/SectionTitle";
 import StackTechnologieContainer from "../molecules/StackTechnologieContainer";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
+import { TbStack2 } from "react-icons/tb";
+import { useTheme } from "../../contexts/ThemeContext";
 import "../../styles/stack.css";
 
 export default function Stack() {
   const { t } = useTranslation();
+  const { theme } = useTheme();
   const { setStack } = useScroll();
   const stackRef = useRef();
 
@@ -16,6 +19,7 @@ export default function Stack() {
     "js",
     "react",
     "bootstrap",
+    "chakra",
     "next",
     "expo",
     "reactNative",
@@ -35,7 +39,10 @@ export default function Stack() {
       className="stack_container container-fluid d-flex flex-column align-items-center px-5 py-0"
     >
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
-        <SectionTitle title={t(`stack.title`)} />
+        <SectionTitle
+          title={t(`stack.title`)}
+          icon={<TbStack2 className={`text_${theme}`} fontSize={40} />}
+        />
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <StackTechnologieContainer
             title={t("stack.subtitle.1")}

@@ -8,12 +8,16 @@ import cert_dj from "../../assets/images/DesarrolloJS.webp";
 import cert_inProgress from "../../assets/images/inProgress.webp";
 import cert_dbf from "../../assets/images/FundamentosDB.webp";
 import cert_bc from "../../assets/images/BootcampUTN.webp";
+import cert_dk from "../../assets/images/DockerKubernetes.webp";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
+import { LuGraduationCap } from "react-icons/lu";
+import { useTheme } from "../../contexts/ThemeContext.jsx";
 import "../../styles/certifications.css";
 
 export default function Certifications() {
   const { t } = useTranslation();
+  const { theme } = useTheme();
   const certificationsRef = useRef();
   const { setCertifications } = useScroll();
 
@@ -27,7 +31,12 @@ export default function Certifications() {
       className="certifications_container container-fluid d-flex flex-column align-items-center px-5 py-0"
     >
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
-        <SectionTitle title={t(`certifications.title`)} />
+        <SectionTitle
+          title={t(`certifications.title`)}
+          icon={
+            <LuGraduationCap className={`text_${theme}`} fontSize={40} />
+          }
+        />
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <CertificationCard
             cert={cert_fs}
@@ -72,12 +81,13 @@ export default function Certifications() {
             pdf="bootcamp"
           />
           <CertificationCard
-            cert={cert_inProgress}
+            cert={cert_dk}
             title={t("certifications.docker.title")}
             subtitle={t("certifications.docker.place")}
             date={t("certifications.docker.date")}
+            pdf="dk"
           />
-           <CertificationCard
+          <CertificationCard
             cert={cert_inProgress}
             title={t("certifications.ia.title")}
             subtitle={t("certifications.ia.place")}

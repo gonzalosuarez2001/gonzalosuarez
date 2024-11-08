@@ -3,10 +3,13 @@ import ExperienceItem from "../atoms/ExperienceItem";
 import SectionTitle from "../atoms/SectionTitle";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
+import { PiSuitcaseSimpleBold } from "react-icons/pi";
+import { useTheme } from "../../contexts/ThemeContext";
 import "../../styles/experience.css";
 
 export default function Experience() {
   const { t } = useTranslation();
+  const { theme } = useTheme();
   const experienceRef = useRef();
   const { setExperience } = useScroll();
 
@@ -20,7 +23,10 @@ export default function Experience() {
       className="experience_container container-fluid d-flex flex-column align-items-center px-5 py-0"
     >
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
-        <SectionTitle title={t(`experience.title`)} />
+        <SectionTitle
+          title={t(`experience.title`)}
+          icon={<PiSuitcaseSimpleBold className={`text_${theme}`} fontSize={40} />}
+        />
         <div className="experience_items_container d-flex">
           <div className="experience_timeline col-2 col-lg-1"></div>
           <div className="col-10 col-lg-11 p-0 pt-3 d-flex">

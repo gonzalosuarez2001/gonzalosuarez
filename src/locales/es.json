@@ -40,39 +40,39 @@
     "title": "Proyectos",
     "samay": {
       "title": "Samay Wayra",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Página web desarrollada para una empresa de alquiler de cabañas. Incluye una galería de fotos y una sección de contacto para realizar reservas de alojamiento."
     },
     "poke": {
       "title": "Poke Team",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Página web que permite seleccionar Pokémon desde una Pokédex para crear tu propio equipo y ver sus estadísticas."
     },
     "notes": {
       "title": "Notes App",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Aplicación web para crear y gestionar notas personalizables, con autenticación de usuarios para asegurar el acceso privado a la información."
     },
     "pap": {
       "title": "Paso a Paso",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Aplicación web desarrollada para una empresa mayorista, permite visualizar los productos disponibles y añadirlos a un carrito para realizar consultas. Además, incluye un panel de administrador para gestionar productos y configurar aspectos generales de la página."
     },
     "traducciones": {
       "title": "Traducciones",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Microservicio para un portal universitario, diseñado para traducir y corregir archivos. Gestiona la carga y descarga de documentos y cuenta con roles específicos para cada tipo de usuario. Además, incluye un sistema de notificación por correo electrónico para mantener a los usuarios informados."
     },
     "ripadmin": {
       "title": "RIP Admin",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Aplicación web para la administración de la aplicación móvil 'RIP Alive'. Permite a los administradores visualizar la información de los usuarios, gestionar el estado de las suscripciones y pagos, configurar catálogos de la aplicación, generar cupones de descuento, entre otras funcionalidades."
     },
     "ripalive": {
       "title": "RIP Alive",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Aplicación móvil diseñada para permitir a los usuarios guardar su información importante en caso de fallecimiento, con el fin de informar a sus familiares sobre sus últimos deseos. Los usuarios pueden almacenar detalles sobre qué hacer con sus pertenencias, contactos clave, inversiones, información personal y de salud, entre otros. La app cuenta con un sistema de suscripción de pago y una tienda con productos."
     },
     "credential": {
       "title": "Credencial UTN",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Aplicación móvil diseñada como credencial digital para una universidad. Permite a los estudiantes validarse como alumnos mediante un código QR y facilita el acceso a información útil, como las materias en curso, el historial académico y una agenda detallada con los horarios de cada asignatura. También incluye una sección para descargar la constancia de alumno."
     },
     "amigoscole": {
       "title": "Amigos del Cole",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa atque officia dolores animi incidunt possimus ea, minus blanditiis excepturi numquam vitae amet"
+      "text": "Aplicación móvil diseñada como billetera digital para estudiantes, en la que los padres pueden cargar dinero en las cuentas de sus hijos que asisten al colegio. La app permite a los estudiantes realizar compras en los buffets de las escuelas mediante un código QR. Incluye tres roles de usuario: cuentas de padres para administrar el saldo, cuentas de hijos para realizar las compras, y cuentas de buffet para gestionar los pagos recibidos."
     }
   },
   "certifications": {
@@ -102,15 +102,15 @@
       "place": "Universidad Tecnológica Nacional",
       "date": "16 Jun 2023"
     },
-    "devops": {
-      "title": "DevOps (CI/CD)",
+    "ia": {
+      "title": "Deep Learning",
       "place": "Universidad Tecnológica Nacional",
       "date": "En curso..."
     },
     "docker": {
       "title": "Docker y Kubernetes",
       "place": "Universidad Tecnológica Nacional",
-      "date": "En curso..."
+      "date": "7 Nov 2024"
     },
     "bootcamp": {
       "title": "Bootcamp Credencial UTN",

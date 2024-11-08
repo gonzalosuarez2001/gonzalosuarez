@@ -6,6 +6,7 @@ import react from "../../assets/pdf/DesarrolloReact.pdf";
 import dbd from "../../assets/pdf/DiplomaturaDB.pdf";
 import dbf from "../../assets/pdf/FundamentosDB.pdf";
 import fullstack from "../../assets/pdf/DiplomaturaFullStack.pdf";
+import dk from "../../assets/pdf/DockerKubernetes.pdf";
 
 export default function CertificationCard({
   cert,
@@ -23,6 +24,7 @@ export default function CertificationCard({
     react: react,
     dbd: dbd,
     dbf: dbf,
+    dk: dk
   };
 
   function handleCertificate() {
