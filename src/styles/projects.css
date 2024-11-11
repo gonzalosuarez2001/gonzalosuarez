@@ -8,10 +8,6 @@
   font-weight: 700;
 }
 
-.projects_card_video_container {
-  cursor: pointer;
-}
-
 .projects_card_text {
   font-size: 14px;
   text-wrap: pretty;

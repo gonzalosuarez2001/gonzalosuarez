@@ -7,6 +7,7 @@ import samay from "../../assets/videos/samay.webm";
 import notes from "../../assets/videos/notes.webm";
 import ripadmin from "../../assets/videos/ripadmin.webm";
 import pap from "../../assets/videos/pap.webm";
+import traducciones from "../../assets/videos/traducciones.webm";
 import credencial1 from "../../assets/videos/credencial1.webm";
 import credencial2 from "../../assets/videos/credencial2.webm";
 import ripalive1 from "../../assets/videos/ripalive1.webm";
@@ -59,7 +60,7 @@ export default function Projects() {
           />
           <ProjectWebCard
             url=""
-            video={ripadmin}
+            video={traducciones}
             title={t("projects.traducciones.title")}
             text={t("projects.traducciones.text")}
             technologies={[
