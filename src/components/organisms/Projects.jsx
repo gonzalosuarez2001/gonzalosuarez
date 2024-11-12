@@ -42,7 +42,6 @@ export default function Projects() {
         />
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <ProjectWebCard
-            url=""
             video={pap}
             title={t("projects.pap.title")}
             text={t("projects.pap.text")}
@@ -59,7 +58,6 @@ export default function Projects() {
             ]}
           />
           <ProjectWebCard
-            url=""
             video={traducciones}
             title={t("projects.traducciones.title")}
             text={t("projects.traducciones.text")}
@@ -75,7 +73,6 @@ export default function Projects() {
             ]}
           />
           <ProjectWebCard
-            url=""
             video={ripadmin}
             title={t("projects.ripadmin.title")}
             text={t("projects.ripadmin.text")}
@@ -91,7 +88,6 @@ export default function Projects() {
             ]}
           />
           <ProjectWebCard
-            url=""
             video={notes}
             title={t("projects.notes.title")}
             text={t("projects.notes.text")}
@@ -107,14 +103,12 @@ export default function Projects() {
             ]}
           />
           <ProjectWebCard
-            url=""
             video={samay}
             title={t("projects.samay.title")}
             text={t("projects.samay.text")}
             technologies={["git", "html", "css", "js", "bootstrap"]}
           />
           <ProjectWebCard
-            url=""
             video={poke}
             title={t("projects.poke.title")}
             text={t("projects.poke.text")}
