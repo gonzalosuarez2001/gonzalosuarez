@@ -3,14 +3,15 @@ import { useTheme } from "../../contexts/ThemeContext";
 import AboutMeImage from "../../assets/images/me.png";
 import { useScroll } from "../../contexts/ScrollContext";
 import { useEffect, useRef } from "react";
-import cv from "../../assets/pdf/CV.pdf";
+import cv_english from "../../assets/pdf/CV_English.pdf";
+import cv_spanish from "../../assets/pdf/CV_Español.pdf";
 import "../../styles/aboutMe.css";
 import LinkedIcon from "../../assets/icons/LinkedIcon";
 import GitIcon from "../../assets/icons/GitIcon";
 
 export default function AboutMe() {
   const { theme } = useTheme();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { setHome } = useScroll();
   const homeRef = useRef();
 
@@ -51,7 +52,11 @@ export default function AboutMe() {
                 {t(`aboutMe.contact`)}
               </button>
               <button
-                onClick={() => window.open(cv, "_blank")}
+                onClick={() =>
+                  i18n.language == "es"
+                    ? window.open(cv_spanish, "_blank")
+                    : window.open(cv_english, "_blank")
+                }
                 className={`button_secondary_${theme} language me-lg-4 col-5 col-lg-4 px-1`}
               >
                 {t(`aboutMe.download`)}
