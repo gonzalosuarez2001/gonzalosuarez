@@ -24,10 +24,7 @@ function App() {
           username: "Alerta de Acceso",
         };
 
-        const webhookUrl =
-          "https://discord.com/api/webhooks/1223315522725351434/yHQuT0etT59ZpTMEQtHUVWko9XF-TPRxXmMOznK0GBigTiUkHpzUWjCjPZjToDbYZC3B";
-
-        axios.post(webhookUrl, mensaje);
+        axios.post(import.meta.env.VITE_DS_WEBHOOK, mensaje);
       }
     });
   }, []);
