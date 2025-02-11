@@ -87,12 +87,6 @@ export default function Certifications() {
             date={t("certifications.docker.date")}
             pdf="dk"
           />
-          <CertificationCard
-            cert={cert_inProgress}
-            title={t("certifications.ia.title")}
-            subtitle={t("certifications.ia.place")}
-            date={t("certifications.ia.date")}
-          />
         </div>
       </div>
     </section>

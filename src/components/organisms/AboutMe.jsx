@@ -32,6 +32,9 @@ export default function AboutMe() {
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-sm-center order-2 order-lg-1 p-0">
           <div className="d-flex flex-column align-items-center">
             <div className="col-12 col-sm-10">
+              <p className={`text_${theme} fs-4 m-5`}>
+                Variable: {import.meta.env.VITE_DS_WEBHOOK}
+              </p>
               <p className={`text_${theme} language about_text_hi`}>
                 {t(`aboutMe.title.1`)}
               </p>
