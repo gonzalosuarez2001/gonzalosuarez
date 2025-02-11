@@ -16,9 +16,8 @@ function App() {
   useEffect(() => {
     axios.get("https://api.ipify.org?format=json").then((response) => {
       const visitorIp = response.data.ip;
-      const myIp = "186.22.245.52";
-console.log(visitorIp)
-console.log(import.meta.env.VITE_DS_WEBHOOK)
+      const myIp = "186.22.245.51";
+
       if (visitorIp !== myIp) {
         const mensaje = {
           content: `Un visitante con la IP ${visitorIp} ha accedido a tu portfolio web.`,
