@@ -27,7 +27,7 @@ export default function Stack() {
   ];
   const backTags = ["node", "express", "sql", "mongo"];
   const toolsTags = ["ubuntu", "bash", "git", "gitlab", "docker", "wordpress"];
-  const learningTags = ["ts"];
+  const learningTags = ["aws","ts"];
 
   useEffect(() => {
     setStack(stackRef);
