@@ -24,7 +24,7 @@ function App() {
           username: "Alerta de Acceso",
         };
 
-        axios.post(import.meta.env.VITE_DS_WEBHOOK, mensaje);
+        axios.post(import.meta.env.VITE_DS_WEBHOOK, mensaje); 
       }
     });
   }, []);
