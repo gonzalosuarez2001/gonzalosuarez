@@ -17,11 +17,19 @@
   },
   "experience": {
     "title": "Experiencia Laboral",
-    "developer": {
-      "title": "Desarrollador",
-      "subtitle": "Universidad Tecnológica Nacional",
-      "date": "Febrero 2024 - Actualidad",
+    "freelance": {
+      "title": "Desarrollador Freelance",
+      "subtitle": "Desarrollo Autónomo",
+      "date": "Marzo 2024 - ",
+      "dateSpan": "Actualidad",
       "text": "Como desarrollador Fullstack, me especializo en el desarrollo de aplicaciones desde cero, cumpliendo con precisión cada etapa del proceso de desarrollo. Además, me encargo de implementar nuevas características, módulos y funcionalidades en las aplicaciones existentes. Y me dedico a resolver errores con el fin de optimizar el rendimiento y mejorar la experiencia del usuario."
+    },
+    "developer": {
+      "title": "Desarrollador de Software",
+      "subtitle": "Universidad Tecnológica Nacional",
+      "date": "Febrero 2024 - ",
+      "dateSpan": "Actualidad",
+      "text": "Como desarrollador freelance, me especializo en el diseño y desarrollo de aplicaciones web y móviles, comprometido con ofrecer resultados que se alineen con los objetivos y necesidades de cada proyecto, manteniendo una comunicación clara y un enfoque proactivo en cada etapa del desarrollo."
     },
     "analyst": {
       "title": "Analista Funcional",

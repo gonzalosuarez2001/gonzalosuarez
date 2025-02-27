@@ -26,10 +26,14 @@
   color: #939393;
 }
 
+.experience_date_span {
+  font-size: 14px;
+  color: #8ba9ff;
+}
+
 .experience_text {
   font-size: 14px;
   line-height: 2;
-
 }
 
 .experience_icon {
@@ -40,4 +44,10 @@
   transition: 0s;
 }
 
-
+.experience_icon_present {
+  position: absolute;
+  left: -7.25px;
+  color: #8ba9ff;
+  border-radius: 50%;
+  transition: 0s;
+}

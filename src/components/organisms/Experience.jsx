@@ -25,16 +25,26 @@ export default function Experience() {
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
         <SectionTitle
           title={t(`experience.title`)}
-          icon={<PiSuitcaseSimpleBold className={`text_${theme}`} fontSize={40} />}
+          icon={
+            <PiSuitcaseSimpleBold className={`text_${theme}`} fontSize={40} />
+          }
         />
         <div className="experience_items_container d-flex">
           <div className="experience_timeline col-2 col-lg-1"></div>
           <div className="col-10 col-lg-11 p-0 pt-3 d-flex">
             <div>
               <ExperienceItem
+                title={t(`experience.freelance.title`)}
+                subtitle={t(`experience.freelance.subtitle`)}
+                date={t(`experience.freelance.date`)}
+                dateSpan={t(`experience.freelance.dateSpan`)}
+                text={t(`experience.freelance.text`)}
+              />
+              <ExperienceItem
                 title={t(`experience.developer.title`)}
                 subtitle={t(`experience.developer.subtitle`)}
                 date={t(`experience.developer.date`)}
+                dateSpan={t(`experience.developer.dateSpan`)}
                 text={t(`experience.developer.text`)}
               />
               <ExperienceItem
