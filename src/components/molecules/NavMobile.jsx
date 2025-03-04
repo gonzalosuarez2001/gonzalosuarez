@@ -36,9 +36,9 @@ export default function NavMobile() {
       ref={navRef}
       className={`${menuOpen ? "nav_open" : "nav_close"} ${
         scrollY == 0 && !menuOpen ? "shadow_invisible" : "shadow_visible"
-      } container_${theme} nav_mobile position-fixed container-fluid d-flex flex-column align-items-center p-0 m-0 py-3`}
+      } container_${theme} nav_mobile position-fixed container-fluid d-flex flex-column align-items-center`}
     >
-      <div className="row col-10 col-md-8">
+      <div className="row col-10 col-md-8 align-items-center">
         <NavHeader
           onClick={() => {
             scrollToElement(home);

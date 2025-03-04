@@ -19,6 +19,7 @@
   transition: height 0.3s, background-color 0.2s, box-shadow 0.2s;
   overflow: hidden;
   z-index: 1;
+  padding-top: 10px;
 }
 
 .nav_open {
