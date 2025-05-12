@@ -17,17 +17,19 @@ export default function Stack() {
     "html",
     "css",
     "js",
+    "ts",
     "react",
+    "next",
+    "reactNative",
+    "expo",
+    "tailwind",
     "bootstrap",
     "chakra",
-    "next",
-    "expo",
-    "reactNative",
     "figma",
   ];
   const backTags = ["node", "express", "sql", "mongo"];
   const toolsTags = ["ubuntu", "bash", "git", "gitlab", "docker", "wordpress"];
-  const learningTags = ["aws","ts"];
+  const learningTags = ["aws"];
 
   useEffect(() => {
     setStack(stackRef);
