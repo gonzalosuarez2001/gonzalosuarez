@@ -18,6 +18,7 @@ import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { PiCubeBold } from "react-icons/pi";
 import { useTheme } from "../../contexts/ThemeContext";
+import { motion, useInView } from "framer-motion";
 import "../../styles/projects.css";
 
 export default function Projects() {
@@ -25,13 +26,18 @@ export default function Projects() {
   const projectsRef = useRef();
   const { theme } = useTheme();
   const { setProjects } = useScroll();
+  const isOnScreen = useInView(projectsRef, { once: true, margin: "-300px" });
+
 
   useEffect(() => {
     setProjects(projectsRef);
   }, []);
 
   return (
-    <section
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={isOnScreen ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       ref={projectsRef}
       className="projects_container container-fluid d-flex flex-column align-items-center px-5 py-0"
     >
@@ -146,6 +152,6 @@ export default function Projects() {
           />
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

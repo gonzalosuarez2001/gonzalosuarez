@@ -5,12 +5,14 @@ import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { PiSuitcaseSimpleBold } from "react-icons/pi";
 import { useTheme } from "../../contexts/ThemeContext";
+import { motion, useInView } from "framer-motion";
 import "../../styles/experience.css";
 
 export default function Experience() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const experienceRef = useRef();
+  const isOnScreen = useInView(experienceRef, { once: true, margin: "-300px" });
   const { setExperience } = useScroll();
 
   useEffect(() => {
@@ -18,7 +20,10 @@ export default function Experience() {
   }, []);
 
   return (
-    <section
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={isOnScreen ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       ref={experienceRef}
       className="experience_container container-fluid d-flex flex-column align-items-center px-5 py-0"
     >
@@ -64,6 +69,6 @@ export default function Experience() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { TbStack2 } from "react-icons/tb";
 import { useTheme } from "../../contexts/ThemeContext";
+import { motion, useInView } from "framer-motion";
 import "../../styles/stack.css";
 
 export default function Stack() {
@@ -12,6 +13,7 @@ export default function Stack() {
   const { theme } = useTheme();
   const { setStack } = useScroll();
   const stackRef = useRef();
+  const isOnScreen = useInView(stackRef, { once: true, margin: "-300px" });
 
   const frontTags = [
     "html",
@@ -36,7 +38,10 @@ export default function Stack() {
   }, []);
 
   return (
-    <section
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={isOnScreen ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       ref={stackRef}
       className="stack_container container-fluid d-flex flex-column align-items-center px-5 py-0"
     >
@@ -64,6 +69,6 @@ export default function Stack() {
           />
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

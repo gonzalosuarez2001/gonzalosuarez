@@ -5,7 +5,6 @@ import cert_dbd from "../../assets/images/DiplomaturaDB.webp";
 import cert_fs from "../../assets/images/DiplomaturaFullStack.webp";
 import cert_dr from "../../assets/images/DesarrolloReact.webp";
 import cert_dj from "../../assets/images/DesarrolloJS.webp";
-import cert_inProgress from "../../assets/images/inProgress.webp";
 import cert_dbf from "../../assets/images/FundamentosDB.webp";
 import cert_bc from "../../assets/images/BootcampUTN.webp";
 import cert_dk from "../../assets/images/DockerKubernetes.webp";
@@ -13,6 +12,7 @@ import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { LuGraduationCap } from "react-icons/lu";
 import { useTheme } from "../../contexts/ThemeContext.jsx";
+import { motion, useInView } from "framer-motion";
 import "../../styles/certifications.css";
 
 export default function Certifications() {
@@ -20,13 +20,18 @@ export default function Certifications() {
   const { theme } = useTheme();
   const certificationsRef = useRef();
   const { setCertifications } = useScroll();
+  const isOnScreen = useInView(certificationsRef, { once: true, margin: "-300px" });
+
 
   useEffect(() => {
     setCertifications(certificationsRef);
   }, []);
 
   return (
-    <section
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={isOnScreen ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       ref={certificationsRef}
       className="certifications_container container-fluid d-flex flex-column align-items-center px-5 py-0"
     >
@@ -89,6 +94,6 @@ export default function Certifications() {
           />
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

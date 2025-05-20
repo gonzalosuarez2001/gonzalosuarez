@@ -31,3 +31,9 @@
 .cursor_pointer {
   cursor: pointer;
 }
+
+@media screen and (max-width: 991px) {
+  .certifications_container {
+    margin-bottom: 45px;
+  }
+}

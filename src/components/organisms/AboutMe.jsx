@@ -8,6 +8,7 @@ import cv_spanish from "../../assets/pdf/Gonzalo_Suarez_CV_ES.pdf";
 import "../../styles/aboutMe.css";
 import LinkedIcon from "../../assets/icons/LinkedIcon";
 import GitIcon from "../../assets/icons/GitIcon";
+import { motion, useInView } from "framer-motion";
 
 export default function AboutMe() {
   const { theme } = useTheme();
@@ -24,7 +25,10 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <section
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: .6, ease: "easeOut" }}
       ref={homeRef}
       className="about_container container-fluid d-flex justify-content-center p-0 mb-sm-5 mb-lg-0"
     >
@@ -89,6 +93,6 @@ export default function AboutMe() {
           />
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }

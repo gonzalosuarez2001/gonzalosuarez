@@ -30,3 +30,12 @@
   background-color: #4071f4;
   line-height: 1.5;
 }
+
+@media screen and (max-width: 991px) {
+  .projects_container {
+    margin-bottom: 22px;
+  }
+}
+
+
+
