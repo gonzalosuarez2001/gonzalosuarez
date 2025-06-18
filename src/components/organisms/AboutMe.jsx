@@ -28,7 +28,7 @@ export default function AboutMe() {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: .6, ease: "easeOut" }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
       ref={homeRef}
       className="about_container container-fluid d-flex justify-content-center p-0 mb-sm-5 mb-lg-0"
     >

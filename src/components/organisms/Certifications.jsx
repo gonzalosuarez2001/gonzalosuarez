@@ -20,8 +20,10 @@ export default function Certifications() {
   const { theme } = useTheme();
   const certificationsRef = useRef();
   const { setCertifications } = useScroll();
-  const isOnScreen = useInView(certificationsRef, { once: true, margin: "-300px" });
-
+  const isOnScreen = useInView(certificationsRef, {
+    once: true,
+    margin: "-300px",
+  });
 
   useEffect(() => {
     setCertifications(certificationsRef);
@@ -38,9 +40,7 @@ export default function Certifications() {
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
         <SectionTitle
           title={t(`certifications.title`)}
-          icon={
-            <LuGraduationCap className={`text_${theme}`} fontSize={40} />
-          }
+          icon={<LuGraduationCap className={`text_${theme}`} fontSize={40} />}
         />
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <CertificationCard

@@ -28,7 +28,6 @@ export default function Projects() {
   const { setProjects } = useScroll();
   const isOnScreen = useInView(projectsRef, { once: true, margin: "-300px" });
 
-
   useEffect(() => {
     setProjects(projectsRef);
   }, []);
