@@ -44,7 +44,7 @@ export default function ProjectMobileCard({
           <video
             className="rounded-2 projects_card_video"
             ref={videoRef1}
-           // autoPlay
+            autoPlay
             muted
           >
             <source src={video1} type="video/mp4" />

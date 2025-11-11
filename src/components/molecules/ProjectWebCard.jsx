@@ -1,9 +1,8 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import ProjectDescription from "./ProjectDescription";
 
 export default function ProjectWebCard({ title, text, video, technologies }) {
   const videoRef = useRef(null);
-  const [onHover, setOnHover] = useState(false);
 
   function handleVideoEnded() {
     videoRef.current.currentTime = 0;
@@ -17,25 +16,13 @@ export default function ProjectWebCard({ title, text, video, technologies }) {
     };
   }, []);
 
-  useEffect(() => {
-    if (videoRef.current) {
-      if (onHover) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-        videoRef.current.currentTime = 0;
-      }
-    }
-  }, [onHover]);
-
   return (
     <div className="col-12 col-lg-5 mb-5 p-0">
-      <div className="projects_card_video_container mb-4 rounded-2">
+      <div className="mb-4 rounded-2">
         <video
           className="projects_card_video rounded-2"
           ref={videoRef}
-          onMouseEnter={() => {console.log("a"),setOnHover(true)}}
-          onMouseLeave={() => setOnHover(false)}
+          autoPlay
           muted
         >
           <source src={video} type="video/mp4" />
