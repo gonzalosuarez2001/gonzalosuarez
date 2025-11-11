@@ -9,7 +9,7 @@ export default function ProjectMobileCard({
   video2,
 }) {
   const videoRef1 = useRef(null);
-  //const videoRef2 = useRef(null);
+  const videoRef2 = useRef(null);
 
   function handleVideoEnded(ref) {
     return () => {
@@ -20,20 +20,20 @@ export default function ProjectMobileCard({
 
   useEffect(() => {
     const video1RefCurrent = videoRef1.current;
-    //const video2RefCurrent = videoRef2.current;
+    const video2RefCurrent = videoRef2.current;
 
     video1RefCurrent.addEventListener("ended", handleVideoEnded(videoRef1));
-    //video2RefCurrent.addEventListener("ended", handleVideoEnded(videoRef2));
+    video2RefCurrent.addEventListener("ended", handleVideoEnded(videoRef2));
 
     return () => {
       video1RefCurrent.removeEventListener(
         "ended",
         handleVideoEnded(videoRef1)
       );
-      /* video2RefCurrent.removeEventListener(
+      video2RefCurrent.removeEventListener(
         "ended",
         handleVideoEnded(videoRef2)
-      ); */
+      );
     };
   }, []);
 
@@ -51,14 +51,14 @@ export default function ProjectMobileCard({
           </video>
         </div>
         <div className="col-5">
-        {/*   <video
+          <video
             className="rounded-2 projects_card_video"
             ref={videoRef2}
             autoPlay
             muted
           >
             <source src={video2} type="video/mp4" />
-          </video> */}
+          </video>
         </div>
       </div>
       <ProjectDescription

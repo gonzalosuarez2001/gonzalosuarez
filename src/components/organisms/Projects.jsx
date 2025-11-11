@@ -12,8 +12,6 @@ import credencial1 from "../../assets/videos/credencial1.webm";
 import credencial2 from "../../assets/videos/credencial2.webm";
 import ripalive1 from "../../assets/videos/ripalive1.webm";
 import ripalive2 from "../../assets/videos/ripalive2.webm";
-import amigoscole1 from "../../assets/videos/amigoscole1.webm";
-import amigoscole2 from "../../assets/videos/amigoscole2.webm";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { PiCubeBold } from "react-icons/pi";
@@ -133,21 +131,6 @@ export default function Projects() {
             title={t("projects.credential.title")}
             text={t("projects.credential.text")}
             technologies={["git", "docker", "css", "reactNative", "js", "node"]}
-          />
-          <ProjectMobileCard
-            video1={amigoscole1}
-            video2={amigoscole2}
-            title={t("projects.amigoscole.title")}
-            text={t("projects.amigoscole.text")}
-            technologies={[
-              "git",
-              "docker",
-              "reactNative",
-              "css",
-              "js",
-              "node",
-              "sql",
-            ]}
           />
         </div>
       </div>
