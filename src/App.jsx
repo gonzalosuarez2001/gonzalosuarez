@@ -13,7 +13,7 @@ import axios from "axios";
 import "./styles/app.css";
 
 function App() {
-  useEffect(() => {
+ /*  useEffect(() => {
     axios.get("https://api.ipify.org?format=json").then((response) => {
       const visitorIp = response.data.ip;
       const myIp = "186.22.245.51";
@@ -27,7 +27,7 @@ function App() {
         axios.post(import.meta.env.VITE_DS_WEBHOOK, mensaje); 
       }
     });
-  }, []);
+  }, []) */;
 
   return (
     <ThemeContextProvider>
@@ -35,7 +35,7 @@ function App() {
         <Nav />
         <AbouteMe />
         <Experience />
-        <Projects />
+       {/*  <Projects /> */}
         <Certifications />
         <Stack />
         <Footer />
