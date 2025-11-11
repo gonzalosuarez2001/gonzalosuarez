@@ -2,9 +2,6 @@ import { useTranslation } from "react-i18next";
 import SectionTitle from "../atoms/SectionTitle";
 import ProjectWebCard from "../molecules/ProjectWebCard";
 import ProjectMobileCard from "../molecules/ProjectMobileCard";
-import poke from "../../assets/videos/poke.webm";
-import samay from "../../assets/videos/samay.webm";
-import notes from "../../assets/videos/notes.webm";
 import ripadmin from "../../assets/videos/ripadmin.webm";
 import pap from "../../assets/videos/pap.webm";
 import traducciones from "../../assets/videos/traducciones.webm";
@@ -89,33 +86,6 @@ export default function Projects() {
               "node",
               "mongo",
             ]}
-          />
-          <ProjectWebCard
-            video={notes}
-            title={t("projects.notes.title")}
-            text={t("projects.notes.text")}
-            technologies={[
-              "git",
-              "react",
-              "html",
-              "css",
-              "js",
-              "bootstrap",
-              "node",
-              "sql",
-            ]}
-          />
-          <ProjectWebCard
-            video={samay}
-            title={t("projects.samay.title")}
-            text={t("projects.samay.text")}
-            technologies={["git", "html", "css", "js", "bootstrap"]}
-          />
-          <ProjectWebCard
-            video={poke}
-            title={t("projects.poke.title")}
-            text={t("projects.poke.text")}
-            technologies={["git", "react", "html", "css", "js", "bootstrap"]}
           />
 
           <ProjectMobileCard
