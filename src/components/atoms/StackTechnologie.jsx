@@ -21,6 +21,12 @@ import mongo from "../../assets/icons/mongo.webp";
 import chakra from "../../assets/icons/chakra.webp";
 import aws from "../../assets/icons/aws.webp";
 import tailwind from "../../assets/icons/tailwind.webp";
+import prisma from "../../assets/icons/prisma.webp";
+import sequelize from "../../assets/icons/sequelize.webp";
+import stripe from "../../assets/icons/stripe.webp";
+import mp from "../../assets/icons/mp.webp";
+import rc from "../../assets/icons/rc.webp";
+import google from "../../assets/icons/google.webp";
 
 const tagList = {
   react: { name: "React", img: react },
@@ -46,6 +52,12 @@ const tagList = {
   chakra: { name: "Chakra", img: chakra },
   aws: { name: "AWS", img: aws },
   tailwind: { name: "Tailwind", img: tailwind },
+  prisma: { name: "Prisma", img: prisma },
+  sequelize: { name: "Sequelize", img: sequelize },
+  stripe: { name: "Stripe", img: stripe },
+  mp: { name: "Mercado Pago", img: mp },
+  rc: { name: "Revenue Cat", img: rc },
+  google: { name: "Google", img: google },
 };
 
 export default function StackTechnologie({ tag }) {

@@ -8,9 +8,10 @@
   },
   "aboutMe": {
     "title": {
-      "1": "Hi there!",
-      "2": "I'm",
-      "3": "Software Developer"
+      "1": "Hi there! I'm Gonzalo",
+      "2": "Software Developer",
+      "3": "Specialized in",
+      "4": "and"
     },
     "contact": "Contact Me",
     "download": "Download CV"
@@ -85,6 +86,11 @@
   },
   "certifications": {
     "title": "Certifications",
+    "en": {
+      "title": "Diploma in Advanced English Studies",
+      "place": "Cambridge Institute",
+      "date": "1 Dic 2017"
+    },
     "fullstack": {
       "title": "Full Stack Diploma",
       "place": "Universidad Tecnológica Nacional",
@@ -110,11 +116,6 @@
       "place": "Universidad Tecnológica Nacional",
       "date": "16 Jun 2023"
     },
-    "ia": {
-      "title": "Deep Learning",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "In progress..."
-    },
     "docker": {
       "title": "Docker and Kubernetes",
       "place": "Universidad Tecnológica Nacional",
@@ -132,7 +133,7 @@
       "1": "Frontend",
       "2": "Backend",
       "3": "Tools",
-      "4": "Learning"
+      "4": "Integrations"
     }
   },
   "footer": {

@@ -29,9 +29,9 @@ export default function Stack() {
     "chakra",
     "figma",
   ];
-  const backTags = ["node", "express", "sql", "mongo"];
+  const backTags = ["node", "express", "sql", "mongo", "sequelize", "prisma"];
   const toolsTags = ["ubuntu", "bash", "git", "gitlab", "docker", "wordpress"];
-  const learningTags = ["aws"];
+  const learningTags = ["stripe", "rc", "mp", "google"];
 
   useEffect(() => {
     setStack(stackRef);

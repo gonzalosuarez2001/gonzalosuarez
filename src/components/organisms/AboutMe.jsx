@@ -39,11 +39,14 @@ export default function AboutMe() {
               <p className={`text_${theme} language about_text_hi`}>
                 {t(`aboutMe.title.1`)}
               </p>
-              <p className={`text_${theme} language about_text_name`}>
-                {t(`aboutMe.title.2`)} Gonzalo
-              </p>
               <p className={`text_${theme} language about_text_info`}>
+                {t(`aboutMe.title.2`)}
+              </p>
+              <p className={`text_${theme} language about_text_specialty text-center text-lg-start`}>
                 {t(`aboutMe.title.3`)}
+                <span style={{ color: "#44a8beff" }}> React</span>
+                <span> {t(`aboutMe.title.4`)} </span>
+                <span style={{ color: "#47933bff" }}>Node</span>
               </p>
             </div>
             <div className="col-12 col-sm-10 mt-4 d-flex align-items-center justify-content-around justify-content-lg-start">

@@ -8,18 +8,18 @@
 
 .about_text_hi {
   font-weight: 700;
-  font-size: 25px;
-}
-
-.about_text_name {
-  font-weight: 700;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .about_text_info {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   color: #4070f4;
+}
+
+.about_text_specialty {
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .about_img {

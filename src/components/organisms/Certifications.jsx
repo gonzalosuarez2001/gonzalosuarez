@@ -8,6 +8,7 @@ import cert_dj from "../../assets/images/DesarrolloJS.webp";
 import cert_dbf from "../../assets/images/FundamentosDB.webp";
 import cert_bc from "../../assets/images/BootcampUTN.webp";
 import cert_dk from "../../assets/images/DockerKubernetes.webp";
+import cert_en from "../../assets/images/Ingles.webp";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { LuGraduationCap } from "react-icons/lu";
@@ -43,6 +44,13 @@ export default function Certifications() {
           icon={<LuGraduationCap className={`text_${theme}`} fontSize={40} />}
         />
         <div className="d-flex flex-wrap col-12 justify-content-around">
+          <CertificationCard
+            cert={cert_en}
+            title={t("certifications.en.title")}
+            subtitle={t("certifications.en.place")}
+            date={t("certifications.en.date")}
+            pdf="en"
+          />
           <CertificationCard
             cert={cert_fs}
             title={t("certifications.fullstack.title")}

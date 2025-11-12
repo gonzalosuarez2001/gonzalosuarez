@@ -55,6 +55,7 @@ export default function Projects() {
               "chakra",
               "node",
               "sql",
+              "sequelize"
             ]}
           />
           <ProjectWebCard
@@ -70,6 +71,7 @@ export default function Projects() {
               "js",
               "node",
               "sql",
+              "sequelize"
             ]}
           />
           <ProjectWebCard

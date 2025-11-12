@@ -8,9 +8,10 @@
   },
   "aboutMe": {
     "title": {
-      "1": "¡Hola!",
-      "2": "Soy",
-      "3": "Desarrollador de Software"
+      "1": "¡Hola! Soy Gonzalo",
+      "2": "Desarrollador de Software",
+      "3": "Especializado en",
+      "4": "y"
     },
     "contact": "Contáctame",
     "download": "Descargar CV"
@@ -85,6 +86,11 @@
   },
   "certifications": {
     "title": "Certificaciones",
+    "en": {
+      "title": "Diploma en Estudios Superiores de Inglés",
+      "place": "Instituto Cambridge",
+      "date": "1 Dic 2017"
+    },
     "fullstack": {
       "title": "Diplomatura Full Stack",
       "place": "Universidad Tecnológica Nacional",
@@ -110,11 +116,6 @@
       "place": "Universidad Tecnológica Nacional",
       "date": "16 Jun 2023"
     },
-    "ia": {
-      "title": "Deep Learning",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "En curso..."
-    },
     "docker": {
       "title": "Docker y Kubernetes",
       "place": "Universidad Tecnológica Nacional",
@@ -132,7 +133,7 @@
       "1": "Frontend",
       "2": "Backend",
       "3": "Herramientas",
-      "4": "Aprendiendo"
+      "4": "Integraciones"
     }
   },
   "footer": {
