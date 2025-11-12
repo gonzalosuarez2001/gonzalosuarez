@@ -11,6 +11,15 @@ import gitIcon from "../../assets/icons/git.webp";
 import chakraIcon from "../../assets/icons/chakra.webp";
 import mongoIcon from "../../assets/icons/mongo.webp";
 import sequelizeIcon from "../../assets/icons/sequelize.webp";
+import keycloakIcon from "../../assets/icons/keycloak.webp";
+import tailwindIcon from "../../assets/icons/tailwind.webp";
+import stripeIcon from "../../assets/icons/stripe.webp";
+import rcIcon from "../../assets/icons/rc.webp";
+import expoIcon from "../../assets/icons/expo.webp";
+import figmaIcon from "../../assets/icons/figma.webp";
+import tsIcon from "../../assets/icons/ts.webp";
+import prismaIcon from "../../assets/icons/prisma.webp";
+import nextIcon from "../../assets/icons/next.webp";
 
 const tagList = {
   react: { name: "React", icon: reactIcon },
@@ -26,6 +35,15 @@ const tagList = {
   chakra: { name: "Chakra", icon: chakraIcon },
   mongo: { name: "MongoDB", icon: mongoIcon },
   sequelize: { name: "Sequelize", icon: sequelizeIcon },
+  keycloak: { name: "Keycloak", icon: keycloakIcon },
+  tailwind: { name: "Tailwind", icon: tailwindIcon },
+  stripe: { name: "Stripe", icon: stripeIcon },
+  rc: { name: "Revenue Cat", icon: rcIcon },
+  expo: { name: "Expo", icon: expoIcon },
+  figma: { name: "Figma", icon: figmaIcon },
+  ts: { name: "TypeScript", icon: tsIcon },
+  prisma: { name: "Prisma", icon: prismaIcon },
+  next: { name: "Next.js", icon: nextIcon },
 };
 
 export default function Tag({ tag }) {

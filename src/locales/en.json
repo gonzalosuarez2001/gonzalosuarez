@@ -46,7 +46,12 @@
     }
   },
   "projects": {
-    "title": "Projects",
+    "mobile": {
+      "title": "Mobile Projects"
+    },
+    "web": {
+      "title": "Web Projects"
+    },
     "samay": {
       "title": "Samay Wayra",
       "text": "Web page developed for a cabin rental company. It includes a photo gallery and a contact section to make accommodation reservations."
@@ -59,6 +64,18 @@
       "title": "Notes App",
       "text": "Web application for creating and managing customizable notes, with user authentication to ensure private access to information."
     },
+    "movil": {
+      "title": "Moviltrack",
+      "text": ""
+    },
+    "planner": {
+      "title": "Organizer",
+      "text": ""
+    },
+    "toon": {
+      "title": "Toon Guesser",
+      "text": ""
+    },
     "pap": {
       "title": "Paso a Paso",
       "text": "Web application developed for a wholesale company, enabling users to browse available products and add them to a cart for request purposes. Additionally, it includes an admin panel to manage products and configure general page settings."
@@ -67,9 +84,17 @@
       "title": "Traducciones",
       "text": "Microservice for a university portal, designed to translate and correct files. It manages the uploading and downloading of documents and includes specific roles for each user type. Additionally, it includes an email notification system to keep users informed."
     },
+    "difusiones": {
+      "title": "Diffusions",
+      "text": ""
+    },
     "ripadmin": {
       "title": "RIP Admin",
       "text": "Web application for managing the 'RIP Alive' mobile app. It allows administrators to view user information, manage subscription and payment statuses, configure app catalogs, generate discount coupons, and more."
+    },
+    "ripbene": {
+      "title": "RIP Beneficiaries",
+      "text": ""
     },
     "ripalive": {
       "title": "RIP Alive",

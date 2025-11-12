@@ -3,7 +3,7 @@ import ExperienceItem from "../atoms/ExperienceItem";
 import SectionTitle from "../atoms/SectionTitle";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
-import { PiSuitcaseSimpleBold } from "react-icons/pi";
+import { Briefcase } from "lucide-react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { motion, useInView } from "framer-motion";
 import "../../styles/experience.css";
@@ -31,7 +31,7 @@ export default function Experience() {
         <SectionTitle
           title={t(`experience.title`)}
           icon={
-            <PiSuitcaseSimpleBold className={`text_${theme}`} fontSize={40} />
+            <Briefcase className={`text_${theme}`} size={35} />
           }
         />
         <div className="experience_items_container d-flex">

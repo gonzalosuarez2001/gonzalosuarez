@@ -2,7 +2,8 @@ import { ThemeContextProvider } from "./contexts/ThemeContext";
 import Nav from "./components/organisms/Nav";
 import AbouteMe from "./components/organisms/AboutMe";
 import Experience from "./components/organisms/Experience";
-import Projects from "./components/organisms/Projects";
+import WebProjects from "./components/organisms/WebProjects";
+import MobileProjects from "./components/organisms/MobileProjects";
 import Certifications from "./components/organisms/Certifications";
 import Stack from "./components/organisms/Stack";
 import Footer from "./components/organisms/Footer";
@@ -13,7 +14,7 @@ import axios from "axios";
 import "./styles/app.css";
 
 function App() {
- /*  useEffect(() => {
+  /*  useEffect(() => {
     axios.get("https://api.ipify.org?format=json").then((response) => {
       const visitorIp = response.data.ip;
       const myIp = "186.22.245.51";
@@ -27,15 +28,14 @@ function App() {
         axios.post(import.meta.env.VITE_DS_WEBHOOK, mensaje); 
       }
     });
-  }, []) */;
-
-  return (
+  }, []) */ return (
     <ThemeContextProvider>
       <ScrollContextProvider>
         <Nav />
         <AbouteMe />
         <Experience />
-        <Projects />
+        <WebProjects />
+        <MobileProjects />
         <Certifications />
         <Stack />
         <Footer />

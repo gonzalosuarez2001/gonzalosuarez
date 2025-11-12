@@ -1,6 +1,6 @@
 import { useTheme } from "../../contexts/ThemeContext";
 import { useTranslation } from "react-i18next";
-import { FiMoon, FiSun } from "react-icons/fi";
+import { Moon, Sun } from "lucide-react";
 
 export default function NavTools() {
   const { theme, handleTheme, handleLanguage } = useTheme();
@@ -28,7 +28,7 @@ export default function NavTools() {
         }}
         className={`text_${theme} nav_tools_thememode`}
       >
-        {theme == "light" ? <FiSun /> : <FiMoon />}
+        {theme == "light" ? <Sun /> : <Moon />}
       </span>
       <button
         onClick={() => {

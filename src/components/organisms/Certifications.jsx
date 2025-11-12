@@ -11,7 +11,7 @@ import cert_dk from "../../assets/images/DockerKubernetes.webp";
 import cert_en from "../../assets/images/Ingles.webp";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
-import { LuGraduationCap } from "react-icons/lu";
+import { GraduationCap } from "lucide-react";
 import { useTheme } from "../../contexts/ThemeContext.jsx";
 import { motion, useInView } from "framer-motion";
 import "../../styles/certifications.css";
@@ -41,7 +41,7 @@ export default function Certifications() {
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
         <SectionTitle
           title={t(`certifications.title`)}
-          icon={<LuGraduationCap className={`text_${theme}`} fontSize={40} />}
+          icon={<GraduationCap className={`text_${theme}`} size={35} />}
         />
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <CertificationCard

@@ -3,7 +3,7 @@ import SectionTitle from "../atoms/SectionTitle";
 import StackTechnologieContainer from "../molecules/StackTechnologieContainer";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
-import { TbStack2 } from "react-icons/tb";
+import { Layers } from "lucide-react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { motion, useInView } from "framer-motion";
 import "../../styles/stack.css";
@@ -31,7 +31,7 @@ export default function Stack() {
   ];
   const backTags = ["node", "express", "sql", "mongo", "sequelize", "prisma"];
   const toolsTags = ["ubuntu", "bash", "git", "gitlab", "docker", "wordpress"];
-  const learningTags = ["stripe", "rc", "mp", "google"];
+  const learningTags = ["stripe", "rc", "mp", "google", "keycloak"];
 
   useEffect(() => {
     setStack(stackRef);
@@ -48,7 +48,7 @@ export default function Stack() {
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
         <SectionTitle
           title={t(`stack.title`)}
-          icon={<TbStack2 className={`text_${theme}`} fontSize={40} />}
+          icon={<Layers className={`text_${theme}`} size={35} />}
         />
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <StackTechnologieContainer

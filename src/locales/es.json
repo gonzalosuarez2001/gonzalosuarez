@@ -46,7 +46,12 @@
     }
   },
   "projects": {
-    "title": "Proyectos",
+    "mobile": {
+      "title": "Proyectos Móviles"
+    },
+    "web": {
+      "title": "Proyectos Web"
+    },
     "samay": {
       "title": "Samay Wayra",
       "text": "Página web desarrollada para una empresa de alquiler de cabañas. Incluye una galería de fotos y una sección de contacto para realizar reservas de alojamiento."
@@ -59,6 +64,18 @@
       "title": "Notes App",
       "text": "Aplicación web para crear y gestionar notas personalizables, con autenticación de usuarios para asegurar el acceso privado a la información."
     },
+    "movil": {
+      "title": "Moviltrack",
+      "text": ""
+    },
+    "planner": {
+      "title": "Organizador",
+      "text": ""
+    },
+    "toon": {
+      "title": "Toon Guesser",
+      "text": ""
+    },
     "pap": {
       "title": "Paso a Paso",
       "text": "Aplicación web desarrollada para una empresa mayorista, permite visualizar los productos disponibles y añadirlos a un carrito para realizar consultas. Además, incluye un panel de administrador para gestionar productos y configurar aspectos generales de la página."
@@ -67,9 +84,17 @@
       "title": "Traducciones",
       "text": "Microservicio para un portal universitario, diseñado para traducir y corregir archivos. Gestiona la carga y descarga de documentos y cuenta con roles específicos para cada tipo de usuario. Además, incluye un sistema de notificación por correo electrónico para mantener a los usuarios informados."
     },
+    "difusiones": {
+      "title": "Difusiones",
+      "text": ""
+    },
     "ripadmin": {
       "title": "RIP Admin",
       "text": "Aplicación web para la administración de la aplicación móvil 'RIP Alive'. Permite a los administradores visualizar la información de los usuarios, gestionar el estado de las suscripciones y pagos, configurar catálogos de la aplicación, generar cupones de descuento, entre otras funcionalidades."
+    },
+    "ripbene": {
+      "title": "RIP Beneficiarios",
+      "text": ""
     },
     "ripalive": {
       "title": "RIP Alive",

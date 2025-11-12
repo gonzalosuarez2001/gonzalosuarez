@@ -27,6 +27,7 @@ import stripe from "../../assets/icons/stripe.webp";
 import mp from "../../assets/icons/mp.webp";
 import rc from "../../assets/icons/rc.webp";
 import google from "../../assets/icons/google.webp";
+import keycloak from "../../assets/icons/keycloak.webp";
 
 const tagList = {
   react: { name: "React", img: react },
@@ -58,6 +59,7 @@ const tagList = {
   mp: { name: "Mercado Pago", img: mp },
   rc: { name: "Revenue Cat", img: rc },
   google: { name: "Google", img: google },
+  keycloak: { name: "Keycloak", img: keycloak },
 };
 
 export default function StackTechnologie({ tag }) {
