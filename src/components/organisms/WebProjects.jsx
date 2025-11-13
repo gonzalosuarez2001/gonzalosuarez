@@ -1,14 +1,14 @@
 import { useTranslation } from "react-i18next";
 import SectionTitle from "../atoms/SectionTitle";
 import ProjectWebCard from "../molecules/ProjectWebCard";
-import ProjectMobileCard from "../molecules/ProjectMobileCard";
 import ripadmin from "../../assets/videos/ripadmin.webm";
+import ripbene from "../../assets/videos/ripbene.webm";
 import pap from "../../assets/videos/pap.webm";
-import traducciones from "../../assets/videos/traducciones.webm";
-import credencial1 from "../../assets/videos/credencial1.webm";
-import credencial2 from "../../assets/videos/credencial2.webm";
-import ripalive1 from "../../assets/videos/ripalive1.webm";
-import ripalive2 from "../../assets/videos/ripalive2.webm";
+import tradu from "../../assets/videos/tradu.webm";
+import movil from "../../assets/videos/movil.webm";
+import planner from "../../assets/videos/planner.webm";
+import difu from "../../assets/videos/difu.webm";
+import toon from "../../assets/videos/toon.webm";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { Monitor } from "lucide-react";
@@ -42,7 +42,7 @@ export default function WebProjects() {
         />
         <div className="d-flex flex-wrap col-12 justify-content-around">
           <ProjectWebCard
-            video={pap}
+            video={movil}
             title={t("projects.movil.title")}
             text={t("projects.movil.text")}
             technologies={[
@@ -76,7 +76,7 @@ export default function WebProjects() {
           />
 
           <ProjectWebCard
-            video={traducciones}
+            video={tradu}
             title={t("projects.traducciones.title")}
             text={t("projects.traducciones.text")}
             technologies={[
@@ -93,7 +93,7 @@ export default function WebProjects() {
             ]}
           />
           <ProjectWebCard
-            video={traducciones}
+            video={difu}
             title={t("projects.difusiones.title")}
             text={t("projects.difusiones.text")}
             technologies={[
@@ -125,7 +125,7 @@ export default function WebProjects() {
             ]}
           />
           <ProjectWebCard
-            video={ripadmin}
+            video={ripbene}
             title={t("projects.ripbene.title")}
             text={t("projects.ripbene.text")}
             technologies={[
@@ -140,7 +140,7 @@ export default function WebProjects() {
             ]}
           />
           <ProjectWebCard
-            video={pap}
+            video={planner}
             title={t("projects.planner.title")}
             text={t("projects.planner.text")}
             technologies={[
@@ -157,7 +157,7 @@ export default function WebProjects() {
             ]}
           />
           <ProjectWebCard
-            video={pap}
+            video={toon}
             title={t("projects.toon.title")}
             text={t("projects.toon.text")}
             technologies={[

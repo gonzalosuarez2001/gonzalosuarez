@@ -1,10 +1,6 @@
 import { useTranslation } from "react-i18next";
 import SectionTitle from "../atoms/SectionTitle";
-import ProjectWebCard from "../molecules/ProjectWebCard";
 import ProjectMobileCard from "../molecules/ProjectMobileCard";
-import ripadmin from "../../assets/videos/ripadmin.webm";
-import pap from "../../assets/videos/pap.webm";
-import traducciones from "../../assets/videos/traducciones.webm";
 import credencial1 from "../../assets/videos/credencial1.webm";
 import credencial2 from "../../assets/videos/credencial2.webm";
 import ripalive1 from "../../assets/videos/ripalive1.webm";
