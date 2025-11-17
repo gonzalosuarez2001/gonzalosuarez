@@ -46,6 +46,7 @@
     }
   },
   "projects": {
+    "details": "Detalles",
     "mobile": {
       "title": "Proyectos Móviles"
     },

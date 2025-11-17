@@ -1,27 +1,21 @@
 import { useTranslation } from "react-i18next";
 import SectionTitle from "../atoms/SectionTitle";
 import ProjectMobileCard from "../molecules/ProjectMobileCard";
-import credencial1 from "../../assets/videos/credencial1.webm";
-import credencial2 from "../../assets/videos/credencial2.webm";
-import ripalive1 from "../../assets/videos/ripalive1.webm";
-import ripalive2 from "../../assets/videos/ripalive2.webm";
 import { useRef, useEffect } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { Smartphone } from "lucide-react";
 import { useTheme } from "../../contexts/ThemeContext";
 import { motion, useInView } from "framer-motion";
+import mobileProjects from "../../config/mobileProjects.js";
 import "../../styles/projects.css";
+import { useProject } from "../../contexts/ProjectsContext.jsx";
 
 export default function MobileProjects() {
   const { t } = useTranslation();
   const projectsRef = useRef();
   const { theme } = useTheme();
-  const { setProjects } = useScroll();
   const isOnScreen = useInView(projectsRef, { once: true, margin: "-300px" });
-
-  useEffect(() => {
-    setProjects(projectsRef);
-  }, []);
+  const { setCurrentProject, openModal } = useProject();
 
   return (
     <motion.div
@@ -34,46 +28,24 @@ export default function MobileProjects() {
       <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
         <SectionTitle
           title={t(`projects.mobile.title`)}
-          icon={
-            <Smartphone className={`text_${theme}`} size={35} />
-          }
+          icon={<Smartphone className={`text_${theme}`} size={35} />}
         />
         <div className="d-flex flex-wrap col-12 justify-content-around">
-          <ProjectMobileCard
-            video1={ripalive1}
-            video2={ripalive2}
-            title={t("projects.ripalive.title")}
-            text={t("projects.ripalive.text")}
-            technologies={[
-              "git",
-              "expo",
-              "reactNative",
-              "css",
-              "js",
-              "node",
-              "mongo",
-              "stripe",
-              "rc",
-              "figma",
-            ]}
-          />
-          <ProjectMobileCard
-            video1={credencial1}
-            video2={credencial2}
-            title={t("projects.credential.title")}
-            text={t("projects.credential.text")}
-            technologies={[
-              "git",
-              "docker",
-              "expo",
-              "reactNative",
-              "css",
-              "js",
-              "node",
-              "keycloak",
-              "figma",
-            ]}
-          />
+          {mobileProjects.map((project, index) => (
+            <ProjectMobileCard
+              key={index}
+              video1={project.video1}
+              video2={project.video2}
+              title={t(`projects.${project.name}.title`)}
+              text={t(`projects.${project.name}.text`)}
+              technologies={project.technologies}
+              url={project?.url}
+              onClick={() => {
+                setCurrentProject(project);
+                openModal();
+              }}
+            />
+          ))}
         </div>
       </div>
     </motion.div>

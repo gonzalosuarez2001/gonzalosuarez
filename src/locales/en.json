@@ -46,6 +46,7 @@
     }
   },
   "projects": {
+    "details": "Details",
     "mobile": {
       "title": "Mobile Projects"
     },

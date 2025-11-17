@@ -1,4 +1,5 @@
 import { ThemeContextProvider } from "./contexts/ThemeContext";
+import { ProjectContextProvider } from "./contexts/ProjectsContext";
 import Nav from "./components/organisms/Nav";
 import AbouteMe from "./components/organisms/AboutMe";
 import Experience from "./components/organisms/Experience";
@@ -31,15 +32,17 @@ function App() {
   }, []) */ return (
     <ThemeContextProvider>
       <ScrollContextProvider>
-        <Nav />
-        <AbouteMe />
-        <Experience />
-        <WebProjects />
-        <MobileProjects />
-        <Certifications />
-        <Stack />
-        <Footer />
-        <ToTopArrow />
+        <ProjectContextProvider>
+          <Nav />
+          <AbouteMe />
+          <Experience />
+          <WebProjects />
+          <MobileProjects />
+          <Certifications />
+          <Stack />
+          <Footer />
+          <ToTopArrow />
+        </ProjectContextProvider>
       </ScrollContextProvider>
     </ThemeContextProvider>
   );

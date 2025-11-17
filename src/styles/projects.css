@@ -13,19 +13,34 @@
   text-wrap: pretty;
 }
 
-.projects_card_video_container {
-  transition: box-shadow 0.2s;
+.projects_mobile_video_group {
+  cursor: pointer;
 }
 
-.projects_card_video_container:hover {
-box-shadow: -1px -2px 11px 2px rgba(64,112,244,0.5);
--webkit-box-shadow: -1px -2px 11px 2px rgba(64,112,244,0.5);
--moz-box-shadow: -1px -2px 11px 2px rgba(64,112,244,0.5);
-}
-
-.projects_card_video {
+.projects_mobile_card_video {
   width: 100%;
   box-shadow: 2px 3px 10px 0px rgba(62, 62, 62, 0.2);
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.projects_mobile_video_group:hover .projects_mobile_card_video {
+  box-shadow: 0px 0px 20px 6px rgba(64, 112, 244, 0.48);
+  -webkit-box-shadow: 0px 0px 20px 6px rgba(64, 112, 244, 0.48);
+  -moz-box-shadow: 0px 0px 20px 6px rgba(64, 112, 244, 0.48);
+}
+
+.projects_web_card_video {
+  width: 100%;
+  box-shadow: 2px 3px 10px 0px rgba(62, 62, 62, 0.2);
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.projects_web_card_video:hover {
+  box-shadow: 0px 0px 20px 6px rgba(64, 112, 244, 0.48);
+  -webkit-box-shadow: 0px 0px 20px 6px rgba(64, 112, 244, 0.48);
+  -moz-box-shadow: 0px 0px 20px 6px rgba(64, 112, 244, 0.48);
 }
 
 .projects_tag_name {
@@ -33,12 +48,56 @@ box-shadow: -1px -2px 11px 2px rgba(64,112,244,0.5);
   font-weight: 600;
 }
 
-.projects_card_category {
+.projects_card_details {
   color: #ffffff;
-  font-size: 14px;
-  font-weight: 600;
   background-color: #4071f4;
   line-height: 1.5;
+  border: none;
+  transition: 0.2s;
+}
+
+.projects_card_details:hover {
+  background-color: #2d5cba;
+}
+
+.projects_card_details_text {
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 3px;
+}
+
+.projects_url_lock {
+  cursor: default !important;
+}
+
+.projects_url_unlock {
+  background-color: #8aa9ff;
+  transition: .2s;
+}
+
+.projects_url_unlock:hover {
+  background-color: rgb(94, 128, 223);
+}
+
+/* Fondo oscuro */
+.modal_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 998;
+}
+
+/* Contenedor del modal */
+.custom_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+  z-index: 999;
 }
 
 @media screen and (max-width: 991px) {

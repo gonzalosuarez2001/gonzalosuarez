@@ -7,6 +7,8 @@ export default function ProjectMobileCard({
   technologies,
   video1,
   video2,
+  onClick,
+  url,
 }) {
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
@@ -39,10 +41,10 @@ export default function ProjectMobileCard({
 
   return (
     <div className="col-12 col-lg-5 mb-5 p-0">
-      <div className="col-12 rounded-2 d-flex mb-4 justify-content-between">
+      <div className="projects_mobile_video_group col-12 rounded-2 d-flex mb-4 justify-content-between">
         <div className="col-5">
           <video
-            className="rounded-2 projects_card_video"
+            className="rounded-2 projects_mobile_card_video"
             ref={videoRef1}
             autoPlay
             muted
@@ -52,7 +54,7 @@ export default function ProjectMobileCard({
         </div>
         <div className="col-5">
           <video
-            className="rounded-2 projects_card_video"
+            className="rounded-2 projects_mobile_card_video"
             ref={videoRef2}
             autoPlay
             muted
@@ -64,8 +66,9 @@ export default function ProjectMobileCard({
       <ProjectDescription
         title={title}
         text={text}
+        url={url}
         technologies={technologies}
-        type="Mobile"
+        onClick={onClick}
       />
     </div>
   );

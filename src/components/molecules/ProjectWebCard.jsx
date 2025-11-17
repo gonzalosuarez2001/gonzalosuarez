@@ -1,7 +1,14 @@
 import { useRef, useEffect } from "react";
 import ProjectDescription from "./ProjectDescription";
 
-export default function ProjectWebCard({ title, text, video, technologies }) {
+export default function ProjectWebCard({
+  title,
+  text,
+  video,
+  technologies,
+  onClick,
+  url,
+}) {
   const videoRef = useRef(null);
 
   function handleVideoEnded() {
@@ -17,13 +24,14 @@ export default function ProjectWebCard({ title, text, video, technologies }) {
   }, []);
 
   return (
-    <div className="col-12 col-lg-5 mb-5 p-0">
+    <div className=" col-12 col-lg-5 mb-5 p-0">
       <div className="mb-4 rounded-2">
         <video
-          className="projects_card_video rounded-2"
+          className="projects_web_card_video rounded-2"
           ref={videoRef}
           autoPlay
           muted
+          onClick={onClick}
         >
           <source src={video} type="video/mp4" />
         </video>
@@ -32,7 +40,8 @@ export default function ProjectWebCard({ title, text, video, technologies }) {
         title={title}
         text={text}
         technologies={technologies}
-        type="Web"
+        url={url}
+        onClick={onClick}
       />
     </div>
   );
