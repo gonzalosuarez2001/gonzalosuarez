@@ -19,7 +19,7 @@ export default function ProjectMobileCard({
       ref.current.play();
     };
   }
-
+/* 
   useEffect(() => {
     const video1RefCurrent = videoRef1.current;
     const video2RefCurrent = videoRef2.current;
@@ -37,11 +37,11 @@ export default function ProjectMobileCard({
         handleVideoEnded(videoRef2)
       );
     };
-  }, []);
+  }, []); */
 
   return (
     <div className="col-12 col-lg-5 mb-5 p-0">
-      <div className="projects_mobile_video_group col-12 rounded-2 d-flex mb-4 justify-content-between">
+      <div className="projects_mobile_video_group col-12 rounded-2 d-flex mb-4 justify-content-between" onClick={onClick}>
         <div className="col-5">
           <video
             className="rounded-2 projects_mobile_card_video"

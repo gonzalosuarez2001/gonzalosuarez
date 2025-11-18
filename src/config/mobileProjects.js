@@ -17,10 +17,9 @@ const mobileProjects = [
       "js",
       "node",
       "mongo",
-      "stripe",
-      "rc",
       "figma",
     ],
+    integrations: ["stripe", "rc"],
   },
   {
     name: "credential",
@@ -34,9 +33,9 @@ const mobileProjects = [
       "css",
       "js",
       "node",
-      "keycloak",
       "figma",
     ],
+    integrations: ["keycloak"],
   },
 ];
 

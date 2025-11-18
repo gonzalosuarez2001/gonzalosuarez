@@ -16,12 +16,12 @@ export default function ProjectWebCard({
     videoRef.current.play();
   }
 
-  useEffect(() => {
+ /*  useEffect(() => {
     videoRef.current.addEventListener("ended", handleVideoEnded);
     return () => {
       videoRef.current.removeEventListener("ended", handleVideoEnded);
     };
-  }, []);
+  }, []); */
 
   return (
     <div className=" col-12 col-lg-5 mb-5 p-0">

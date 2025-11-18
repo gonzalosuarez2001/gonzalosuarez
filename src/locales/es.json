@@ -47,6 +47,12 @@
   },
   "projects": {
     "details": "Detalles",
+    "modal": {
+      "challengues": "Desafíos",
+      "technologies": "Tecnologías",
+      "integrations": "Integraciones",
+      "gallery": "Galería"
+    },
     "mobile": {
       "title": "Proyectos Móviles"
     },

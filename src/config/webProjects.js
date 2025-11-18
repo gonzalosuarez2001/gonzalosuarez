@@ -51,8 +51,8 @@ const webProjects = [
       "node",
       "sql",
       "sequelize",
-      "keycloak",
     ],
+    integrations: ["keycloak"],
   },
   {
     name: "difusiones",
@@ -67,8 +67,8 @@ const webProjects = [
       "node",
       "sql",
       "sequelize",
-      "keycloak",
     ],
+    integrations: ["keycloak"],
   },
   {
     name: "ripadmin",
@@ -114,6 +114,7 @@ const webProjects = [
       "sql",
       "sequelize",
     ],
+    integrations: ["google"],
   },
   {
     name: "toon",

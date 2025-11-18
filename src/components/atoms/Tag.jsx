@@ -20,6 +20,7 @@ import figmaIcon from "../../assets/icons/figma.webp";
 import tsIcon from "../../assets/icons/ts.webp";
 import prismaIcon from "../../assets/icons/prisma.webp";
 import nextIcon from "../../assets/icons/next.webp";
+import googleIcon from "../../assets/icons/google.webp";
 
 const tagList = {
   react: { name: "React", icon: reactIcon },
@@ -44,11 +45,11 @@ const tagList = {
   ts: { name: "TypeScript", icon: tsIcon },
   prisma: { name: "Prisma", icon: prismaIcon },
   next: { name: "Next.js", icon: nextIcon },
+  google: { name: "Google", icon: googleIcon },
 };
 
 export default function Tag({ tag }) {
   const { theme } = useTheme();
-
   return (
     <div className={`background_secondary_${theme} rounded-2 me-3 mb-3 p-2`}>
       <img className="me-2" width="19" height="19" src={tagList[tag].icon} />

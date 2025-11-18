@@ -45,7 +45,7 @@
 
 .projects_tag_name {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .projects_card_details {
@@ -79,6 +79,11 @@
   background-color: rgb(94, 128, 223);
 }
 
+.project_text_fixed {
+ margin: 0px !important;
+ margin-top: 2px !important;
+}
+
 /* Fondo oscuro */
 .modal_backdrop {
   position: fixed;
@@ -98,6 +103,13 @@
   left: 50%;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
   z-index: 999;
+  height: 70vh;
+  width: 70vw;
+  overflow-y: scroll;
+}
+
+.custom_modal::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
