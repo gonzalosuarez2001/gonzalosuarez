@@ -72,7 +72,7 @@
 
 .projects_url_unlock {
   background-color: #8aa9ff;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .projects_url_unlock:hover {
@@ -80,8 +80,8 @@
 }
 
 .project_text_fixed {
- margin: 0px !important;
- margin-top: 2px !important;
+  margin: 0px !important;
+  margin-top: 2px !important;
 }
 
 /* Fondo oscuro */
@@ -105,15 +105,54 @@
   z-index: 999;
   height: 70vh;
   width: 70vw;
-  overflow-y: scroll;
+  max-width: 1000px;
 }
 
-.custom_modal::-webkit-scrollbar {
+.custom_modal_inner::-webkit-scrollbar {
   display: none;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background: #4071f4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+  background-color: #2d5cba;
+}
+
+.custom-prev {
+  left: 15px;
+}
+.custom-next {
+  right: 15px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4071f4 !important; /* color del activo */
 }
 
 @media screen and (max-width: 991px) {
   .projects_container {
     margin-bottom: 22px;
+  }
+
+  .custom-prev,
+  .custom-next {
+    display: none;
   }
 }

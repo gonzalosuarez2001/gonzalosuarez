@@ -2,8 +2,24 @@ import { useContext, useState, createContext, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "./ThemeContext";
-import { CheckCircle, X, Layers, Workflow, Image } from "lucide-react";
+import {
+  CheckCircle,
+  X,
+  Layers,
+  Workflow,
+  Image,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import Tag from "../components/atoms/Tag";
+import uno from "../assets/images/1.png";
+import dos from "../assets/images/2.png";
+import tres from "../assets/images/3.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "../styles/projects.css";
 
 const ProjectContext = createContext();
@@ -68,91 +84,136 @@ export function ProjectContextProvider({ children }) {
                 animate={{ opacity: 1, scale: 1, x: "-50%", y: "-50%" }}
                 exit={{ opacity: 0, scale: 0.9, x: "-50%", y: "-50%" }}
                 transition={{ duration: 0.2, ease: "easeOut" }}
-                className={`custom_modal container_${theme} rounded-3 p-5`}
+                className={`custom_modal container_${theme} rounded-3`}
               >
-                <div className="d-flex align-items-center mb-3 col-12 justify-content-between">
-                  <h2 className={`projects_card_title language m-0 fs-3`}>
-                    {t(`projects.${currentProject.name}.title`)}
-                  </h2>
-                  <X
-                    onClick={closeModal}
-                    style={{ cursor: "pointer" }}
-                    className={`text_${theme}`}
-                    size={35}
-                  />
-                </div>
-                <p className={`text_${theme} language`}>
-                  {t(`projects.${currentProject.name}.text`)}
-                </p>
-                <div className="d-flex align-items-center mt-5">
-                  <CheckCircle className={`text_${theme}`} size={25} />
-                  <h3
-                    className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
-                    style={{ fontWeight: "900" }}
-                  >
-                    {t("projects.modal.challengues")}
-                  </h3>
-                </div>
-                <div className="col-12 row">
-                  {test.map((item, index) => (
-                    <div className="d-flex align-items-center mt-3" key={index}>
-                      <i
-                        className={`bi bi-circle-fill me-3`}
-                        style={{ color: "#4071f4", fontSize: "8px" }}
-                      />
-                      <p className={`text_${theme} language m-0`}>{item}</p>
-                    </div>
-                  ))}
-                </div>
-                <div className="d-flex align-items-center mt-5">
-                  <Layers className={`text_${theme}`} size={25} />
-                  <h3
-                    className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
-                    style={{ fontWeight: "900" }}
-                  >
-                    {t("projects.modal.technologies")}
-                  </h3>
-                </div>
-                <div className="d-flex mt-3 flex-wrap">
-                  {currentProject.technologies.map((technologie, index) => {
-                    return <Tag tag={technologie} key={index} />;
-                  })}
-                </div>
-
-                {currentProject?.integrations && (
-                  <>
-                    <div className="d-flex align-items-center mt-4">
-                      <Workflow className={`text_${theme}`} size={25} />
-                      <h3
-                        className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
-                        style={{ fontWeight: "900" }}
+                <div className="custom_modal_inner h-100 overflow-auto p-5">
+                  <div className="d-flex align-items-center mb-3 col-12 justify-content-between">
+                    <h2 className={`projects_card_title language m-0 fs-3`}>
+                      {t(`projects.${currentProject.name}.title`)}
+                    </h2>
+                    <X
+                      onClick={closeModal}
+                      style={{ cursor: "pointer" }}
+                      className={`text_${theme}`}
+                      size={35}
+                    />
+                  </div>
+                  <p className={`text_${theme} language`}>
+                    {t(`projects.${currentProject.name}.text`)}
+                  </p>
+                  <div className="d-flex align-items-center mt-5">
+                    <CheckCircle className={`text_${theme}`} size={25} />
+                    <h3
+                      className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
+                      style={{ fontWeight: "900" }}
+                    >
+                      {t("projects.modal.challengues")}
+                    </h3>
+                  </div>
+                  <div className="col-12 row">
+                    {test.map((item, index) => (
+                      <div
+                        className="d-flex align-items-center mt-3"
+                        key={index}
                       >
-                        {t("projects.modal.integrations")}
-                      </h3>
-                    </div>
+                        <i
+                          className={`bi bi-circle-fill me-3`}
+                          style={{ color: "#4071f4", fontSize: "8px" }}
+                        />
+                        <p className={`text_${theme} language m-0`}>{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="d-flex align-items-center mt-5">
+                    <Layers className={`text_${theme}`} size={25} />
+                    <h3
+                      className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
+                      style={{ fontWeight: "900" }}
+                    >
+                      {t("projects.modal.technologies")}
+                    </h3>
+                  </div>
+                  <div className="d-flex mt-3 flex-wrap">
+                    {currentProject.technologies.map((technologie, index) => {
+                      return <Tag tag={technologie} key={index} />;
+                    })}
+                  </div>
 
-                    <div className="d-flex mt-3 flex-wrap">
-                      {currentProject.integrations.map((technologie, index) => {
-                        return <Tag tag={technologie} key={index} />;
-                      })}
-                    </div>
-                  </>
-                )}
+                  {currentProject?.integrations && (
+                    <>
+                      <div className="d-flex align-items-center mt-4">
+                        <Workflow className={`text_${theme}`} size={25} />
+                        <h3
+                          className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
+                          style={{ fontWeight: "900" }}
+                        >
+                          {t("projects.modal.integrations")}
+                        </h3>
+                      </div>
 
-                <div className="d-flex align-items-center mt-4 mb-3">
-                      <Image className={`text_${theme}`} size={25} />
-                      <h3
-                        className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
-                        style={{ fontWeight: "900" }}
+                      <div className="d-flex mt-3 flex-wrap">
+                        {currentProject.integrations.map(
+                          (technologie, index) => {
+                            return <Tag tag={technologie} key={index} />;
+                          }
+                        )}
+                      </div>
+                    </>
+                  )}
+
+                  <div className="d-flex align-items-center mt-4 mb-3">
+                    <Image className={`text_${theme}`} size={25} />
+                    <h3
+                      className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
+                      style={{ fontWeight: "900" }}
+                    >
+                      {t("projects.modal.gallery")}
+                    </h3>
+                  </div>
+
+                  <div
+                    className={`rounded-2 d-flex justify-content-start align-items-center`}
+                  >
+                    <div
+                      className="w-100 rounded-2 overflow-hidden position-relative"
+                      style={{
+                        boxShadow: "2px 3px 10px 0px rgba(62, 62, 62, 0.2)",
+                      }}
+                    >
+                      <div className="custom-prev">
+                        <ChevronLeft size={28} strokeWidth={3} />
+                      </div>
+
+                      <div className="custom-next">
+                        <ChevronRight size={28} strokeWidth={3} />
+                      </div>
+                      <Swiper
+                        modules={[Navigation, Pagination]}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        navigation={{
+                          prevEl: ".custom-prev",
+                          nextEl: ".custom-next",
+                        }}
+                        pagination={{ clickable: true }}
+                        loop={true}
+                        className="mySwiper"
                       >
-                        {t("projects.modal.gallery")}
-                      </h3>
-                    </div>
+                        <SwiperSlide>
+                          <img src={uno} className="w-100" />
+                        </SwiperSlide>
 
-                <div
-                  className={`background_secondary_${theme} rounded-2`}
-                  style={{ height: "500px" }}
-                ></div>
+                        <SwiperSlide>
+                          <img src={dos} className="w-100" />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                          <img src={tres} className="w-100" />
+                        </SwiperSlide>
+                      </Swiper>
+                    </div>
+                  </div>
+                </div>
               </motion.div>
             </>
           )}
