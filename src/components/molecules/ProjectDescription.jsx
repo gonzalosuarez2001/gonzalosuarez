@@ -25,9 +25,9 @@ export default function ProyectDescription({
             className="projects_card_details px-2 py-1 rounded-2 d-flex justify-content-center align-items-center cursor-pointer"
           >
             <Eye size={20} />
-            <h3 className="projects_card_details_text m-0 ms-2 language">
+          {/*   <h3 className="projects_card_details_text m-0 ms-2 language">
               {t("projects.details")}
-            </h3>
+            </h3> */}
           </button>
           <button
             onClick={() => {
