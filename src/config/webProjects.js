@@ -21,6 +21,16 @@ const webProjects = [
       "node",
       "mongo",
     ],
+    images: [
+      "movil1.png",
+      "movil8.png",
+      "movil2.png",
+      "movil7.png",
+      "movil3.png",
+      "movil4.png",
+      "movil5.png",
+      "movil6.png",
+    ],
   },
   {
     name: "pap",
@@ -37,6 +47,7 @@ const webProjects = [
       "sql",
       "sequelize",
     ],
+    images: ["pap1.png", "pap2.png", "pap3.png", "pap4.png", "pap5.png"],
   },
   {
     name: "traducciones",
@@ -83,6 +94,7 @@ const webProjects = [
       "node",
       "mongo",
     ],
+    images: ["ripadmin1.png", "ripadmin2.png", "ripadmin3.png", "ripadmin4.png", "ripadmin6.png", "ripadmin5.png"],
   },
   {
     name: "ripbene",

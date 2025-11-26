@@ -16,7 +16,7 @@ export default function WebProjects() {
   const { theme } = useTheme();
   const { setProjects } = useScroll();
   const isOnScreen = useInView(projectsRef, { once: true, margin: "-300px" });
-  const { setCurrentProject, openModal } = useProject();
+  const { setCurrentProject, openModal, setCurrentProjectType } = useProject();
 
   useEffect(() => {
     setProjects(projectsRef);
@@ -46,6 +46,7 @@ export default function WebProjects() {
                 technologies={project.technologies}
                 url={project?.url}
                 onClick={() => {
+                  setCurrentProjectType("web");
                   setCurrentProject(project);
                   openModal();
                 }}

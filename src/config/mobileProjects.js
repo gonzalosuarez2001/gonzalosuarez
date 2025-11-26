@@ -20,6 +20,17 @@ const mobileProjects = [
       "figma",
     ],
     integrations: ["stripe", "rc"],
+    images: [
+      "rip1.png",
+      "rip2.png",
+      "rip3.png",
+      "rip4.png",
+      "rip5.png",
+      "rip6.png",
+      "rip7.png",
+      "rip8.png",
+      "rip9.png",
+    ],
   },
   {
     name: "credential",
@@ -36,6 +47,14 @@ const mobileProjects = [
       "figma",
     ],
     integrations: ["keycloak"],
+    images: [
+      "credencial1.png",
+      "credencial2.png",
+      "credencial3.png",
+      "credencial4.png",
+      "credencial5.png",
+      "credencial6.png",
+    ],
   },
 ];
 

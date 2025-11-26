@@ -15,7 +15,7 @@ export default function MobileProjects() {
   const projectsRef = useRef();
   const { theme } = useTheme();
   const isOnScreen = useInView(projectsRef, { once: true, margin: "-300px" });
-  const { setCurrentProject, openModal } = useProject();
+  const { setCurrentProject, openModal, setCurrentProjectType } = useProject();
 
   return (
     <motion.div
@@ -41,6 +41,7 @@ export default function MobileProjects() {
               technologies={project.technologies}
               url={project?.url}
               onClick={() => {
+                setCurrentProjectType("mobile");
                 setCurrentProject(project);
                 openModal();
               }}

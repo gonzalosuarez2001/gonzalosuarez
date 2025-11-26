@@ -29,8 +29,16 @@ export default function Stack() {
     "chakra",
     "figma",
   ];
-  const backTags = ["node", "express", "sql", "mongo", "sequelize", "prisma"];
-  const toolsTags = ["ubuntu", "bash", "git", "gitlab", "docker", "wordpress"];
+  const backTags = [
+    "docker",
+    "node",
+    "express",
+    "sql",
+    "mongo",
+    "sequelize",
+    "prisma",
+  ];
+  const toolsTags = ["ubuntu", "bash", "git", "gitlab", "wordpress"];
   const learningTags = ["stripe", "rc", "mp", "google", "keycloak"];
 
   useEffect(() => {

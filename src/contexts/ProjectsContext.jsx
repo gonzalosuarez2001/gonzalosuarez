@@ -31,13 +31,14 @@ export function useProject() {
 export function ProjectContextProvider({ children }) {
   const [open, setOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState({});
+  const [currentProjectType, setCurrentProjectType] = useState("web");
 
   const { t } = useTranslation();
   const { theme } = useTheme();
 
   const openModal = () => setOpen(true);
   const closeModal = () => setOpen(false);
-const testeo = "pap2"
+
   const test = [
     "Implemented responsive design to ensure optimal viewing across devices.",
     "Integrated third-party APIs for enhanced functionality.",
@@ -59,6 +60,7 @@ const testeo = "pap2"
         setCurrentProject,
         openModal,
         closeModal,
+        setCurrentProjectType,
       }}
     >
       <>
@@ -177,7 +179,10 @@ const testeo = "pap2"
                     <div
                       className="w-100 rounded-2 overflow-hidden position-relative"
                       style={{
-                        boxShadow: "2px 3px 10px 0px rgba(62, 62, 62, 0.2)",
+                        boxShadow:
+                          currentProjectType == "web"
+                            ? "2px 3px 10px 0px rgba(62, 62, 62, 0.2)"
+                            : null,
                       }}
                     >
                       <div className="custom-prev">
@@ -199,17 +204,20 @@ const testeo = "pap2"
                         loop={true}
                         className="mySwiper"
                       >
-                        <SwiperSlide>
-                          <img src={`/gonzalosuarez/assets/images/${testeo}.png`} className="w-100" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                          <img src={dos} className="w-100" />
-                        </SwiperSlide>
-
-                        <SwiperSlide>
-                          <img src={tres} className="w-100" />
-                        </SwiperSlide>
+                        {currentProject.images.map((image, index) => (
+                          <SwiperSlide key={index}>
+                            <div className="w-100 d-flex justify-content-center">
+                              <img
+                                src={`/gonzalosuarez/assets/images/${image}`}
+                                className={`${
+                                  currentProjectType == "web"
+                                    ? "w-100"
+                                    : "col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4"
+                                }`}
+                              />
+                            </div>
+                          </SwiperSlide>
+                        ))}
                       </Swiper>
                     </div>
                   </div>
