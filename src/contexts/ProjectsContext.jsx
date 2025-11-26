@@ -104,7 +104,7 @@ export function ProjectContextProvider({ children }) {
                     {t(`projects.${currentProject.name}.text`)}
                   </p>
                   <div className="d-flex align-items-center mt-5">
-                    <CheckCircle className={`text_${theme}`} size={25} />
+                    <CheckCircle style={{ color: "#4070f4" }} size={25} />
                     <h3
                       className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
                       style={{ fontWeight: "900" }}
@@ -119,15 +119,15 @@ export function ProjectContextProvider({ children }) {
                         key={index}
                       >
                         <i
-                          className={`bi bi-circle-fill me-3 d-none d-md-block`}
-                          style={{ color: "#4071f4", fontSize: "8px" }}
+                          className={`text_${theme} bi bi-circle-fill me-3 d-none d-md-block`}
+                          style={{ fontSize: "8px" }}
                         />
                         <p className={`text_${theme} language m-0`}>{item}</p>
                       </div>
                     ))}
                   </div>
                   <div className="d-flex align-items-center mt-5">
-                    <Layers className={`text_${theme}`} size={25} />
+                    <Layers style={{ color: "#4070f4" }} size={25} />
                     <h3
                       className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
                       style={{ fontWeight: "900" }}
@@ -144,7 +144,7 @@ export function ProjectContextProvider({ children }) {
                   {currentProject?.integrations && (
                     <>
                       <div className="d-flex align-items-center mt-4">
-                        <Workflow className={`text_${theme}`} size={25} />
+                        <Workflow style={{ color: "#4070f4" }} size={25} />
                         <h3
                           className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
                           style={{ fontWeight: "900" }}
@@ -164,7 +164,7 @@ export function ProjectContextProvider({ children }) {
                   )}
 
                   <div className="d-flex align-items-center mt-4 mb-3">
-                    <Image className={`text_${theme}`} size={25} />
+                    <Image style={{ color: "#4070f4" }} size={25} />
                     <h3
                       className={`text_${theme} language ms-3 fs-5 project_text_fixed`}
                       style={{ fontWeight: "900" }}
