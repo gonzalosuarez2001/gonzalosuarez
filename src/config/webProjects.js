@@ -1,11 +1,11 @@
-import ripadmin from "../assets/videos/ripadmin.webm";
-import ripbene from "../assets/videos/ripbene.webm";
-import pap from "../assets/videos/pap.webm";
-import tradu from "../assets/videos/tradu.webm";
-import movil from "../assets/videos/movil.webm";
-import planner from "../assets/videos/planner.webm";
-import difu from "../assets/videos/difu.webm";
-import toon from "../assets/videos/toon.webm";
+import ripadmin from "../../public/assets/videos/ripadmin.webm";
+import ripbene from "../../public/assets/videos/ripbene.webm";
+import pap from "../../public/assets/videos/pap.webm";
+import tradu from "../../public/assets/videos/tradu.webm";
+import movil from "../../public/assets/videos/movil.webm";
+import planner from "../../public/assets/videos/planner.webm";
+import difu from "../../public/assets/videos/difu.webm";
+import toon from "../../public/assets/videos/toon.webm";
 
 const webProjects = [
   {

@@ -1,7 +1,7 @@
-import credencial1 from "../assets/videos/credencial1.webm";
-import credencial2 from "../assets/videos/credencial2.webm";
-import ripalive1 from "../assets/videos/ripalive1.webm";
-import ripalive2 from "../assets/videos/ripalive2.webm";
+import credencial1 from "../../public/assets/videos/credencial1.webm";
+import credencial2 from "../../public/assets/videos/credencial2.webm";
+import ripalive1 from "../../public/assets/videos/ripalive1.webm";
+import ripalive2 from "../../public/assets/videos/ripalive2.webm";
 
 const mobileProjects = [
   {

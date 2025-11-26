@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../contexts/ThemeContext";
-import GitIcon from "../../assets/icons/GitIcon";
-import LinkedIcon from "../../assets/icons/LinkedIcon";
+import GitIcon from "../../../public/assets/icons/GitIcon";
+import LinkedIcon from "../../../public/assets/icons/LinkedIcon";
 import "../../styles/footer.css";
 
 export default function Footer() {

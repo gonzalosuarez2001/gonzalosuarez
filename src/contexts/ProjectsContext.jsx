@@ -12,9 +12,9 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Tag from "../components/atoms/Tag";
-import uno from "../assets/images/1.png";
-import dos from "../assets/images/2.png";
-import tres from "../assets/images/3.png";
+import uno from "../../public/assets/images/pap1.png";
+import dos from "../../public/assets/images/pap2.png";
+import tres from "../../public/assets/images/pap3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -37,7 +37,7 @@ export function ProjectContextProvider({ children }) {
 
   const openModal = () => setOpen(true);
   const closeModal = () => setOpen(false);
-
+const testeo = "pap2"
   const test = [
     "Implemented responsive design to ensure optimal viewing across devices.",
     "Integrated third-party APIs for enhanced functionality.",
@@ -200,7 +200,7 @@ export function ProjectContextProvider({ children }) {
                         className="mySwiper"
                       >
                         <SwiperSlide>
-                          <img src={uno} className="w-100" />
+                          <img src={`/gonzalosuarez/assets/images/${testeo}.png`} className="w-100" />
                         </SwiperSlide>
 
                         <SwiperSlide>

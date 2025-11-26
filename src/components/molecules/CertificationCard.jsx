@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 import { useTheme } from "../../contexts/ThemeContext";
-import bootcamp from "../../assets/pdf/BootcampUTN.pdf";
-import js from "../../assets/pdf/DesarrolloJS.pdf";
-import react from "../../assets/pdf/DesarrolloReact.pdf";
-import dbd from "../../assets/pdf/DiplomaturaDB.pdf";
-import dbf from "../../assets/pdf/FundamentosDB.pdf";
-import fullstack from "../../assets/pdf/DiplomaturaFullStack.pdf";
-import dk from "../../assets/pdf/DockerKubernetes.pdf";
-import en from "../../assets/pdf/Ingles.pdf";
+import bootcamp from "../../../public/assets/pdf/BootcampUTN.pdf";
+import js from "../../../public/assets/pdf/DesarrolloJS.pdf";
+import react from "../../../public/assets/pdf/DesarrolloReact.pdf";
+import dbd from "../../../public/assets/pdf/DiplomaturaDB.pdf";
+import dbf from "../../../public/assets/pdf/FundamentosDB.pdf";
+import fullstack from "../../../public/assets/pdf/DiplomaturaFullStack.pdf";
+import dk from "../../../public/assets/pdf/DockerKubernetes.pdf";
+import en from "../../../public/assets/pdf/Ingles.pdf";
 
 export default function CertificationCard({
   cert,

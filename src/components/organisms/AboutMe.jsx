@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../contexts/ThemeContext";
-import AboutMeImage from "../../assets/images/me.png";
+import AboutMeImage from "../../../public/assets/images/me.png";
 import { useScroll } from "../../contexts/ScrollContext";
 import { useEffect, useRef } from "react";
-import cv_english from "../../assets/pdf/Gonzalo_Suarez_Resume_EN.pdf";
-import cv_spanish from "../../assets/pdf/Gonzalo_Suarez_CV_ES.pdf";
+import cv_english from "../../../public/assets/pdf/Gonzalo_Suarez_Resume_EN.pdf";
+import cv_spanish from "../../../public/assets/pdf/Gonzalo_Suarez_CV_ES.pdf";
 import "../../styles/aboutMe.css";
-import LinkedIcon from "../../assets/icons/LinkedIcon";
-import GitIcon from "../../assets/icons/GitIcon";
+import LinkedIcon from "../../../public/assets/icons/LinkedIcon";
+import GitIcon from "../../../public/assets/icons/GitIcon";
 import { motion, useInView } from "framer-motion";
 
 export default function AboutMe() {
