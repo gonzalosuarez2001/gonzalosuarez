@@ -155,9 +155,11 @@
   .custom-next {
     display: none;
   }
-
-  .custom_modal {
-  height: 100vh;
-  width: 100vw;
 }
+
+@media screen and (max-width: 767px) {
+  .custom_modal {
+    height: 95vh;
+    width: 95vw;
+  }
 }

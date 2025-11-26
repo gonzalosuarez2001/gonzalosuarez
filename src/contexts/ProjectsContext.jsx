@@ -86,7 +86,7 @@ export function ProjectContextProvider({ children }) {
                 transition={{ duration: 0.2, ease: "easeOut" }}
                 className={`custom_modal container_${theme} rounded-3`}
               >
-                <div className="custom_modal_inner h-100 overflow-auto p-3 p-lg-5 ">
+                <div className="custom_modal_inner h-100 overflow-auto p-3 p-md-5 ">
                   <div className="d-flex align-items-center mb-3 col-12 justify-content-between">
                     <h2 className={`projects_card_title language m-0 fs-3`}>
                       {t(`projects.${currentProject.name}.title`)}
@@ -117,7 +117,7 @@ export function ProjectContextProvider({ children }) {
                         key={index}
                       >
                         <i
-                          className={`bi bi-circle-fill me-3 d-none d-lg-block`}
+                          className={`bi bi-circle-fill me-3 d-none d-md-block`}
                           style={{ color: "#4071f4", fontSize: "8px" }}
                         />
                         <p className={`text_${theme} language m-0`}>{item}</p>
