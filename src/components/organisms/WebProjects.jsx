@@ -33,7 +33,7 @@ export default function WebProjects() {
       >
         <div className="col-12 col-md-8 col-lg-12 col-xl-10 col-xxl-8">
           <SectionTitle
-            title={t(`projects.web.title`)}
+            title={t(`projects.titles.web`)}
             icon={<Monitor className={`text_${theme}`} size={35} />}
           />
           <div className="d-flex flex-wrap col-12 justify-content-around">

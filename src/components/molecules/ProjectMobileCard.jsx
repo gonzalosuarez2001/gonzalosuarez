@@ -19,7 +19,7 @@ export default function ProjectMobileCard({
       ref.current.play();
     };
   }
-/* 
+
   useEffect(() => {
     const video1RefCurrent = videoRef1.current;
     const video2RefCurrent = videoRef2.current;
@@ -37,7 +37,7 @@ export default function ProjectMobileCard({
         handleVideoEnded(videoRef2)
       );
     };
-  }, []); */
+  }, []);
 
   return (
     <div className="col-12 col-lg-5 mb-5 p-0">

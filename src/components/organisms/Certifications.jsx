@@ -52,6 +52,13 @@ export default function Certifications() {
             pdf="en"
           />
           <CertificationCard
+            cert={cert_dbf}
+            title={t("certifications.dbf.title")}
+            subtitle={t("certifications.dbf.place")}
+            date={t("certifications.dbf.date")}
+            pdf="dbf"
+          />
+          <CertificationCard
             cert={cert_fs}
             title={t("certifications.fullstack.title")}
             subtitle={t("certifications.fullstack.place")}
@@ -59,11 +66,11 @@ export default function Certifications() {
             pdf="fullstack"
           />
           <CertificationCard
-            cert={cert_dbf}
-            title={t("certifications.dbf.title")}
-            subtitle={t("certifications.dbf.place")}
-            date={t("certifications.dbf.date")}
-            pdf="dbf"
+            cert={cert_dj}
+            title={t("certifications.js.title")}
+            subtitle={t("certifications.js.place")}
+            date={t("certifications.js.date")}
+            pdf="js"
           />
           <CertificationCard
             cert={cert_dbd}
@@ -78,13 +85,6 @@ export default function Certifications() {
             subtitle={t("certifications.react.place")}
             date={t("certifications.react.date")}
             pdf="react"
-          />
-          <CertificationCard
-            cert={cert_dj}
-            title={t("certifications.js.title")}
-            subtitle={t("certifications.js.place")}
-            date={t("certifications.js.date")}
-            pdf="js"
           />
           <CertificationCard
             cert={cert_bc}

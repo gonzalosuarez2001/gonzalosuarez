@@ -53,67 +53,110 @@
       "integrations": "Integraciones",
       "gallery": "Galería"
     },
-    "mobile": {
-      "title": "Proyectos Móviles"
-    },
-    "web": {
-      "title": "Proyectos Web"
-    },
-    "samay": {
-      "title": "Samay Wayra",
-      "text": "Página web desarrollada para una empresa de alquiler de cabañas. Incluye una galería de fotos y una sección de contacto para realizar reservas de alojamiento."
-    },
-    "poke": {
-      "title": "Poke Team",
-      "text": "Página web que permite seleccionar Pokémon desde una Pokédex para crear tu propio equipo y ver sus estadísticas."
-    },
-    "notes": {
-      "title": "Notes App",
-      "text": "Aplicación web para crear y gestionar notas personalizables, con autenticación de usuarios para asegurar el acceso privado a la información."
+    "titles": {
+      "mobile": "Proyectos Móviles",
+      "web": "Proyectos Web"
     },
     "movil": {
       "title": "Moviltrack",
-      "text": ""
+      "subtitle": "Sistema de Gestión Empresarial",
+      "text": "Aplicación web administrativa que permite gestionar las operaciones comerciales de una empresa. El sistema cuenta con un panel de control analítico, gestión de proyectos, clientes, proveedores, productos y servicios. Incluye módulos para cotizaciones, órdenes de compra, remisiones, gastos y facturación recurrente.",
+      "challenges": [
+        "Gestionar dos divisas (MXN y USD) junto con diferentes tipos de cambio para la administración general del sistema.",
+        "Implementar un generador de PDFs en tiempo real adaptable a distintos tipos de documentos.",
+        "Desarrollar un sistema de creación de cobros recurrentes automáticos.",
+        "Crear un sistema de Drag and Drop de productos personalizables para la creación de cotizaciones.",
+        "Diseñar un dashboard para los distintos módulos, con gráficos, informes y recordatorios personalizables."
+      ]
     },
     "planner": {
       "title": "Organizador",
-      "text": ""
+      "subtitle": "Organizador de Tareas y Notas",
+      "text": "Aplicación web diseñada para organizar notas y tareas de manera simple y eficiente. Permite crear distintos tipos de notas y tareas, como ejecutables, en espera, recurrentes o programadas, cada una con funcionalidades específicas para adaptarse a diferentes necesidades. Incluye un editor de notas con soporte para Markdown que facilita una mejor redacción y estructuración del contenido. La aplicación también ofrece un sistema de recordatorios que muestra las tareas pendientes del día.",
+      "challenges": [
+        "Implementar un editor de texto con soporte para Markdown.",
+        "Diseñar una estructura de tablas compartida, con funcionalidades específicas según el tipo de nota o tarea."
+      ]
     },
     "toon": {
       "title": "Toon Guesser",
-      "text": ""
+      "subtitle": "Juego de Adivinanza de Personajes",
+      "text": "Página web donde los usuarios pueden adivinar personajes de distintos dibujos animados. El sistema muestra una imagen pixelada en blanco y negro de un personaje, que va ganando color y detalle a medida que el usuario realiza sus intentos. Cada día se publica un nuevo personaje, ofreciendo un desafío fresco para resolver.",
+      "challenges": [
+        "Diseñar un sistema de imagen basado en canvas para aplicar distintos niveles de pixelado y coloración a la imagen del personaje.",
+        "Crear un sistema de guardado del estado de la sesión sin necesidad de base de datos ni autenticación.",
+        "Configurar un cron que actualice aleatoriamente los personajes, evitando repetir los de días anteriores siempre que queden personajes disponibles."
+      ]
     },
     "pap": {
       "title": "Paso a Paso",
-      "text": "Aplicación web desarrollada para una empresa mayorista, permite visualizar los productos disponibles y añadirlos a un carrito para realizar consultas. Además, incluye un panel de administrador para gestionar productos y configurar aspectos generales de la página."
+      "subtitle": "Página Web Mayorista",
+      "text": "Aplicación web desarrollada para una empresa mayorista, permite visualizar los productos disponibles y añadirlos a un carrito para realizar consultas. Además, incluye un panel de administrador para gestionar productos y configurar aspectos generales de la página.",
+      "challenges": [
+        "Implementar funcionalidades de personalización de catálogos, categorías y productos desde el panel de administración.",
+        "Desarrollar un sistema de gestión de archivos para administrar las imágenes de los productos."
+      ]
     },
     "traducciones": {
       "title": "Traducciones",
-      "text": "Microservicio para un portal universitario, diseñado para traducir y corregir archivos. Gestiona la carga y descarga de documentos y cuenta con roles específicos para cada tipo de usuario. Además, incluye un sistema de notificación por correo electrónico para mantener a los usuarios informados."
+      "subtitle": "Microservicio de Traducción y Corrección",
+      "text": "Microservicio para un portal universitario, diseñado para traducir y corregir archivos. Gestiona la carga y descarga de documentos y cuenta con roles específicos para cada tipo de usuario. Además, incluye un sistema de notificación por correo electrónico para mantener a los usuarios informados.",
+      "challenges": [
+        "Diseñar una arquitectura de microservicio en el backend, integrando Keycloak para la autenticación en las comunicaciones a través del API Gateway.",
+        "Desarrollar un sistema de gestión de archivos para los distintos documentos de cada solicitud.",
+        "Integrar Keycloak para la gestión de usuarios y roles."
+      ]
     },
     "difusiones": {
       "title": "Difusiones",
-      "text": ""
+      "subtitle": "Microservicio de Envío Masivo de Correos",
+      "text": "Microservicio para un portal universitario, encargado del envío masivo de difusiones por correo electrónico. El sistema permite gestionar listas de destinatarios, monitorear el estado de cada difusión desde un panel de control y visualizar quién abrió los correos enviados. Además, incluye un editor de texto enriquecido, opción de adjuntar archivos y programación de envíos.",
+      "challenges": [
+        "Diseñar una arquitectura de microservicio en el backend, integrando Keycloak para la autenticación en las comunicaciones a través del API Gateway.",
+        "Desarrollar un editor de texto enriquecido con funcionalidad de adjuntar archivos y programar envíos.",
+        "Crear un sistema de semáforos para el envío masivo de correos, optimizando el rendimiento y evitando bloqueos por parte del proveedor de servicios de correo.",
+        "Establecer un método para detectar quién abrió la difusión."
+      ]
     },
     "ripadmin": {
       "title": "RIP Admin",
-      "text": "Aplicación web para la administración de la aplicación móvil 'RIP Alive'. Permite a los administradores visualizar la información de los usuarios, gestionar el estado de las suscripciones y pagos, configurar catálogos de la aplicación, generar cupones de descuento, entre otras funcionalidades."
+      "subtitle": "Panel de Administración RIP Alive",
+      "text": "Aplicación web para la gestión de la app móvil “RIP Alive”. Permite a los administradores visualizar información de los usuarios, gestionar estados de suscripción y pagos, generar cupones de descuento, configurar productos, catálogos y eventos de la app, entre otras funcionalidades.",
+      "challenges": [
+        "Desarrollar funcionalidades para la creación y gestión de productos, catálogos y eventos dentro de la aplicación móvil.",
+        "Diseñar un sistema para la generación y administración de cupones de descuento para los usuarios."
+      ]
     },
     "ripbene": {
       "title": "RIP Beneficiarios",
-      "text": ""
+      "subtitle": "Página de Beneficiarios RIP Alive",
+      "text": "Aplicación web diseñada para que los beneficiarios asignados por un usuario en la app RIP Alive puedan acceder a la información de legado de este último. Los beneficiarios pueden visualizar a las personas que los han asignado y solicitar acceso a sus datos. La solicitud se aprueba únicamente si el titular no responde dentro del período de tiempo que haya configurado, interpretándose que la persona ha fallecido. En ese caso, el beneficiario obtiene acceso a la información de legado que el titular dejó registrada.",
+      "challenges": [
+        "Establecer un método para vincular la cuenta del beneficiario con los titulares que lo han asignado.",
+        "Diseñar un sistema de solicitudes de acceso a la información de legado, con un flujo de aprobación basado en el tiempo de respuesta del titular."
+      ]
     },
     "ripalive": {
       "title": "RIP Alive",
-      "text": "Aplicación móvil diseñada para permitir a los usuarios guardar su información importante en caso de fallecimiento, con el fin de informar a sus familiares sobre sus últimos deseos. Los usuarios pueden almacenar detalles sobre qué hacer con sus pertenencias, contactos clave, inversiones, información personal y de salud, entre otros. La app cuenta con un sistema de suscripción de pago y una tienda con productos."
+      "subtitle": "Aplicación de Legado Personal",
+      "text": "Aplicación móvil diseñada para permitir a los usuarios guardar su información importante en caso de fallecimiento, con el fin de informar a sus familiares sobre sus últimos deseos. Los usuarios pueden almacenar detalles sobre qué hacer con sus pertenencias, contactos clave, inversiones, información personal y de salud, entre otros. La app cuenta con un sistema de suscripción de pago y una tienda con productos.",
+      "challenges": [
+        "Implementar un sistema de adquisición y gestión de suscripciones a través de Google Play y App Store utilizando RevenueCat.",
+        "Integrar un sistema de pagos para la compra de productos dentro de la aplicación mediante Stripe.",
+        "Crear un sistema de notificaciones en tiempo real para alertar sobre distintos eventos dentro de la aplicación.",
+        "Diseñar un sistema de referidos con cashback para incentivar la incorporación de nuevos usuarios."
+      ]
     },
     "credential": {
       "title": "Credencial UTN",
-      "text": "Aplicación móvil diseñada como credencial digital para una universidad. Permite a los estudiantes validarse como alumnos mediante un código QR y facilita el acceso a información útil, como las materias en curso, el historial académico y una agenda detallada con los horarios de cada asignatura. También incluye una sección para descargar la constancia de alumno."
-    },
-    "amigoscole": {
-      "title": "Amigos del Cole",
-      "text": "Aplicación móvil diseñada como billetera digital para estudiantes, en la que los padres pueden cargar dinero en las cuentas de sus hijos que asisten al colegio. La app permite a los estudiantes realizar compras en los buffets de las escuelas mediante un código QR. Incluye tres roles de usuario: cuentas de padres para administrar el saldo, cuentas de hijos para realizar las compras, y cuentas de buffet para gestionar los pagos recibidos."
+      "subtitle": "Aplicación de Credencial Digital",
+      "text": "Aplicación móvil diseñada como credencial digital para una universidad. Permite a los estudiantes validarse como alumnos mediante un código QR y facilita el acceso a información útil, como las materias en curso, el historial académico y una agenda detallada con los horarios de cada asignatura. También incluye una sección para descargar la constancia de alumno.",
+      "challenges": [
+        "Diseñar un flujo de validación de alumnos mediante un código QR temporal y encriptado.",
+        "Integrar autenticación con Keycloak a través de un navegador integrado en la aplicación.",
+        "Generar en tiempo real un PDF con el historial académico del alumno.",
+        "Integrar la API de SIU-Guaraní (Sistema de Gestión Académica de Argentina) para obtener datos en tiempo real sobre los estudiantes."
+      ]
     }
   },
   "certifications": {
@@ -131,7 +174,7 @@
     "dbf": {
       "title": "Fundamentos Bases de Datos",
       "place": "Universidad Tecnológica Nacional",
-      "date": "27 Oct 2023"
+      "date": "30 Sep 2022"
     },
     "dbd": {
       "title": "Diplomatura Bases de Datos",

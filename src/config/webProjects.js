@@ -64,6 +64,13 @@ const webProjects = [
       "sequelize",
     ],
     integrations: ["keycloak"],
+    images: [
+      "traducciones1.png",
+      "traducciones2.png",
+      "traducciones3.png",
+      "traducciones4.png",
+      "traducciones5.png",
+    ],
   },
   {
     name: "difusiones",
@@ -80,6 +87,14 @@ const webProjects = [
       "sequelize",
     ],
     integrations: ["keycloak"],
+    images: [
+      "difu1.png",
+      "difu2.png",
+      "difu3.png",
+      "difu4.png",
+      "difu5.png",
+      "difu6.png",
+    ],
   },
   {
     name: "ripadmin",
@@ -94,7 +109,14 @@ const webProjects = [
       "node",
       "mongo",
     ],
-    images: ["ripadmin1.png", "ripadmin2.png", "ripadmin3.png", "ripadmin4.png", "ripadmin6.png", "ripadmin5.png"],
+    images: [
+      "ripadmin1.png",
+      "ripadmin2.png",
+      "ripadmin3.png",
+      "ripadmin4.png",
+      "ripadmin6.png",
+      "ripadmin5.png",
+    ],
   },
   {
     name: "ripbene",
@@ -109,6 +131,13 @@ const webProjects = [
       "chakra",
       "node",
       "mongo",
+    ],
+    images: [
+      "ripbene1.png",
+      "ripbene2.png",
+      "ripbene3.png",
+      "ripbene4.png",
+      "ripbene5.png",
     ],
   },
   {
@@ -127,6 +156,16 @@ const webProjects = [
       "sequelize",
     ],
     integrations: ["google"],
+    images: [
+      "planner1.png",
+      "planner2.png",
+      "planner3.png",
+      "planner4.png",
+      "planner5.png",
+      "planner6.png",
+      "planner7.png",
+      "planner8.png",
+    ],
   },
   {
     name: "toon",

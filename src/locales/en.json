@@ -53,67 +53,110 @@
       "integrations": "Integrations",
       "gallery": "Gallery"
     },
-    "mobile": {
-      "title": "Mobile Projects"
-    },
-    "web": {
-      "title": "Web Projects"
-    },
-    "samay": {
-      "title": "Samay Wayra",
-      "text": "Web page developed for a cabin rental company. It includes a photo gallery and a contact section to make accommodation reservations."
-    },
-    "poke": {
-      "title": "Poke Team",
-      "text": "Website that allows users to select Pokémon from a Pokédex to create their own team and view its stats."
-    },
-    "notes": {
-      "title": "Notes App",
-      "text": "Web application for creating and managing customizable notes, with user authentication to ensure private access to information."
+    "titles": {
+      "mobile": "Mobile Projects",
+      "web": "Web Projects"
     },
     "movil": {
       "title": "Moviltrack",
-      "text": ""
+      "subtitle": "Enterprise Management System",
+      "text": "Administrative web application that allows managing a company's commercial operations. The system includes an analytical dashboard, project management, clients, suppliers, products, and services. It also features modules for quotations, purchase orders, delivery notes, expenses, and recurring billing.",
+      "challenges": [
+        "Managing two currencies (MXN and USD) along with different exchange rates for the system’s overall administration.",
+        "Implementing a real-time PDF generator adaptable to various types of documents.",
+        "Developing a system for creating automatic recurring charges.",
+        "Building a drag-and-drop system for customizable products used in quote creation.",
+        "Designing a dashboard for the different modules, with customizable charts, reports, and reminders."
+      ]
     },
     "planner": {
       "title": "Organizer",
-      "text": ""
+      "subtitle": "Task and Note Organizer",
+      "text": "A web application designed to organize notes and tasks in a simple and efficient way. It allows you to create different types of notes and tasks, such as actionable, waiting, recurring, and scheduled items, each with specific features to adapt to different needs. It includes a notes editor with Markdown support that helps improve writing and content structure. The application also offers a reminder system that displays the tasks pending for the day.",
+      "challenges": [
+        "Implementing a text editor with Markdown support.",
+        "Designing a shared table structure with specific functionalities depending on the type of note or task."
+      ]
     },
     "toon": {
       "title": "Toon Guesser",
-      "text": ""
+      "subtitle": "Character Guessing Game",
+      "text": "A web page where users can guess characters from various cartoons. The system displays a black-and-white pixelated image of a character, which gradually gains color and detail as the user makes guesses. A new character is released every day, offering a fresh challenge for users to solve.",
+      "challenges": [
+        "Design a canvas-based system to apply different levels of pixelation and coloring to the character's image.",
+        "Create a session state saving system without using a database or authentication.",
+        "Set up a cron job to randomly update characters, avoiding repetition from previous days as long as characters are available."
+      ]
     },
     "pap": {
       "title": "Paso a Paso",
-      "text": "Web application developed for a wholesale company, enabling users to browse available products and add them to a cart for request purposes. Additionally, it includes an admin panel to manage products and configure general page settings."
+      "subtitle": "Wholesale Web Page",
+      "text": "Web application developed for a wholesale company, enabling users to browse available products and add them to a cart for request purposes. Additionally, it includes an admin panel to manage products and configure general page settings.",
+      "challenges": [
+        "Implementing customization features for catalogs, categories, and products from the admin panel.",
+        "Developing a file management system to handle product images."
+      ]
     },
     "traducciones": {
       "title": "Traducciones",
-      "text": "Microservice for a university portal, designed to translate and correct files. It manages the uploading and downloading of documents and includes specific roles for each user type. Additionally, it includes an email notification system to keep users informed."
+      "subtitle": "Translation and Proofreading Microservice",
+      "text": "Microservice for a university portal, designed to translate and correct files. It manages the uploading and downloading of documents and includes specific roles for each user type. Additionally, it includes an email notification system to keep users informed.",
+      "challenges": [
+        "Design a microservice architecture in the backend, integrating Keycloak for authentication in communications through the API Gateway.",
+        "Develop a file management system for the various documents of each request.",
+        "Integrate Keycloak for user and role management."
+      ]
     },
     "difusiones": {
       "title": "Diffusions",
-      "text": ""
+      "subtitle": "Bulk Email Sending Microservice",
+      "text": "Administrative web microservice designed for a university portal to manage and send mass email campaigns. The system includes recipient list management and a dashboard to monitor the status of each campaign. It also provides tracking capabilities to see which users have opened the emails. The email module features a rich-text editor, file attachments, and scheduling options for automated deliveries.",
+      "challenges": [
+        "Design a microservice architecture in the backend, integrating Keycloak for authentication in communications through the API Gateway.",
+        "Develop a rich text editor with the ability to attach files and schedule mailings.",
+        "Create a semaphore system for bulk email sending, optimizing performance and preventing blocks from the email service provider.",
+        "Establish a method to track who opened the mailing."
+      ]
     },
     "ripadmin": {
       "title": "RIP Admin",
-      "text": "Web application for managing the 'RIP Alive' mobile app. It allows administrators to view user information, manage subscription and payment statuses, configure app catalogs, generate discount coupons, and more."
+      "subtitle": "RIP Alive Admin Panel",
+      "text": "Web application for managing the “RIP Alive” mobile app. It allows administrators to view user information, manage subscription and payment statuses, generate discount coupons, configure products, catalogs, and in-app events, among other functionalities.",
+      "challenges": [
+        "Develop features for creating and managing products, catalogs, and events within the mobile app.",
+        "Design a system for generating and managing discount coupons for users."
+      ]
     },
     "ripbene": {
       "title": "RIP Beneficiaries",
-      "text": ""
+      "subtitle": "RIP Alive Beneficiaries Page",
+      "text": "A web application designed for beneficiaries assigned by a user in the RIP Alive app to access that user’s legacy information. Beneficiaries can view the people who have assigned them and request access to their data. The request is approved only if the account holder does not respond within the time period they configured, which is interpreted as a sign that the person has passed away. In that case, the beneficiary is granted access to the legacy information the holder previously recorded.",
+      "challenges": [
+        "Establish a method to link the beneficiary's account with the assignor accounts.",
+        "Design a system for requesting access to legacy information, with an approval flow based on the assignor's response time."
+      ]
     },
     "ripalive": {
       "title": "RIP Alive",
-      "text": "Mobile application designed to allow users to save all their important information in case of death, to inform family members of their final wishes. Users can store details about what to do with their belongings, key contacts, investments, personal and health information, and more. The app includes a built-in subscription system and a store for purchasing products."
+      "subtitle": "Personal Legacy Application",
+      "text": "Mobile application designed to allow users to save all their important information in case of death, to inform family members of their final wishes. Users can store details about what to do with their belongings, key contacts, investments, personal and health information, and more. The app includes a built-in subscription system and a store for purchasing products.",
+      "challenges": [
+        "Develop a system for subscription acquisition and management through Google Play and the App Store using RevenueCat.",
+        "Integrate a payment system for in-app product purchases using Stripe.",
+        "Create a real-time notification system to alert users about various events within the app.",
+        "Design a referral system with cashback to encourage the acquisition of new users."
+      ]
     },
     "credential": {
       "title": "Credencial UTN",
-      "text": "Mobile application designed as a digital credential for a university. It allows students to verify their enrollment status with a QR code and provides access to useful information, such as current courses, academic records, and a detailed schedule with class times. It also includes a section to download an enrollment certificate."
-    },
-    "amigoscole": {
-      "title": "Amigos del Cole",
-      "text": "Mobile application designed as a digital wallet for students, where parents can load money into their children's accounts for school. The app allows students to make purchases in school cafeterias using a QR code. It includes three user roles: parent accounts to manage balance and monitor transactions, student accounts to make purchases, and cafeteria accounts to manage received payments."
+      "subtitle": "Digital Credential Application",
+      "text": "Mobile application designed as a digital credential for a university. It allows students to verify their enrollment status with a QR code and provides access to useful information, such as current courses, academic records, and a detailed schedule with class times. It also includes a section to download an enrollment certificate.",
+      "challenges": [
+        "Integrate the SIU-Guaraní API (Argentina's Academic Management System) to obtain real-time student data.",
+        "Design a student validation flow using a temporary, encrypted QR code.",
+        "Generate a PDF with the student's academic history in real time.",
+        "Integrate authentication with Keycloak through an in-app browser."
+      ]
     }
   },
   "certifications": {
@@ -131,7 +174,7 @@
     "dbf": {
       "title": "Database Fundamentals",
       "place": "Universidad Tecnológica Nacional",
-      "date": "27 Oct 2023"
+      "date": "30 Sep 2022"
     },
     "dbd": {
       "title": "Database Diploma",
