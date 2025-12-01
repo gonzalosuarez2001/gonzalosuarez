@@ -9,29 +9,16 @@ export default function ProjectWebCard({
   onClick,
   url,
 }) {
-  const videoRef = useRef(null);
-
-  function handleVideoEnded() {
-    videoRef.current.currentTime = 0;
-    videoRef.current.play();
-  }
-
-  useEffect(() => {
-    videoRef.current.addEventListener("ended", handleVideoEnded);
-    return () => {
-      videoRef.current.removeEventListener("ended", handleVideoEnded);
-    };
-  }, []);
-
   return (
     <div className=" col-12 col-lg-5 mb-5 p-0">
       <div className="mb-4 rounded-2">
         <video
           className="projects_web_card_video rounded-2"
-          ref={videoRef}
+          onClick={onClick}
           autoPlay
           muted
-          onClick={onClick}
+          loop
+          playsInline
         >
           <source src={video} type="video/mp4" />
         </video>
