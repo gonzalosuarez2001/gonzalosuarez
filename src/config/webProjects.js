@@ -47,7 +47,17 @@ const webProjects = [
       "sql",
       "sequelize",
     ],
-    images: ["pap1.png", "pap2.png", "pap3.png", "pap4.png", "pap5.png"],
+    images: [
+      "pap1.png",
+      "pap2.png",
+      "pap3.png",
+      "pap4.png",
+      "pap5.png",
+      "pap6.png",
+      "pap7.png",
+      "pap8.png",
+      "pap9.png",
+    ],
   },
   {
     name: "traducciones",
