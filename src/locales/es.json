@@ -60,7 +60,7 @@
     "movil": {
       "title": "Moviltrack",
       "subtitle": "Sistema de Gestión Empresarial",
-      "text": "Aplicación web administrativa que permite gestionar las operaciones comerciales de una empresa. El sistema cuenta con un panel de control analítico, gestión de proyectos, clientes, proveedores, productos y servicios. Incluye módulos para cotizaciones, órdenes de compra, remisiones, gastos y facturación recurrente.",
+      "text": "Aplicación web administrativa que permite gestionar las operaciones comerciales de una empresa. El sistema cuenta con un panel de control analítico, gestión de proyectos, clientes, proveedores, productos y servicios. Incluye módulos para cotizaciones, órdenes de compra, recibos, gastos y facturación recurrente.",
       "challenges": [
         "Gestionar dos divisas (MXN y USD) junto con diferentes tipos de cambio para la administración general del sistema.",
         "Implementar un generador de PDFs en tiempo real adaptable a distintos tipos de documentos.",
