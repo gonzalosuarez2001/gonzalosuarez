@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../contexts/ThemeContext";
 import AboutMeImage from "../../../public/assets/images/me.png";
-import adini_logo from "../../../public/assets/images/adini_logo.jpeg";
 import { useScroll } from "../../contexts/ScrollContext";
 import { useEffect, useRef } from "react";
 import cv_english from "../../../public/assets/pdf/Gonzalo_Suarez_Resume_EN.pdf";
@@ -94,10 +93,6 @@ export default function AboutMe() {
           <img
             className="about_img col-10 col-sm-8 col-lg-11"
             src={AboutMeImage}
-          />
-          <img
-            className="about_img col-10 col-sm-8 col-lg-11"
-            src={adini_logo}
           />
         </div>
       </div>
