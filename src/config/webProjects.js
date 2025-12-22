@@ -193,6 +193,14 @@ const webProjects = [
       "sql",
       "prisma",
     ],
+     images: [
+      "toon1.png",
+      "toon2.png",
+      "toon3.png",
+      "toon4.png",
+      "toon5.png",
+      "toon6.png",
+    ],
   },
 ];
 
