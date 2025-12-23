@@ -180,6 +180,7 @@ const webProjects = [
   {
     name: "toon",
     video: toon,
+    url: "https://toonguesser.com/",
     technologies: [
       "git",
       "docker",
