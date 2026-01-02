@@ -1,11 +1,14 @@
 import ProjectDescription from "./ProjectDescription";
 
 export default function ProjectMobileCard({
+  isSafari,
   title,
   text,
   technologies,
   video1,
   video2,
+  image1,
+  image2,
   onClick,
   url,
 }) {
@@ -16,26 +19,40 @@ export default function ProjectMobileCard({
         onClick={onClick}
       >
         <div className="col-5">
-          <video
-            className="rounded-2 projects_mobile_card_video"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src={video1} type="video/mp4" />
-          </video>
+          {isSafari ? (
+            <img
+              src={`/gonzalosuarez/assets/images/${image1}`}
+              className="w-100 rounded-2"
+            />
+          ) : (
+            <video
+              className="rounded-2 projects_mobile_card_video"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={video1} type="video/mp4" />
+            </video>
+          )}
         </div>
         <div className="col-5">
-          <video
-            className="rounded-2 projects_mobile_card_video"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src={video2} type="video/mp4" />
-          </video>
+          {isSafari ? (
+            <img
+              src={`/gonzalosuarez/assets/images/${image2}`}
+              className="w-100 rounded-2"
+            />
+          ) : (
+            <video
+              className="rounded-2 projects_mobile_card_video"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src={video2} type="video/mp4" />
+            </video>
+          )}
         </div>
       </div>
 

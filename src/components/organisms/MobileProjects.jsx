@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import SectionTitle from "../atoms/SectionTitle";
 import ProjectMobileCard from "../molecules/ProjectMobileCard";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useScroll } from "../../contexts/ScrollContext";
 import { Smartphone } from "lucide-react";
 import { useTheme } from "../../contexts/ThemeContext";
@@ -16,6 +16,19 @@ export default function MobileProjects() {
   const { theme } = useTheme();
   const isOnScreen = useInView(projectsRef, { once: true, margin: "-300px" });
   const { setCurrentProject, openModal, setCurrentProjectType } = useProject();
+
+  const [isSafari, setIsSafari] = useState(false);
+
+  const isSafariBrowser = () => {
+    if (typeof navigator === "undefined") return false;
+
+    const ua = navigator.userAgent;
+    return /Safari/.test(ua) && !/Chrome/.test(ua);
+  };
+
+  useEffect(() => {
+    setIsSafari(isSafariBrowser());
+  }, []);
 
   return (
     <motion.div
@@ -34,8 +47,11 @@ export default function MobileProjects() {
           {mobileProjects.map((project, index) => (
             <ProjectMobileCard
               key={index}
+              isSafari={isSafari}
               video1={project.video1}
               video2={project.video2}
+              image1={project.image1}
+              image2={project.image2}
               title={t(`projects.${project.name}.title`)}
               text={t(`projects.${project.name}.text`)}
               technologies={project.technologies}

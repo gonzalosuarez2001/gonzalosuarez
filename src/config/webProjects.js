@@ -11,6 +11,7 @@ const webProjects = [
   {
     name: "movil",
     video: movil,
+    image: "movil1.png",
     technologies: [
       "git",
       "react",
@@ -35,6 +36,7 @@ const webProjects = [
   {
     name: "pap",
     video: pap,
+    image: "pap2.png",
     technologies: [
       "git",
       "docker",
@@ -62,6 +64,7 @@ const webProjects = [
   {
     name: "traducciones",
     video: tradu,
+    image: "traducciones1.png",
     technologies: [
       "git",
       "docker",
@@ -85,6 +88,7 @@ const webProjects = [
   {
     name: "difusiones",
     video: difu,
+    image: "difu1.png",
     technologies: [
       "git",
       "docker",
@@ -109,6 +113,7 @@ const webProjects = [
   {
     name: "ripadmin",
     video: ripadmin,
+    image: "ripadmin1.png",
     technologies: [
       "git",
       "react",
@@ -131,6 +136,7 @@ const webProjects = [
   {
     name: "ripbene",
     video: ripbene,
+    image: "ripbene2.png",
     url: "https://beneficiarios.ripalive.live/",
     technologies: [
       "git",
@@ -153,6 +159,7 @@ const webProjects = [
   {
     name: "planner",
     video: planner,
+    image: "planner2.png",
     technologies: [
       "git",
       "docker",
@@ -180,6 +187,7 @@ const webProjects = [
   {
     name: "toon",
     video: toon,
+    image: "toon1.png",
     url: "https://toonguesser.com/",
     technologies: [
       "git",

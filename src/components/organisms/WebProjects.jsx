@@ -18,6 +18,19 @@ export default function WebProjects() {
   const isOnScreen = useInView(projectsRef, { once: true, margin: "-300px" });
   const { setCurrentProject, openModal, setCurrentProjectType } = useProject();
 
+  const [isSafari, setIsSafari] = useState(false);
+
+  const isSafariBrowser = () => {
+    if (typeof navigator === "undefined") return false;
+
+    const ua = navigator.userAgent;
+    return /Safari/.test(ua) && !/Chrome/.test(ua);
+  };
+
+  useEffect(() => {
+    setIsSafari(isSafariBrowser());
+  }, []);
+
   useEffect(() => {
     setProjects(projectsRef);
   }, []);
@@ -40,9 +53,11 @@ export default function WebProjects() {
             {webProjects.map((project, index) => (
               <ProjectWebCard
                 key={index}
+                isSafari={isSafari}
                 title={t(`projects.${project.name}.title`)}
                 text={t(`projects.${project.name}.text`)}
                 video={project.video}
+                image={project.image}
                 technologies={project.technologies}
                 url={project?.url}
                 onClick={() => {

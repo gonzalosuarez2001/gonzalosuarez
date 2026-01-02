@@ -8,6 +8,8 @@ const mobileProjects = [
     name: "ripalive",
     video1: ripalive1,
     video2: ripalive2,
+    image1: "rip1.png",
+    image2: "rip2.png",
     url: "https://www.ripalive.com/",
     technologies: [
       "git",
@@ -36,6 +38,8 @@ const mobileProjects = [
     name: "credential",
     video1: credencial1,
     video2: credencial2,
+    image1: "credencial1.png",
+    image2: "credencial2.png",
     technologies: [
       "git",
       "docker",
