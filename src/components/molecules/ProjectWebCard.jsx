@@ -17,7 +17,8 @@ export default function ProjectWebCard({
         {isSafari ? (
           <img
             src={`/gonzalosuarez/assets/images/${image}`}
-            className="w-100 rounded-2"
+            className="w-100 rounded-2 projects_web_card_video"
+            onClick={onClick}
           />
         ) : (
           <video
