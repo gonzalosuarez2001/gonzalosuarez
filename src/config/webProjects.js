@@ -6,6 +6,7 @@ import movil from "../../public/assets/videos/movil.webm";
 import planner from "../../public/assets/videos/planner.webm";
 import difu from "../../public/assets/videos/difu.webm";
 import toon from "../../public/assets/videos/toon.webm";
+import { u } from "framer-motion/client";
 
 const webProjects = [
   {
@@ -65,6 +66,7 @@ const webProjects = [
     name: "traducciones",
     video: tradu,
     image: "traducciones1.png",
+    url: "https://sia.frba.utn.edu.ar/",
     technologies: [
       "git",
       "docker",
@@ -89,6 +91,7 @@ const webProjects = [
     name: "difusiones",
     video: difu,
     image: "difu1.png",
+    url: "https://sia.frba.utn.edu.ar/",
     technologies: [
       "git",
       "docker",
@@ -202,7 +205,7 @@ const webProjects = [
       "sql",
       "prisma",
     ],
-     images: [
+    images: [
       "toon1.png",
       "toon2.png",
       "toon3.png",
