@@ -20,6 +20,7 @@ export default function NavMobile() {
     projects,
     certifications,
     stack,
+    activeSection,
   } = useScroll();
 
   useEffect(() => {
@@ -58,6 +59,7 @@ export default function NavMobile() {
             setMenuOpen(false);
           }}
           name={t(`nav.home`)}
+          isActive={activeSection === "home"}
         />
         <NavMobileItem
           onClick={() => {
@@ -65,6 +67,7 @@ export default function NavMobile() {
             setMenuOpen(false);
           }}
           name={t(`nav.experience`)}
+          isActive={activeSection === "experience"}
         />
         <NavMobileItem
           onClick={() => {
@@ -72,6 +75,7 @@ export default function NavMobile() {
             setMenuOpen(false);
           }}
           name={t(`nav.projects`)}
+          isActive={activeSection === "projects"}
         />
         <NavMobileItem
           onClick={() => {
@@ -79,6 +83,7 @@ export default function NavMobile() {
             setMenuOpen(false);
           }}
           name={t(`nav.certifications`)}
+          isActive={activeSection === "certifications"}
         />
         <NavMobileItem
           onClick={() => {
@@ -86,6 +91,7 @@ export default function NavMobile() {
             setMenuOpen(false);
           }}
           name={t(`nav.technologies`)}
+          isActive={activeSection === "stack"}
         />
       </div>
     </nav>

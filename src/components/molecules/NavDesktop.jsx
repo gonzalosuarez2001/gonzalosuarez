@@ -16,6 +16,7 @@ export default function NavDesktop() {
     projects,
     certifications,
     stack,
+    activeSection,
   } = useScroll();
 
   return (
@@ -39,30 +40,35 @@ export default function NavDesktop() {
                 scrollToElement(home);
               }}
               name={t(`nav.home`)}
+              isActive={activeSection === "home"}
             />
             <NavDesktopItem
               onClick={() => {
                 scrollToElement(experience);
               }}
               name={t(`nav.experience`)}
+              isActive={activeSection === "experience"}
             />
             <NavDesktopItem
               onClick={() => {
                 scrollToElement(projects);
               }}
               name={t(`nav.projects`)}
+              isActive={activeSection === "projects"}
             />
             <NavDesktopItem
               onClick={() => {
                 scrollToElement(certifications);
               }}
               name={t(`nav.certifications`)}
+              isActive={activeSection === "certifications"}
             />
             <NavDesktopItem
               onClick={() => {
                 scrollToElement(stack);
               }}
               name={t(`nav.technologies`)}
+              isActive={activeSection === "stack"}
             />
           </div>
         </div>

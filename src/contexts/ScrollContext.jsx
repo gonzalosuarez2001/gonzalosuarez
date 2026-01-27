@@ -14,6 +14,7 @@ export function ScrollContextProvider({ children }) {
   const [stack, setStack] = useState(0);
   const [scrollY, setScrollY] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [activeSection, setActiveSection] = useState("home");
 
   function scrollToElement(ref) {
     if (ref.current) {
@@ -38,6 +39,53 @@ export function ScrollContextProvider({ children }) {
     });
   }, []);
 
+  useEffect(() => {
+    const sections = [
+      { name: "home", ref: home },
+      { name: "experience", ref: experience },
+      { name: "projects", ref: projects },
+      { name: "certifications", ref: certifications },
+      { name: "stack", ref: stack },
+    ];
+
+    const observerOptions = {
+      root: null,
+      rootMargin: "-50% 0px -50% 0px",
+      threshold: 0,
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionName = entry.target.getAttribute("data-section");
+          if (sectionName) {
+            setActiveSection(sectionName);
+          }
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+
+    sections.forEach((section) => {
+      if (section.ref?.current) {
+        section.ref.current.setAttribute("data-section", section.name);
+        observer.observe(section.ref.current);
+      }
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section.ref?.current) {
+          observer.unobserve(section.ref.current);
+        }
+      });
+    };
+  }, [home, experience, projects, certifications, stack]);
+
   return (
     <ScrollContext.Provider
       value={{
@@ -54,6 +102,7 @@ export function ScrollContextProvider({ children }) {
         setCertifications,
         stack,
         setStack,
+        activeSection,
       }}
     >
       {children}
