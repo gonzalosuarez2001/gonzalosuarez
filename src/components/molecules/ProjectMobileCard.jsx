@@ -1,4 +1,4 @@
-import ProjectDescription from "./ProjectDescription";
+import ProjectDescription from "./ProjectDescription.jsx";
 
 export default function ProjectMobileCard({
   isSafari,

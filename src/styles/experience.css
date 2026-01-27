@@ -6,8 +6,14 @@
   position: relative;
 }
 
-.experience_timeline {
-  border-left: 2px solid #d2dfff;
+.experience_timeline_light {
+  border-left: 3px solid #f3f3f3;
+  transition: 0.2s;
+}
+
+.experience_timeline_dark {
+  border-left: 3px solid #262f47;
+  transition: 0.2s;
 }
 
 .experience_title {

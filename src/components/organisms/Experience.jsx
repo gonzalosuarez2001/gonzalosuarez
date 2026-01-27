@@ -35,7 +35,7 @@ export default function Experience() {
           }
         />
         <div className="experience_items_container d-flex">
-          <div className="experience_timeline col-2 col-lg-1"></div>
+          <div className={`experience_timeline_${theme} col-2 col-lg-1`}></div>
           <div className="col-10 col-lg-11 p-0 pt-3 d-flex">
             <div>
               <ExperienceItem

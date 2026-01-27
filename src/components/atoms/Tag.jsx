@@ -50,8 +50,9 @@ const tagList = {
 
 export default function Tag({ tag }) {
   const { theme } = useTheme();
+
   return (
-    <div className={`background_secondary_${theme} rounded-2 me-3 mb-3 p-2`}>
+    <div className={`background_secondary_${theme} rounded-2 me-3 mb-3 p-2 d-flex`}>
       <img className="me-2" width="20" height="20" src={tagList[tag].icon} />
       <span className={`text_${theme} projects_tag_name text-center`}>
         {tagList[tag].name}

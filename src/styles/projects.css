@@ -46,6 +46,7 @@
 .projects_tag_name {
   font-size: 14px;
   font-weight: 900;
+  white-space: nowrap;
 }
 
 .projects_card_details {
@@ -144,6 +145,45 @@
 
 .swiper-pagination-bullet-active {
   background: #4071f4 !important; /* color del activo */
+}
+
+.tag-scrollbar {
+  transition: 0.2s;
+}
+
+.tag-scrollbar::-webkit-scrollbar {
+  height: 5px;
+  overflow: hidden;
+}
+
+.tag-scrollbar_dark::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 0px 8px 8px 0px;
+  overflow: hidden;
+}
+
+.tag-scrollbar_dark::-webkit-scrollbar-thumb {
+  background-color: #262f47;
+  border-radius: 8px;
+}
+
+.tag-scrollbar_dark::-webkit-scrollbar-thumb:hover {
+  background-color: #2c3653;
+}
+
+.tag-scrollbar_light::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 0px 8px 8px 0px;
+  overflow: hidden;
+}
+
+.tag-scrollbar_light::-webkit-scrollbar-thumb {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+.tag-scrollbar_light::-webkit-scrollbar-thumb:hover {
+  background-color: #e2e2e2;
 }
 
 @media screen and (max-width: 991px) {

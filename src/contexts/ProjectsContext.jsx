@@ -125,10 +125,10 @@ export function ProjectContextProvider({ children }) {
                         key={index}
                       >
                         <i
-                          className={`text_${theme} bi bi-circle-fill me-3 d-none d-md-block`}
+                          className={`text_${theme} bi bi-circle-fill me-3`}
                           style={{ fontSize: "8px" }}
                         />
-                        <p className={`text_${theme} language m-0`}>{screenWidth <= 767 && "• "} {item}</p>
+                        <p className={`text_${theme} language m-0`}>{item}</p>
                       </div>
                     ))}
                   </div>

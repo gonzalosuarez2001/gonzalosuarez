@@ -25,9 +25,6 @@ export default function ProyectDescription({
             className="projects_card_details px-2 py-1 rounded-2 d-flex justify-content-center align-items-center cursor-pointer"
           >
             <Eye size={20} />
-          {/*   <h3 className="projects_card_details_text m-0 ms-2 language">
-              {t("projects.details")}
-            </h3> */}
           </button>
           <button
             onClick={() => {
@@ -45,7 +42,7 @@ export default function ProyectDescription({
       </div>
       <p className={`text_${theme} projects_card_text language`}>{text}</p>
 
-      <div className="d-flex mt-4 flex-wrap">
+      <div className={`d-flex mt-4 overflow-x-auto tag-scrollbar_${theme} tag-scrollbar`}>
         {technologies.map((technologie, index) => {
           return <Tag tag={technologie} key={index} />;
         })}
