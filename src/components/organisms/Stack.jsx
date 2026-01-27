@@ -24,6 +24,7 @@ export default function Stack() {
     "next",
     "reactNative",
     "expo",
+    "redux",
     "tailwind",
     "bootstrap",
     "chakra",
