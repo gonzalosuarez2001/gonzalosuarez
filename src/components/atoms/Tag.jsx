@@ -21,6 +21,8 @@ import tsIcon from "../../../public/assets/icons/ts.webp";
 import prismaIcon from "../../../public/assets/icons/prisma.webp";
 import nextIcon from "../../../public/assets/icons/next.webp";
 import googleIcon from "../../../public/assets/icons/google.webp";
+import actionsIcon from "../../../public/assets/icons/actions.webp";
+import reduxIcon from "../../../public/assets/icons/redux.webp";
 
 const tagList = {
   react: { name: "React", icon: reactIcon },
@@ -46,6 +48,8 @@ const tagList = {
   prisma: { name: "Prisma", icon: prismaIcon },
   next: { name: "Next.js", icon: nextIcon },
   google: { name: "Google", icon: googleIcon },
+  actions: { name: "GitHub Actions", icon: actionsIcon },
+  redux: { name: "Redux", icon: reduxIcon },
 };
 
 export default function Tag({ tag }) {

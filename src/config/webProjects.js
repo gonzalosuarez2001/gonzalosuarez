@@ -174,6 +174,7 @@ const webProjects = [
       "node",
       "sql",
       "sequelize",
+      "actions"
     ],
     integrations: ["google"],
     images: [
@@ -200,10 +201,12 @@ const webProjects = [
       "html",
       "css",
       "ts",
+      "redux",
       "tailwind",
       "node",
       "sql",
       "prisma",
+      "actions",
     ],
     images: [
       "toon1.png",

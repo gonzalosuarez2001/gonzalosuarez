@@ -29,6 +29,7 @@ import rc from "../../../public/assets/icons/rc.webp";
 import google from "../../../public/assets/icons/google.webp";
 import keycloak from "../../../public/assets/icons/keycloak.webp";
 import redux from "../../../public/assets/icons/redux.webp";
+import actions from "../../../public/assets/icons/actions.webp";
 
 const tagList = {
   react: { name: "React", img: react },
@@ -62,6 +63,7 @@ const tagList = {
   google: { name: "Google", img: google },
   keycloak: { name: "Keycloak", img: keycloak },
   redux: { name: "Redux", img: redux },
+  actions: { name: "GitHub Actions", img: actions },
 };
 
 export default function StackTechnologie({ tag }) {
