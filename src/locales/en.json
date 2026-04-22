@@ -150,7 +150,7 @@
     "credential": {
       "title": "Credencial UTN + AI",
       "subtitle": "Digital Credential Application with AI Chat",
-      "text": "Mobile application designed as a digital credential for a university. It allows students to verify their enrollment status with a QR code and provides access to useful information, such as current courses, academic records, and a detailed schedule with class times. It also includes a section to download an enrollment certificate.",
+      "text": "Mobile application designed as a digital credential for a university. It features an AI chat with a RAG system to answer academic queries. It allows students to verify their enrollment status with a QR code and provides access to useful information, such as current courses, academic records, and a detailed schedule with class times.",
       "challenges": [
         "Develop an AI chat with a RAG system with a dual information retrieval mechanism: semantic search over documents indexed in a vector database and tool calling to the university database.",
         "Design a student validation flow using a temporary, encrypted QR code.",

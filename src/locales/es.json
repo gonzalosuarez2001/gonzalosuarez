@@ -150,7 +150,7 @@
     "credential": {
       "title": "Credencial UTN + IA",
       "subtitle": "Aplicación de Credencial Digital con Chat IA",
-      "text": "Aplicación móvil diseñada como credencial digital para una universidad. Permite a los estudiantes validarse como alumnos mediante un código QR y facilita el acceso a información útil, como las materias en curso, el historial académico y una agenda detallada con los horarios de cada asignatura. También incluye una sección para descargar la constancia de alumno.",
+      "text": "Aplicación móvil diseñada como credencial digital para una universidad. Cuenta con un chat de IA con sistema RAG para responder consultas académicas. Permite a los estudiantes validarse como alumnos mediante un código QR y facilita el acceso a información útil, como las materias en curso, el historial académico y una agenda detallada con los horarios de cada asignatura.",
       "challenges": [
         "Desarrollar un chat de IA con sistema RAG con doble mecanismo de obtención de información: búsqueda semántica sobre documentos indexados en una base de datos vectorial y tool calling a la base de datos de la universidad.",
         "Diseñar un flujo de validación de alumnos mediante un código QR temporal y encriptado.",
