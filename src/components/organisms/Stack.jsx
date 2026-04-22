@@ -30,16 +30,16 @@ export default function Stack() {
     "chakra",
     "figma",
   ];
-  const backTags = [
-    "node",
-    "express",
-    "sql",
-    "mongo",
-    "sequelize",
-    "prisma",
-  ];
+  const backTags = ["node", "express", "sql", "mongo", "sequelize", "prisma"];
   const toolsTags = ["docker", "actions", "git", "gitlab", "bash", "wordpress"];
-  const learningTags = ["stripe", "rc", "mp", "google", "keycloak"];
+  const integrationsTags = [
+    "ollama",
+    "stripe",
+    "rc",
+    "mp",
+    "google",
+    "keycloak",
+  ];
 
   useEffect(() => {
     setStack(stackRef);
@@ -73,7 +73,7 @@ export default function Stack() {
           />
           <StackTechnologieContainer
             title={t("stack.subtitle.4")}
-            tags={learningTags}
+            tags={integrationsTags}
           />
         </div>
       </div>

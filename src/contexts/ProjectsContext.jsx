@@ -33,7 +33,7 @@ export function ProjectContextProvider({ children }) {
 
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const {screenWidth} = useScroll()
+  const { screenWidth } = useScroll();
 
   const openModal = () => setOpen(true);
   const closeModal = () => setOpen(false);
@@ -163,7 +163,7 @@ export function ProjectContextProvider({ children }) {
                         {currentProject.integrations.map(
                           (technologie, index) => {
                             return <Tag tag={technologie} key={index} />;
-                          }
+                          },
                         )}
                       </div>
                     </>
@@ -179,9 +179,7 @@ export function ProjectContextProvider({ children }) {
                     </h3>
                   </div>
 
-                  <div
-                    className="rounded-2 d-flex justify-content-start align-items-center"
-                  >
+                  <div className="rounded-2 d-flex justify-content-start align-items-center">
                     <div
                       className="w-100 rounded-2 overflow-hidden position-relative"
                       style={{
@@ -218,7 +216,7 @@ export function ProjectContextProvider({ children }) {
                                 className={`${
                                   currentProjectType == "web"
                                     ? "w-100"
-                                    : "col-10 col-md-8 col-lg-6 col-xl-4"
+                                    : `col-10 col-md-8 col-lg-6 ${currentProject?.reduceImg ? "col-xl-3" : "col-xl-4"}`
                                 }`}
                               />
                             </div>

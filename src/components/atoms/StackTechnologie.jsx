@@ -30,6 +30,7 @@ import google from "../../../public/assets/icons/google.webp";
 import keycloak from "../../../public/assets/icons/keycloak.webp";
 import redux from "../../../public/assets/icons/redux.webp";
 import actions from "../../../public/assets/icons/actions.webp";
+import ollama from "../../../public/assets/icons/ollama.webp";
 
 const tagList = {
   react: { name: "React", img: react },
@@ -64,6 +65,7 @@ const tagList = {
   keycloak: { name: "Keycloak", img: keycloak },
   redux: { name: "Redux", img: redux },
   actions: { name: "GitHub Actions", img: actions },
+  ollama: { name: "Ollama", img: ollama },
 };
 
 export default function StackTechnologie({ tag }) {

@@ -148,13 +148,13 @@
       ]
     },
     "credential": {
-      "title": "Credencial UTN",
-      "subtitle": "Aplicación de Credencial Digital",
+      "title": "Credencial UTN + IA",
+      "subtitle": "Aplicación de Credencial Digital con Chat IA",
       "text": "Aplicación móvil diseñada como credencial digital para una universidad. Permite a los estudiantes validarse como alumnos mediante un código QR y facilita el acceso a información útil, como las materias en curso, el historial académico y una agenda detallada con los horarios de cada asignatura. También incluye una sección para descargar la constancia de alumno.",
       "challenges": [
+        "Desarrollar un chat de IA con sistema RAG con doble mecanismo de obtención de información: búsqueda semántica sobre documentos indexados en una base de datos vectorial y tool calling a la base de datos de la universidad.",
         "Diseñar un flujo de validación de alumnos mediante un código QR temporal y encriptado.",
         "Integrar autenticación con Keycloak a través de un navegador integrado en la aplicación.",
-        "Generar en tiempo real un PDF con el historial académico del alumno.",
         "Integrar la API de SIU-Guaraní (Sistema de Gestión Académica de Argentina) para obtener datos en tiempo real sobre los estudiantes."
       ]
     }

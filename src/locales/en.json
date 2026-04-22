@@ -98,7 +98,7 @@
       ]
     },
     "traducciones": {
-      "title": "Traducciones",
+      "title": "Translations",
       "subtitle": "Translation and Proofreading Microservice",
       "text": "Microservice for a university portal, designed to translate and correct files. It manages the uploading and downloading of documents and includes specific roles for each user type. Additionally, it includes an email notification system to keep users informed.",
       "challenges": [
@@ -148,14 +148,14 @@
       ]
     },
     "credential": {
-      "title": "Credencial UTN",
-      "subtitle": "Digital Credential Application",
+      "title": "Credencial UTN + AI",
+      "subtitle": "Digital Credential Application with AI Chat",
       "text": "Mobile application designed as a digital credential for a university. It allows students to verify their enrollment status with a QR code and provides access to useful information, such as current courses, academic records, and a detailed schedule with class times. It also includes a section to download an enrollment certificate.",
       "challenges": [
-        "Integrate the SIU-Guaraní API (Argentina's Academic Management System) to obtain real-time student data.",
+        "Develop an AI chat with a RAG system with a dual information retrieval mechanism: semantic search over documents indexed in a vector database and tool calling to the university database.",
         "Design a student validation flow using a temporary, encrypted QR code.",
-        "Generate a PDF with the student's academic history in real time.",
-        "Integrate authentication with Keycloak through an in-app browser."
+        "Integrate authentication with Keycloak through an in-app browser.",
+        "Integrate the SIU-Guaraní API (Argentina's Academic Management System) to obtain real-time student data."
       ]
     }
   },

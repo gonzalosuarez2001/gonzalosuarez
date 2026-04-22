@@ -23,6 +23,7 @@ import nextIcon from "../../../public/assets/icons/next.webp";
 import googleIcon from "../../../public/assets/icons/google.webp";
 import actionsIcon from "../../../public/assets/icons/actions.webp";
 import reduxIcon from "../../../public/assets/icons/redux.webp";
+import ollamaIcon from "../../../public/assets/icons/ollama.webp";
 
 const tagList = {
   react: { name: "React", icon: reactIcon },
@@ -50,13 +51,16 @@ const tagList = {
   google: { name: "Google", icon: googleIcon },
   actions: { name: "GitHub Actions", icon: actionsIcon },
   redux: { name: "Redux", icon: reduxIcon },
+  ollama: { name: "Ollama", icon: ollamaIcon },
 };
 
 export default function Tag({ tag }) {
   const { theme } = useTheme();
 
   return (
-    <div className={`background_secondary_${theme} rounded-2 me-3 mb-3 p-2 d-flex`}>
+    <div
+      className={`background_secondary_${theme} rounded-2 me-3 mb-3 p-2 d-flex`}
+    >
       <img className="me-2" width="20" height="20" src={tagList[tag].icon} />
       <span className={`text_${theme} projects_tag_name text-center`}>
         {tagList[tag].name}
