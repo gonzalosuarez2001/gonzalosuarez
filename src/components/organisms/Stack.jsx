@@ -31,7 +31,7 @@ export default function Stack() {
     "figma",
   ];
   const backTags = ["node", "express", "sql", "mongo", "sequelize", "prisma"];
-  const toolsTags = ["docker", "actions", "git", "gitlab", "bash", "wordpress"];
+  const toolsTags = ["aws", "docker", "actions", "git", "gitlab", "bash", "wordpress"];
   const integrationsTags = [
     "ollama",
     "stripe",
