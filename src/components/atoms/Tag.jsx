@@ -24,7 +24,7 @@ import googleIcon from "../../../public/assets/icons/google.webp";
 import actionsIcon from "../../../public/assets/icons/actions.webp";
 import reduxIcon from "../../../public/assets/icons/redux.webp";
 import ollamaIcon from "../../../public/assets/icons/ollama.webp";
-import awsIcon from "../../public/assets/icons/aws.webp";
+import awsIcon from "../../../public/assets/icons/aws.webp";
 
 
 const tagList = {
