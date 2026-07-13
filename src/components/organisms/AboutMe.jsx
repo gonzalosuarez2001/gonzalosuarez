@@ -32,7 +32,7 @@ export default function AboutMe() {
       ref={homeRef}
       className="about_container container-fluid d-flex justify-content-center p-0 mb-sm-5 mb-lg-0"
     >
-      <div className="about_subcontainer col-10 col-md-8 col-lg-12 col-xl-10 col-xxl-8 row justify-content-center">
+      <div className="about_subcontainer col-10 col-md-8 col-lg-12 col-xl-10 col-xxl-8 row justify-content-center mt-5">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-sm-center order-2 order-lg-1 p-0">
           <div className="d-flex flex-column align-items-center">
             <div className="col-12 col-sm-10">
@@ -90,10 +90,12 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="p-0 p-sm-3 col-12 col-lg-6 d-flex justify-content-center align-items-center mt-0 mt-sm-4 mt-lg-0 order-1 order-lg-1">
+         <div className="mb-4 d-flex justify-content-center align-items-center rounded col-10 col-sm-8 col-lg-11">  
           <img
-            className="about_img col-10 col-sm-8 col-lg-11"
+            className="rounded about_img"
             src={AboutMeImage}
           />
+          </div>
         </div>
       </div>
     </motion.div>
