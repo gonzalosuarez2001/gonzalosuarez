@@ -23,11 +23,11 @@
     "title": "Work Experience",
     "freelance": {
       "title": "Co-Founder & Software Developer",
-      "subtitle": "ADINI - Self Employed",
+      "subtitle": "ADINI - Software Development Studio",
       "date": "March 2024 - ",
       "dateSpan": "Present",
       "text": [
-        "Co-founded a tech startup focused on web and mobile application development, leading, together with the team, the functional analysis, design, development, and deployment of solutions for clients.",
+        "Co-founded a software development studio delivering custom web and mobile solutions for clients. Led functional analysis, software design, development, deployment, and infrastructure alongside the team.",
         "Designed and developed enterprise resource planning (ERP) systems, administrative platforms, and mobile applications, integrating payment gateways, subscriptions, real-time notifications, and admin dashboards.",
         "Implemented infrastructure and deployment automation using Docker, GitHub Actions (CI/CD), Linux servers, reverse proxies, and cloud services, managing development and production environments.",
         "Collaborated with clients on requirements gathering, technical solution definition, and project planning, supporting the full software development lifecycle."
