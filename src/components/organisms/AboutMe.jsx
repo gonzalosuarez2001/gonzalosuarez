@@ -16,6 +16,8 @@ export default function AboutMe() {
   const { setHome } = useScroll();
   const homeRef = useRef();
 
+  const specialtyColor = "#8ba9ff";
+
   function handleClick(link) {
     window.open(link, "_blank");
   }
@@ -32,7 +34,7 @@ export default function AboutMe() {
       ref={homeRef}
       className="about_container container-fluid d-flex justify-content-center p-0 mb-sm-5 mb-lg-0"
     >
-      <div className="about_subcontainer col-10 col-md-8 col-lg-12 col-xl-10 col-xxl-8 row justify-content-center mt-5">
+      <div className="about_subcontainer col-10 col-md-8 col-lg-12 col-xl-10 col-xxl-8 row justify-content-center mt-4">
         <div className="col-12 col-lg-6 d-flex flex-column justify-content-sm-center order-2 order-lg-1 p-0">
           <div className="d-flex flex-column align-items-center">
             <div className="col-12 col-sm-10">
@@ -43,10 +45,16 @@ export default function AboutMe() {
                 {t(`aboutMe.title.2`)}
               </p>
               <p className={`text_${theme} language about_text_specialty text-center text-lg-start`}>
-                {t(`aboutMe.title.3`)}
-                <span style={{ color: "#44a8beff" }}> React</span>
-                <span> {t(`aboutMe.title.4`)} </span>
-                <span style={{ color: "#47933bff" }}>Node</span>
+                {t(`aboutMe.title.3`, { returnObjects: true }).map(
+                  (term, index, terms) => (
+                    <span key={index}>
+                      <span style={{ color: specialtyColor }}>{term}</span>
+                      {index < terms.length - 1 && (
+                        <span className="about_specialty_sep"> · </span>
+                      )}
+                    </span>
+                  )
+                )}
               </p>
             </div>
             <div className="col-12 col-sm-10 mt-4 d-flex align-items-center justify-content-around justify-content-lg-start">

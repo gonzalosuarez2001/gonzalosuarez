@@ -12,7 +12,7 @@ export default function ExperienceItem({
 
   return (
     <div className={`text_${theme} ${lastItem ? "" : "mb-5"} row`}>
-      <div className="col-12 col-lg-5">
+      <div className="col-12 col-lg-5 mb-3 mb-lg-0">
         <div className={`text_${theme} mb-2`}>
           <i
             className={`${
@@ -32,7 +32,13 @@ export default function ExperienceItem({
         </div>
       </div>
       <div className="col-12 col-lg-7">
-        <p className="experience_text mb-0 language">{text}</p>
+        <ul className="experience_list mb-0">
+          {text.map((item, index) => (
+            <li key={index} className="experience_text language">
+              {item}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

@@ -20,6 +20,7 @@
   color: #4071f4;
   font-size: 20px;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 .experience_subtitle {
@@ -43,6 +44,21 @@
   line-height: 2;
 }
 
+.experience_list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.experience_list .experience_text {
+  position: relative;
+  line-height: 1.7;
+}
+
+.experience_list .experience_text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .experience_icon {
   position: absolute;
   left: -7.25px;
@@ -57,6 +73,23 @@
   color: #8ba9ff;
   border-radius: 50%;
   transition: 0s;
+}
+
+@media screen and (min-width: 991px) {
+  .experience_list .experience_text {
+    padding-left: 18px;
+  }
+
+  .experience_list .experience_text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #4071f4;
+  }
 }
 
 @media screen and (max-width: 991px) {

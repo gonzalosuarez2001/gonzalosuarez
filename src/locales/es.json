@@ -10,8 +10,11 @@
     "title": {
       "1": "¡Hola! Soy Gonzalo",
       "2": "Desarrollador de Software",
-      "3": "Especializado en",
-      "4": "y"
+      "3": [
+        "Full Stack",
+        "Cloud",
+        "IA"
+      ]
     },
     "contact": "Contáctame",
     "download": "Descargar CV"
@@ -23,26 +26,46 @@
       "subtitle": "ADINI - Autónomo",
       "date": "Marzo 2024 - ",
       "dateSpan": "Actualidad",
-      "text": "Como cofundador de una startup tecnológica, lidero junto a mis compañeros el desarrollo y la implementación de soluciones integrales para clientes, abarcando tanto el desarrollo de software (aplicaciones web y móviles) como servicios de infraestructura y nube. Me desempeño principalmente como desarrollador full stack y analista, participando en todo el ciclo de vida de los proyectos: desde el relevamiento de requerimientos y definición de soluciones, hasta el desarrollo, despliegue y mantenimiento."
+      "text": [
+        "Cofundé una startup tecnológica dedicada al desarrollo de aplicaciones web y móviles, liderando junto al equipo el análisis funcional, diseño, desarrollo y despliegue de soluciones para clientes.",
+        "Diseñé y desarrollé sistemas de gestión empresarial (ERP), plataformas administrativas y aplicaciones móviles, integrando pasarelas de pago, suscripciones, notificaciones en tiempo real y paneles de administración.",
+        "Implementé infraestructura y automatización de despliegues utilizando Docker, GitHub Actions (CI/CD), servidores Linux, proxies reversos y servicios en la nube, administrando entornos de desarrollo y producción.",
+        "Colaboré con clientes en el relevamiento de requerimientos, definición de soluciones técnicas y planificación de proyectos, acompañando el ciclo completo de desarrollo de software."
+      ]
     },
     "developer": {
       "title": "Desarrollador de Software",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "Febrero 2024 - ",
       "dateSpan": "Actualidad",
-      "text": "Como desarrollador Full Stack, me especializo en el desarrollo de aplicaciones desde cero, cumpliendo con precisión cada etapa del proceso de desarrollo. Además, me encargo de implementar nuevas características, módulos y funcionalidades en las aplicaciones existentes. También me dedico a resolver errores con el fin de optimizar el rendimiento y mejorar la experiencia del usuario."
+      "text": [
+        "Diseñé e implementé soluciones de software para la Universidad Tecnológica Nacional, participando en todo el ciclo de vida del desarrollo de aplicaciones web, móviles y microservicios.",
+        "Centralicé la autenticación y autorización de usuarios, microservicios y APIs mediante Keycloak, administrando SSO, OAuth2/OpenID Connect, JWT, Client Credentials, y modelos de roles y permisos.",
+        "Desarrollé soluciones de IA Generativa utilizando RAG, búsqueda semántica sobre bases vectoriales y tool calling para consultar información institucional en tiempo real.",
+        "Optimicé procesos de envío de correos y notificaciones mediante colas de trabajo asíncronas con BullMQ y Redis, mejorando la escalabilidad y el rendimiento.",
+        "Integré sistemas institucionales y servicios externos, incluyendo LDAP, SIU Guaraní y APIs REST, garantizando el intercambio seguro y consistente de información."
+      ]
     },
     "analyst": {
       "title": "Analista Funcional",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "Abril 2023 - Enero 2024",
-      "text": "Encargado del análisis y relevamiento de requisitos para proyectos de desarrollo de software. Enfocado en la generación de casos de uso e historias de usuario, así como en la creación de diversos diagramas que conformaban las etapas de análisis y diseño. Además, realizaba tareas de testing QA para garantizar la calidad del software desarrollado."
+      "text": [
+        "Relevé y analicé requerimientos funcionales junto a clientes y usuarios, transformando necesidades de negocio en especificaciones técnicas.",
+        "Elaboré historias de usuario, casos de uso y diagramas UML para definir funcionalidades y guiar el desarrollo de software.",
+        "Colaboré con equipos de desarrollo en la validación funcional de soluciones durante todo el ciclo de vida del proyecto.",
+        "Ejecuté pruebas funcionales (QA), identificando incidencias y verificando el cumplimiento de los requisitos antes de cada entrega."
+      ]
     },
     "support": {
       "title": "Soporte Aplicaciones",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "Agosto 2022 - Marzo 2023",
-      "text": "Mi rol consistía en identificar y resolver errores en las aplicaciones universitarias tanto desde la interfaz de administrador como mediante consultas en las bases de datos en caso de ser necesario. Además, gestionaba los permisos de las aplicaciones y mantenía contacto con los usuarios para asistirlos en la resolución de problemas."
+      "text": [
+        "Analicé y resolví incidencias en aplicaciones universitarias, realizando diagnóstico desde interfaces administrativas, logs y consultas a bases de datos para identificar la causa raíz de los problemas.",
+        "Administré permisos, roles y accesos de usuarios en las aplicaciones institucionales, garantizando la correcta configuración de privilegios según cada perfil.",
+        "Brindé soporte técnico a usuarios internos, gestionando reportes de incidentes, seguimiento de casos y comunicación directa hasta su resolución."
+      ]
     }
   },
   "projects": {

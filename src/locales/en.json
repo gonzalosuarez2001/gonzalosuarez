@@ -10,8 +10,11 @@
     "title": {
       "1": "Hi there! I'm Gonzalo",
       "2": "Software Developer",
-      "3": "Specialized in",
-      "4": "and"
+      "3": [
+        "Full Stack",
+        "Cloud",
+        "AI"
+      ]
     },
     "contact": "Contact Me",
     "download": "Download CV"
@@ -23,26 +26,46 @@
       "subtitle": "ADINI - Self Employed",
       "date": "March 2024 - ",
       "dateSpan": "Present",
-      "text": "As a co-founder of a tech startup, I lead, together with my team, the development and implementation of end-to-end solutions for clients, covering both software development (web and mobile applications) and infrastructure and cloud services. I primarily work as a full stack developer and analyst, participating in the entire project lifecycle: from requirements gathering and solution design to development, deployment, and maintenance."
+      "text": [
+        "Co-founded a tech startup focused on web and mobile application development, leading, together with the team, the functional analysis, design, development, and deployment of solutions for clients.",
+        "Designed and developed enterprise resource planning (ERP) systems, administrative platforms, and mobile applications, integrating payment gateways, subscriptions, real-time notifications, and admin dashboards.",
+        "Implemented infrastructure and deployment automation using Docker, GitHub Actions (CI/CD), Linux servers, reverse proxies, and cloud services, managing development and production environments.",
+        "Collaborated with clients on requirements gathering, technical solution definition, and project planning, supporting the full software development lifecycle."
+      ]
     },
     "developer": {
       "title": "Software Developer",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "February 2024 - ",
       "dateSpan": "Present",
-      "text": "As a Full Stack Developer, I specialize in developing applications from scratch, following each stage of the development process accurately. Additionally, I handle the implementation of new features, modules, and functionalities in existing applications. I also focus on resolving errors to optimize performance and enhance the user experience."
+      "text": [
+        "Designed and implemented software solutions for Universidad Tecnológica Nacional, taking part in the full development lifecycle of web, mobile, and microservice applications.",
+        "Centralized user, microservice, and API authentication and authorization through Keycloak, managing SSO, OAuth2/OpenID Connect, JWT, Client Credentials, and role and permission models.",
+        "Developed Generative AI solutions using RAG, semantic search over vector databases, and tool calling to query institutional information in real time.",
+        "Optimized email and notification delivery through asynchronous job queues with BullMQ and Redis, improving scalability and performance.",
+        "Integrated institutional systems and external services, including LDAP, SIU Guaraní, and REST APIs, ensuring secure and consistent information exchange."
+      ]
     },
     "analyst": {
       "title": "Functional Analyst",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "April 2023 - January 2024",
-      "text": "Responsible for analyzing and determining requirements for software development projects. Focused on generating use cases and user stories, as well as creating various diagrams that comprised the analysis and design stages. In addition, I carried out QA testing tasks to guarantee the quality of the developed software."
+      "text": [
+        "Gathered and analyzed functional requirements together with clients and users, translating business needs into technical specifications.",
+        "Produced user stories, use cases, and UML diagrams to define features and guide software development.",
+        "Collaborated with development teams on the functional validation of solutions throughout the entire project lifecycle.",
+        "Executed functional testing (QA), identifying issues and verifying requirement compliance before each delivery."
+      ]
     },
     "support": {
       "title": "Application Support",
       "subtitle": "Universidad Tecnológica Nacional",
       "date": "August 2022 - March 2023",
-      "text": "My role consisted of identifying and resolving errors in university applications both from the administrator interface and through database queries when necessary. Additionally, I managed app permissions and kept in touch with users to help them resolve issues."
+      "text": [
+        "Analyzed and resolved incidents in university applications, performing diagnostics through administrative interfaces, logs, and database queries to identify the root cause of problems.",
+        "Managed user permissions, roles, and access in institutional applications, ensuring the correct configuration of privileges for each profile.",
+        "Provided technical support to internal users, handling incident reports, case tracking, and direct communication until resolution."
+      ]
     }
   },
   "projects": {

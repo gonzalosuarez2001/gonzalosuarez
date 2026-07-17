@@ -43,26 +43,26 @@ export default function Experience() {
                 subtitle={t(`experience.freelance.subtitle`)}
                 date={t(`experience.freelance.date`)}
                 dateSpan={t(`experience.freelance.dateSpan`)}
-                text={t(`experience.freelance.text`)}
+                text={t(`experience.freelance.text`, { returnObjects: true })}
               />
               <ExperienceItem
                 title={t(`experience.developer.title`)}
                 subtitle={t(`experience.developer.subtitle`)}
                 date={t(`experience.developer.date`)}
                 dateSpan={t(`experience.developer.dateSpan`)}
-                text={t(`experience.developer.text`)}
+                text={t(`experience.developer.text`, { returnObjects: true })}
               />
               <ExperienceItem
                 title={t(`experience.analyst.title`)}
                 subtitle={t(`experience.analyst.subtitle`)}
                 date={t(`experience.analyst.date`)}
-                text={t(`experience.analyst.text`)}
+                text={t(`experience.analyst.text`, { returnObjects: true })}
               />
               <ExperienceItem
                 title={t(`experience.support.title`)}
                 subtitle={t(`experience.support.subtitle`)}
                 date={t(`experience.support.date`)}
-                text={t(`experience.support.text`)}
+                text={t(`experience.support.text`, { returnObjects: true })}
                 lastItem={true}
               />
             </div>
