@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import Button from "../../components/Button/Button";
 import Reveal from "../../components/Reveal/Reveal";
-import StagesPanel from "../../components/StagesPanel/StagesPanel";
+import HeroVideo from "../../components/HeroVideo/HeroVideo";
 import { contact } from "../../data/links";
 import { useCvLink } from "../../hooks/useCvLink";
 import { asset } from "../../utils/asset";
@@ -59,7 +59,7 @@ export default function Hero() {
         </Reveal>
       </div>
       <Reveal onMount delay={0.3} className={styles.showcase}>
-        <StagesPanel />
+        <HeroVideo />
       </Reveal>
     </section>
   );

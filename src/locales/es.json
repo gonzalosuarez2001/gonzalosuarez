@@ -28,33 +28,56 @@
     "role": "Cofundador de ADINI · Software Developer en ABN",
     "title": "Llevo ideas de cero a producción.",
     "lead": "Construyo aplicaciones web y móviles, les integro IA donde suma de verdad y me ocupo de que corran en la nube de forma estable y automatizada.",
-    "stages": {
-      "label": "Etapas de un proyecto",
+    "video": {
+      "label": "Cómo trabajo, etapa por etapa",
+      "steps": {
+        "analysis": "Análisis",
+        "development": "Desarrollo",
+        "ai": "IA",
+        "deploy": "Deploy"
+      },
+      "captions": {
+        "analysis": "Entiendo el problema y defino la solución junto al cliente.",
+        "development": "Desarrollo aplicaciones web completas: interfaz, APIs y base de datos.",
+        "ai": "Integro IA conectada a los datos reales del negocio.",
+        "deploy": "La despliego en la nube con CI/CD y la mantengo en producción."
+      },
+      "analysis": {
+        "title": "Relevamiento",
+        "requirements": ["Usuarios y roles", "Flujos principales", "Integraciones"],
+        "flow": ["Necesidad", "Requerimientos", "Solución"]
+      },
       "development": {
-        "label": "Desarrollo",
-        "description": "Apps web y móviles, APIs y microservicios, desde el relevamiento hasta la entrega.",
-        "project": "Moviltrack · ERP web",
-        "stack": "React · Node.js · MongoDB",
-        "imageAlt": "Dashboard de Moviltrack"
+        "title": "Panel de gestión",
+        "menu": ["Dashboard", "Pedidos", "Clientes", "Facturación"],
+        "kpis": [
+          { "label": "Pedidos", "value": "128" },
+          { "label": "Clientes", "value": "42" },
+          { "label": "Facturado", "value": "$3,4M" }
+        ],
+        "orders": ["Ferretería Sur", "Distribuidora Norte", "Almacén Central"],
+        "statuses": {
+          "inProgress": "En curso",
+          "pending": "Pendiente",
+          "delivered": "Entregado"
+        },
+        "layers": [
+          { "title": "Frontend", "tools": "React · Next.js" },
+          { "title": "API REST", "tools": "Node.js · Express" },
+          { "title": "Base de datos", "tools": "SQL · MongoDB" }
+        ]
       },
       "ai": {
-        "label": "Integraciones IA",
-        "description": "Asistentes con RAG, búsqueda semántica y tool calling conectados a datos reales.",
-        "project": "Credencial UTN · asistente con RAG",
-        "stack": "Ollama · base vectorial · Keycloak",
-        "imageAlt": "Credencial UTN con asistente de IA"
+        "title": "Asistente",
+        "question": "¿Cuántos pedidos quedan pendientes?",
+        "toolCall": "consultar_pedidos(estado: \"pendiente\")",
+        "answer": "Hay 12 pedidos pendientes. 3 vencen hoy y ya están priorizados.",
+        "source": "fuente · base de datos"
       },
       "deploy": {
-        "label": "Deploy en la nube",
-        "description": "Infraestructura como código, CI/CD, servidores y permisos en producción.",
-        "project": "CI/CD y despliegues automatizados",
-        "stack": "GCP · AWS · Docker",
-        "steps": {
-          "push": "Push a main",
-          "build": "Build y tests",
-          "infrastructure": "Infraestructura",
-          "release": "Deploy a producción"
-        }
+        "pipeline": ["Commit", "Build", "Tests", "Deploy"],
+        "status": "En producción",
+        "detail": "Google Cloud · CI/CD · monitoreo activo"
       }
     }
   },

@@ -28,33 +28,56 @@
     "role": "Co-founder of ADINI · Software Developer at ABN",
     "title": "I take ideas from zero to production.",
     "lead": "I build web and mobile apps, add AI where it truly helps, and make sure they run in the cloud reliably and automatically.",
-    "stages": {
-      "label": "Project stages",
+    "video": {
+      "label": "How I work, stage by stage",
+      "steps": {
+        "analysis": "Analysis",
+        "development": "Build",
+        "ai": "AI",
+        "deploy": "Deploy"
+      },
+      "captions": {
+        "analysis": "I understand the problem and define the solution together with the client.",
+        "development": "I build complete web applications: interface, APIs and database.",
+        "ai": "I integrate AI connected to the business's real data.",
+        "deploy": "I deploy it to the cloud with CI/CD and keep it running in production."
+      },
+      "analysis": {
+        "title": "Discovery",
+        "requirements": ["Users and roles", "Main flows", "Integrations"],
+        "flow": ["Need", "Requirements", "Solution"]
+      },
       "development": {
-        "label": "Development",
-        "description": "Web and mobile apps, APIs and microservices, from requirements to delivery.",
-        "project": "Moviltrack · web ERP",
-        "stack": "React · Node.js · MongoDB",
-        "imageAlt": "Moviltrack dashboard"
+        "title": "Management dashboard",
+        "menu": ["Dashboard", "Orders", "Clients", "Billing"],
+        "kpis": [
+          { "label": "Orders", "value": "128" },
+          { "label": "Clients", "value": "42" },
+          { "label": "Billed", "value": "$3.4M" }
+        ],
+        "orders": ["South Hardware", "North Distributors", "Central Store"],
+        "statuses": {
+          "inProgress": "In progress",
+          "pending": "Pending",
+          "delivered": "Delivered"
+        },
+        "layers": [
+          { "title": "Frontend", "tools": "React · Next.js" },
+          { "title": "REST API", "tools": "Node.js · Express" },
+          { "title": "Database", "tools": "SQL · MongoDB" }
+        ]
       },
       "ai": {
-        "label": "AI integrations",
-        "description": "Assistants with RAG, semantic search and tool calling connected to real data.",
-        "project": "Credencial UTN · RAG assistant",
-        "stack": "Ollama · vector database · Keycloak",
-        "imageAlt": "Credencial UTN with AI assistant"
+        "title": "Assistant",
+        "question": "How many orders are still pending?",
+        "toolCall": "get_orders(status: \"pending\")",
+        "answer": "There are 12 pending orders. 3 are due today and already prioritized.",
+        "source": "source · database"
       },
       "deploy": {
-        "label": "Cloud deploy",
-        "description": "Infrastructure as code, CI/CD, servers and permissions in production.",
-        "project": "CI/CD and automated deployments",
-        "stack": "GCP · AWS · Docker",
-        "steps": {
-          "push": "Push to main",
-          "build": "Build and tests",
-          "infrastructure": "Infrastructure",
-          "release": "Deploy to production"
-        }
+        "pipeline": ["Commit", "Build", "Tests", "Deploy"],
+        "status": "In production",
+        "detail": "Google Cloud · CI/CD · active monitoring"
       }
     }
   },
