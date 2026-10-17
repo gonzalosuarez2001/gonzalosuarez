@@ -1,0 +1,16 @@
+import { useEffect, useState } from "react";
+
+export function useScrolled(offset = 8) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function update() {
+      setScrolled(window.scrollY > offset);
+    }
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
+  }, [offset]);
+
+  return scrolled;
+}

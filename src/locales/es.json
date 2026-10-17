@@ -7,11 +7,15 @@
     "skipToContent": "Saltar al contenido"
   },
   "nav": {
+    "label": "Principal",
     "home": "Inicio",
     "experience": "Experiencia",
     "projects": "Proyectos",
     "certifications": "Certificaciones",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "switchLanguage": "Switch to English"
   },
   "tags": {
     "iac": "Infraestructura como código"
@@ -20,5 +24,8 @@
   "experience": {},
   "projects": {},
   "certifications": {},
-  "footer": {}
+  "footer": {
+    "title": "Contacto",
+    "credit": "Desarrollado por Gonzalo Suarez"
+  }
 }
