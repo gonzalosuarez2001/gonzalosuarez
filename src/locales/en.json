@@ -78,10 +78,10 @@
       "adini": {
         "company": "ADINI",
         "position": "Co-founder & Developer",
-        "description": "Software development studio",
+        "description": "Software development agency",
         "summary": "Co-founder & Developer",
         "bullets": [
-          "I co-founded a studio building custom web and mobile apps; together with the team I lead the functional analysis, design, development, deployment and infrastructure of every solution.",
+          "I co-founded an agency building custom web and mobile apps; together with the team I lead the functional analysis, design, development, deployment and infrastructure of every solution.",
           "ERPs, admin platforms and mobile apps with payment gateways, subscriptions, real-time notifications and admin dashboards.",
           "I automate deployments with Docker, GitHub Actions, Linux servers and reverse proxies, and manage the development and production environments.",
           "I support clients through requirements gathering, technical definition and project planning."

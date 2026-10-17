@@ -78,10 +78,10 @@
       "adini": {
         "company": "ADINI",
         "position": "Cofundador & Desarrollador",
-        "description": "Estudio de desarrollo de software",
+        "description": "Agencia de desarrollo de software",
         "summary": "Cofundador & Desarrollador",
         "bullets": [
-          "Cofundé un estudio de aplicaciones web y móviles a medida; lidero con el equipo el análisis funcional, diseño, desarrollo, despliegue e infraestructura de cada solución.",
+          "Cofundé una agencia de aplicaciones web y móviles a medida; lidero con el equipo el análisis funcional, diseño, desarrollo, despliegue e infraestructura de cada solución.",
           "ERPs, plataformas administrativas y apps móviles con pasarelas de pago, suscripciones, notificaciones en tiempo real y paneles de administración.",
           "Automatizo despliegues con Docker, GitHub Actions, servidores Linux y proxies reversos, y administro los entornos de desarrollo y producción.",
           "Acompaño a los clientes en el relevamiento de requerimientos, la definición técnica y la planificación de cada proyecto."
