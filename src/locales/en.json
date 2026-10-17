@@ -159,7 +159,7 @@
       },
       "credential": {
         "title": "Credencial UTN + AI",
-        "kind": "Mobile · AI",
+        "kind": "Mobile · Digital ID",
         "description": "Digital ID for UTN students: QR validation, real-time academic information and an assistant that answers questions.",
         "challenges": [
           "RAG chat: semantic search over a vector database + tool calling to the university database",
@@ -179,7 +179,7 @@
       },
       "difusiones": {
         "title": "Diffusions",
-        "kind": "Web · Microservice",
+        "kind": "Web · Bulk email",
         "description": "Bulk email service for a university portal: recipient lists, rich text editor, attachments, scheduled sends and tracking for every campaign.",
         "challenges": [
           "Semaphores for bulk sending without getting blocked by the email provider",
@@ -189,7 +189,7 @@
       },
       "traducciones": {
         "title": "Translations",
-        "kind": "Web · Microservice",
+        "kind": "Web · Translation management",
         "description": "File translation and proofreading for a university portal: document upload and download, roles for each type of user and email alerts.",
         "challenges": [
           "Microservice architecture with Keycloak authentication through the API Gateway",
@@ -234,7 +234,7 @@
     "groups": {
       "frontend": {
         "title": "Frontend",
-        "description": "Web interfaces and native apps for iOS and Android."
+        "description": "Web and mobile interfaces, from design to implementation."
       },
       "backend": {
         "title": "Backend",
