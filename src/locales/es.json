@@ -6,6 +6,12 @@
   "a11y": {
     "skipToContent": "Saltar al contenido"
   },
+  "common": {
+    "contactMe": "Contactame",
+    "downloadCv": "Descargar CV",
+    "present": "hoy",
+    "stack": "Stack"
+  },
   "nav": {
     "label": "Principal",
     "home": "Inicio",
@@ -20,10 +26,236 @@
   "tags": {
     "iac": "Infraestructura como código"
   },
-  "hero": {},
-  "experience": {},
-  "projects": {},
-  "certifications": {},
+  "hero": {
+    "role": "Software Developer en ABN · Cofundador de ADINI",
+    "title": "Llevo ideas de cero a producción.",
+    "lead": "Construyo aplicaciones web y móviles, les integro IA donde suma de verdad y me ocupo de que corran en la nube de forma estable y automatizada.",
+    "stages": {
+      "label": "Etapas de un proyecto",
+      "development": {
+        "label": "Desarrollo",
+        "description": "Apps web y móviles, APIs y microservicios, desde el relevamiento hasta la entrega.",
+        "project": "Moviltrack · ERP web",
+        "stack": "React · Node.js · MongoDB",
+        "imageAlt": "Dashboard de Moviltrack"
+      },
+      "ai": {
+        "label": "Integraciones IA",
+        "description": "Asistentes con RAG, búsqueda semántica y tool calling conectados a datos reales.",
+        "project": "Credencial UTN · asistente con RAG",
+        "stack": "Ollama · base vectorial · Keycloak",
+        "imageAlt": "Credencial UTN con asistente de IA"
+      },
+      "deploy": {
+        "label": "Deploy en la nube",
+        "description": "Infraestructura como código, CI/CD, servidores y permisos en producción.",
+        "project": "CI/CD y despliegues automatizados",
+        "stack": "GCP · AWS · Docker",
+        "steps": {
+          "push": "Push a main",
+          "build": "Build y tests",
+          "infrastructure": "Infraestructura",
+          "release": "Deploy a producción"
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiencia",
+    "lead": "Empecé en soporte, pasé por análisis funcional y hoy desarrollo y opero sistemas en producción.",
+    "current": "Actual",
+    "items": {
+      "abn": {
+        "company": "ABN",
+        "position": "Software Developer",
+        "description": "Empresa de marketing digital",
+        "summary": "Software Developer",
+        "bullets": [
+          "Desarrollo herramientas internas que le simplifican el trabajo al equipo de paid media.",
+          "Administro la infraestructura en GCP: despliegues, mantenimiento de servidores y gestión de permisos.",
+          "Defino la infraestructura como código y armo los pipelines de CI/CD."
+        ]
+      },
+      "adini": {
+        "company": "ADINI",
+        "position": "Cofundador & Desarrollador",
+        "description": "Estudio de desarrollo de software",
+        "summary": "Cofundador & Desarrollador",
+        "bullets": [
+          "Cofundé un estudio de aplicaciones web y móviles a medida; lidero con el equipo el análisis funcional, diseño, desarrollo, despliegue e infraestructura de cada solución.",
+          "ERPs, plataformas administrativas y apps móviles con pasarelas de pago, suscripciones, notificaciones en tiempo real y paneles de administración.",
+          "Automatizo despliegues con Docker, GitHub Actions, servidores Linux y proxies reversos, y administro los entornos de desarrollo y producción.",
+          "Acompaño a los clientes en el relevamiento de requerimientos, la definición técnica y la planificación de cada proyecto."
+        ]
+      },
+      "utn": {
+        "company": "UTN",
+        "position": "Universidad Tecnológica Nacional",
+        "description": "Tres roles, de soporte a desarrollo",
+        "summary": "Developer · Analista · Soporte",
+        "roles": {
+          "developer": {
+            "title": "Desarrollador de Software",
+            "bullets": [
+              "Aplicaciones web, móviles y microservicios para la universidad, en todo su ciclo de vida.",
+              "Autenticación centralizada con Keycloak para usuarios, microservicios y APIs: SSO, OAuth2 / OpenID Connect, JWT, Client Credentials, roles y permisos.",
+              "IA generativa con RAG, búsqueda semántica sobre bases vectoriales y tool calling para consultar información institucional en tiempo real.",
+              "Colas asíncronas con BullMQ y Redis para correos y notificaciones, e integraciones con LDAP, SIU Guaraní y APIs REST."
+            ]
+          },
+          "analyst": {
+            "title": "Analista Funcional",
+            "bullets": [
+              "Relevamiento de requerimientos con clientes y usuarios, traducidos a historias de usuario, casos de uso y diagramas UML.",
+              "Validación funcional junto al equipo de desarrollo y pruebas de QA antes de cada entrega."
+            ]
+          },
+          "support": {
+            "title": "Soporte de Aplicaciones",
+            "bullets": [
+              "Diagnóstico de incidencias desde interfaces administrativas, logs y consultas a bases de datos.",
+              "Gestión de roles, permisos y accesos, con seguimiento de cada caso hasta su resolución."
+            ]
+          }
+        }
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "lead": "Sistemas de gestión, apps móviles, microservicios e IA aplicada. Elegí uno para ver qué problema resolvía y cómo lo construí.",
+    "filterLabel": "Filtrar proyectos",
+    "categories": {
+      "all": "Todos",
+      "web": "Web",
+      "mobile": "Móvil",
+      "microservices": "Microservicios",
+      "ai": "IA"
+    },
+    "featured": "Destacados",
+    "challenges": "Desafíos resueltos",
+    "more": "Más proyectos",
+    "count_one": "{{count}} proyecto",
+    "count_other": "{{count}} proyectos",
+    "resultsCount_one": "Se muestra {{count}} proyecto",
+    "resultsCount_other": "Se muestran {{count}} proyectos",
+    "screenshotAlt": "Captura de {{title}}",
+    "screenAlt": "Pantalla de {{title}}",
+    "otherScreenAlt": "Otra pantalla de {{title}}",
+    "cta": {
+      "title": "¿Tenés un proyecto en mente?",
+      "lead": "Web, móvil, IA o infraestructura: contame qué necesitás."
+    },
+    "items": {
+      "moviltrack": {
+        "title": "Moviltrack",
+        "kind": "Web · ERP",
+        "description": "Sistema de gestión empresarial: proyectos, clientes, proveedores, cotizaciones, órdenes de compra, gastos y facturación recurrente en un solo lugar.",
+        "challenges": [
+          "Doble moneda (MXN / USD) con distintos tipos de cambio en todo el sistema",
+          "PDFs generados en tiempo real para cada tipo de documento",
+          "Cobros recurrentes automáticos y cotizador con drag & drop"
+        ]
+      },
+      "ripalive": {
+        "title": "RIP Alive",
+        "kind": "Móvil + Web · Producto",
+        "description": "App de legado personal para dejar organizada tu información importante para tu familia, con suscripciones y tienda. Incluye un panel de administración y un portal web para beneficiarios.",
+        "challenges": [
+          "Suscripciones en Google Play y App Store con RevenueCat, y pagos con Stripe",
+          "Acceso de beneficiarios que se habilita solo si el titular no responde en el plazo que configuró",
+          "Notificaciones en tiempo real y referidos con cashback"
+        ]
+      },
+      "credential": {
+        "title": "Credencial UTN + IA",
+        "kind": "Móvil · IA",
+        "description": "Credencial digital para estudiantes de la UTN: validación por QR, información académica en tiempo real y un asistente que responde consultas.",
+        "challenges": [
+          "Chat con RAG: búsqueda semántica en una base vectorial + tool calling a la base de la universidad",
+          "Validación de alumnos con un QR temporal y encriptado",
+          "Login con Keycloak e integración con SIU-Guaraní"
+        ]
+      },
+      "difusiones": {
+        "title": "Difusiones",
+        "kind": "Microservicio",
+        "description": "Envío masivo de correos para un portal universitario: listas de destinatarios, editor enriquecido, adjuntos, envíos programados y seguimiento de cada difusión.",
+        "challenges": [
+          "Semáforos para envíos masivos sin bloqueos del proveedor de correo",
+          "Detección de quién abrió cada difusión",
+          "Autenticación con Keycloak a través del API Gateway"
+        ]
+      },
+      "toon": {
+        "title": "Toon Guesser",
+        "description": "Un personaje nuevo cada día que se revela de a poco."
+      },
+      "pap": {
+        "title": "Paso a Paso",
+        "description": "Catálogo mayorista con carrito de consultas y panel de administración."
+      },
+      "traducciones": {
+        "title": "Traducciones",
+        "description": "Traducción y corrección de archivos con roles y avisos por mail."
+      },
+      "planner": {
+        "title": "Organizador",
+        "description": "Notas y tareas recurrentes o programadas, con editor Markdown."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certificaciones",
+    "lead": "Formación complementaria en desarrollo, bases de datos e infraestructura.",
+    "filterLabel": "Filtrar certificaciones",
+    "categories": {
+      "all": "Todas",
+      "development": "Desarrollo",
+      "databases": "Bases de datos",
+      "infrastructure": "Infraestructura",
+      "languages": "Idiomas"
+    },
+    "view": "Ver",
+    "opensPdf": "(abre el PDF en una pestaña nueva)",
+    "imageAlt": "Certificado: {{title}}",
+    "resultsCount_one": "Se muestra {{count}} certificación",
+    "resultsCount_other": "Se muestran {{count}} certificaciones",
+    "items": {
+      "docker": {
+        "title": "Docker y Kubernetes",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "bootcamp": {
+        "title": "Bootcamp Credencial UTN",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "react": {
+        "title": "Desarrollo en React",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesDiploma": {
+        "title": "Diplomatura en Bases de Datos",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "javascript": {
+        "title": "Desarrollo en JavaScript",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "fullstack": {
+        "title": "Diplomatura Full Stack",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesFundamentals": {
+        "title": "Fundamentos de Bases de Datos",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "english": {
+        "title": "Diploma en Estudios Superiores de Inglés",
+        "place": "Instituto Cambridge"
+      }
+    }
+  },
   "footer": {
     "title": "Contacto",
     "credit": "Desarrollado por Gonzalo Suarez"

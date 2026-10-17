@@ -1,0 +1,109 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr));
+  align-items: center;
+  gap: 56px 64px;
+  padding-top: 72px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 540px;
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.identityText {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.role {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-label);
+}
+
+.title {
+  font-size: var(--font-size-hero);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: var(--tracking-hero);
+  text-wrap: balance;
+}
+
+.lead {
+  color: var(--color-text-body);
+  font-size: var(--font-size-lead);
+  line-height: var(--line-height-body);
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--touch-target);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-label);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social a:hover {
+  color: var(--color-text);
+}
+
+.showcase {
+  min-width: 0;
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding-top: 40px;
+  }
+
+  .intro {
+    gap: 22px;
+  }
+
+  .actions > * {
+    flex: 1 1 auto;
+  }
+}

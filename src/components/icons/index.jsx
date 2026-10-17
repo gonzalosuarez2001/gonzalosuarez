@@ -45,6 +45,38 @@ export function MenuIcon(props) {
   );
 }
 
+export function ArrowRightIcon(props) {
+  return (
+    <Icon size={16} strokeWidth={2} {...props}>
+      <path d="M5 12h14M13 6l6 6-6 6" />
+    </Icon>
+  );
+}
+
+export function ArrowUpRightIcon(props) {
+  return (
+    <Icon size={12} strokeWidth={2.2} {...props}>
+      <path d="M7 17L17 7M9 7h8v8" />
+    </Icon>
+  );
+}
+
+export function DownloadIcon(props) {
+  return (
+    <Icon size={16} strokeWidth={2} {...props}>
+      <path d="M12 4v11M7 10l5 5 5-5M5 20h14" />
+    </Icon>
+  );
+}
+
+export function CheckIcon(props) {
+  return (
+    <Icon size={18} strokeWidth={2.2} {...props}>
+      <path d="M5 12.5l4.5 4.5L19 7.5" />
+    </Icon>
+  );
+}
+
 export function CloseIcon(props) {
   return (
     <Icon {...props}>

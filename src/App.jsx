@@ -2,9 +2,10 @@ import { MotionConfig } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
-import { sections } from "./data/links";
-
-const pendingSections = sections.filter((section) => section.id !== "contacto");
+import Certifications from "./sections/Certifications/Certifications";
+import Experience from "./sections/Experience/Experience";
+import Hero from "./sections/Hero/Hero";
+import Projects from "./sections/Projects/Projects";
 
 function App() {
   const { t } = useTranslation();
@@ -16,11 +17,10 @@ function App() {
       </a>
       <Nav />
       <main id="contenido">
-        {pendingSections.map((section) => (
-          <section key={section.id} id={section.id} className="wrap" style={{ minHeight: "80vh", paddingTop: 56 }}>
-            <h2>{t(section.labelKey)}</h2>
-          </section>
-        ))}
+        <Hero />
+        <Experience />
+        <Projects />
+        <Certifications />
       </main>
       <Footer />
     </MotionConfig>

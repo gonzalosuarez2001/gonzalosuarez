@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 620px;
+}
+
+.title {
+  font-size: var(--font-size-section);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: var(--tracking-section);
+}
+
+.lead {
+  color: var(--color-text-body);
+  font-size: var(--font-size-lead);
+  line-height: var(--line-height-body);
+  text-wrap: pretty;
+}

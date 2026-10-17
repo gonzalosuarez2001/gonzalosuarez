@@ -6,6 +6,12 @@
   "a11y": {
     "skipToContent": "Skip to content"
   },
+  "common": {
+    "contactMe": "Contact me",
+    "downloadCv": "Download CV",
+    "present": "present",
+    "stack": "Stack"
+  },
   "nav": {
     "label": "Main",
     "home": "Home",
@@ -20,12 +26,238 @@
   "tags": {
     "iac": "Infrastructure as code"
   },
-  "hero": {},
-  "experience": {},
-  "projects": {},
-  "certifications": {},
+  "hero": {
+    "role": "Software Developer at ABN · Co-founder of ADINI",
+    "title": "I take ideas from zero to production.",
+    "lead": "I build web and mobile apps, add AI where it truly helps, and make sure they run in the cloud reliably and automatically.",
+    "stages": {
+      "label": "Project stages",
+      "development": {
+        "label": "Development",
+        "description": "Web and mobile apps, APIs and microservices, from requirements to delivery.",
+        "project": "Moviltrack · web ERP",
+        "stack": "React · Node.js · MongoDB",
+        "imageAlt": "Moviltrack dashboard"
+      },
+      "ai": {
+        "label": "AI integrations",
+        "description": "Assistants with RAG, semantic search and tool calling connected to real data.",
+        "project": "Credencial UTN · RAG assistant",
+        "stack": "Ollama · vector database · Keycloak",
+        "imageAlt": "Credencial UTN with AI assistant"
+      },
+      "deploy": {
+        "label": "Cloud deploy",
+        "description": "Infrastructure as code, CI/CD, servers and permissions in production.",
+        "project": "CI/CD and automated deployments",
+        "stack": "GCP · AWS · Docker",
+        "steps": {
+          "push": "Push to main",
+          "build": "Build and tests",
+          "infrastructure": "Infrastructure",
+          "release": "Deploy to production"
+        }
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "lead": "I started in support, moved through functional analysis, and today I build and run systems in production.",
+    "current": "Current",
+    "items": {
+      "abn": {
+        "company": "ABN",
+        "position": "Software Developer",
+        "description": "Digital marketing company",
+        "summary": "Software Developer",
+        "bullets": [
+          "I build internal tools that make the paid media team's work easier.",
+          "I manage the GCP infrastructure: deployments, server maintenance and permission management.",
+          "I define infrastructure as code and build the CI/CD pipelines."
+        ]
+      },
+      "adini": {
+        "company": "ADINI",
+        "position": "Co-founder & Developer",
+        "description": "Software development studio",
+        "summary": "Co-founder & Developer",
+        "bullets": [
+          "I co-founded a studio building custom web and mobile apps; together with the team I lead the functional analysis, design, development, deployment and infrastructure of every solution.",
+          "ERPs, admin platforms and mobile apps with payment gateways, subscriptions, real-time notifications and admin dashboards.",
+          "I automate deployments with Docker, GitHub Actions, Linux servers and reverse proxies, and manage the development and production environments.",
+          "I support clients through requirements gathering, technical definition and project planning."
+        ]
+      },
+      "utn": {
+        "company": "UTN",
+        "position": "Universidad Tecnológica Nacional",
+        "description": "Three roles, from support to development",
+        "summary": "Developer · Analyst · Support",
+        "roles": {
+          "developer": {
+            "title": "Software Developer",
+            "bullets": [
+              "Web apps, mobile apps and microservices for the university, across their whole lifecycle.",
+              "Centralized authentication with Keycloak for users, microservices and APIs: SSO, OAuth2 / OpenID Connect, JWT, Client Credentials, roles and permissions.",
+              "Generative AI with RAG, semantic search over vector databases and tool calling to query institutional data in real time.",
+              "Asynchronous queues with BullMQ and Redis for emails and notifications, plus integrations with LDAP, SIU Guaraní and REST APIs."
+            ]
+          },
+          "analyst": {
+            "title": "Functional Analyst",
+            "bullets": [
+              "Requirements gathering with clients and users, turned into user stories, use cases and UML diagrams.",
+              "Functional validation with the development team and QA testing before every release."
+            ]
+          },
+          "support": {
+            "title": "Application Support",
+            "bullets": [
+              "Incident diagnosis through admin interfaces, logs and database queries.",
+              "Role, permission and access management, following every case through to resolution."
+            ]
+          }
+        }
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "lead": "Management systems, mobile apps, microservices and applied AI. Pick one to see the problem it solved and how I built it.",
+    "filterLabel": "Filter projects",
+    "categories": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "microservices": "Microservices",
+      "ai": "AI"
+    },
+    "featured": "Featured",
+    "challenges": "Challenges solved",
+    "more": "More projects",
+    "count_one": "{{count}} project",
+    "count_other": "{{count}} projects",
+    "resultsCount_one": "Showing {{count}} project",
+    "resultsCount_other": "Showing {{count}} projects",
+    "screenshotAlt": "{{title}} screenshot",
+    "screenAlt": "{{title}} screen",
+    "otherScreenAlt": "Another {{title}} screen",
+    "cta": {
+      "title": "Have a project in mind?",
+      "lead": "Web, mobile, AI or infrastructure: tell me what you need."
+    },
+    "items": {
+      "moviltrack": {
+        "title": "Moviltrack",
+        "kind": "Web · ERP",
+        "description": "Enterprise management system: projects, clients, suppliers, quotes, purchase orders, expenses and recurring billing in one place.",
+        "challenges": [
+          "Dual currency (MXN / USD) with different exchange rates across the whole system",
+          "Real-time PDF generation for every document type",
+          "Automatic recurring charges and a drag & drop quote builder"
+        ]
+      },
+      "ripalive": {
+        "title": "RIP Alive",
+        "kind": "Mobile + Web · Product",
+        "description": "Personal legacy app to keep your important information organized for your family, with subscriptions and a store. Includes an admin panel and a web portal for beneficiaries.",
+        "challenges": [
+          "Google Play and App Store subscriptions with RevenueCat, and payments with Stripe",
+          "Beneficiary access that unlocks only if the account holder doesn't respond within the period they set",
+          "Real-time notifications and referrals with cashback"
+        ]
+      },
+      "credential": {
+        "title": "Credencial UTN + AI",
+        "kind": "Mobile · AI",
+        "description": "Digital ID for UTN students: QR validation, real-time academic information and an assistant that answers questions.",
+        "challenges": [
+          "RAG chat: semantic search over a vector database + tool calling to the university database",
+          "Student validation with a temporary, encrypted QR code",
+          "Keycloak login and SIU-Guaraní integration"
+        ]
+      },
+      "difusiones": {
+        "title": "Diffusions",
+        "kind": "Microservice",
+        "description": "Bulk email service for a university portal: recipient lists, rich text editor, attachments, scheduled sends and tracking for every campaign.",
+        "challenges": [
+          "Semaphores for bulk sending without getting blocked by the email provider",
+          "Tracking who opened each campaign",
+          "Keycloak authentication through the API Gateway"
+        ]
+      },
+      "toon": {
+        "title": "Toon Guesser",
+        "description": "A new character every day, revealed little by little."
+      },
+      "pap": {
+        "title": "Paso a Paso",
+        "description": "Wholesale catalog with an inquiry cart and an admin panel."
+      },
+      "traducciones": {
+        "title": "Translations",
+        "description": "File translation and proofreading with roles and email alerts."
+      },
+      "planner": {
+        "title": "Organizer",
+        "description": "Recurring or scheduled notes and tasks, with a Markdown editor."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "lead": "Additional training in development, databases and infrastructure.",
+    "filterLabel": "Filter certifications",
+    "categories": {
+      "all": "All",
+      "development": "Development",
+      "databases": "Databases",
+      "infrastructure": "Infrastructure",
+      "languages": "Languages"
+    },
+    "view": "View",
+    "opensPdf": "(opens the PDF in a new tab)",
+    "imageAlt": "Certificate: {{title}}",
+    "resultsCount_one": "Showing {{count}} certification",
+    "resultsCount_other": "Showing {{count}} certifications",
+    "items": {
+      "docker": {
+        "title": "Docker and Kubernetes",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "bootcamp": {
+        "title": "Bootcamp UTN Credential",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "react": {
+        "title": "Development in React",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesDiploma": {
+        "title": "Database Diploma",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "javascript": {
+        "title": "Development in JavaScript",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "fullstack": {
+        "title": "Full Stack Diploma",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesFundamentals": {
+        "title": "Database Fundamentals",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "english": {
+        "title": "Diploma in Advanced English Studies",
+        "place": "Cambridge Institute"
+      }
+    }
+  },
   "footer": {
     "title": "Contact",
-    "credit": "Built by Gonzalo Suarez"
+    "credit": "Developed by Gonzalo Suarez"
   }
 }

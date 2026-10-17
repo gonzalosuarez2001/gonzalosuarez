@@ -1,0 +1,154 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.panel {
+  padding: 36px 40px 40px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detailHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.company {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.position {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.meta {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-label);
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bullets li {
+  display: flex;
+  gap: 12px;
+  font-size: var(--font-size-body);
+  line-height: 1.55;
+  text-wrap: pretty;
+}
+
+.bullets.small {
+  gap: 10px;
+}
+
+.bullets.small li {
+  color: var(--color-text-chip);
+  font-size: 15px;
+}
+
+.check {
+  flex: none;
+  margin-top: 3px;
+  color: var(--color-accent);
+}
+
+.small .check {
+  width: 16px;
+  height: 16px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.role {
+  position: relative;
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 16px;
+}
+
+.role:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  bottom: 0;
+  left: 8.5px;
+  width: 1px;
+  background: var(--color-border);
+}
+
+.roleMarker {
+  justify-self: center;
+  width: 10px;
+  height: 10px;
+  margin-top: 7px;
+  border-radius: 50%;
+  background: var(--color-dot-inactive);
+}
+
+.latestRole .roleMarker {
+  background: var(--color-accent);
+}
+
+.roleBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 24px;
+}
+
+.role:last-child .roleBody {
+  padding-bottom: 0;
+}
+
+.roleHeading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin: 0;
+  font-weight: inherit;
+}
+
+.roleTitle {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.years {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-small);
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 560px) {
+  .panel {
+    padding: 24px 20px 28px;
+  }
+
+  .company {
+    font-size: 26px;
+  }
+}
