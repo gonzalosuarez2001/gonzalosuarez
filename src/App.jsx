@@ -1,52 +1,33 @@
-import { ThemeContextProvider } from "./contexts/ThemeContext";
-import { ProjectContextProvider } from "./contexts/ProjectsContext";
-import Nav from "./components/organisms/Nav";
-import AbouteMe from "./components/organisms/AboutMe";
-import Experience from "./components/organisms/Experience";
-import WebProjects from "./components/organisms/WebProjects";
-import MobileProjects from "./components/organisms/MobileProjects";
-import Certifications from "./components/organisms/Certifications";
-import Stack from "./components/organisms/Stack";
-import Footer from "./components/organisms/Footer";
-import { ScrollContextProvider } from "./contexts/ScrollContext";
-import ToTopArrow from "./components/atoms/ToTopArrow";
-import { useEffect } from "react";
-import axios from "axios";
-import "./styles/app.css";
+import { MotionConfig } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import Footer from "./components/Footer/Footer";
+import Nav from "./components/Nav/Nav";
+import Certifications from "./sections/Certifications/Certifications";
+import Contact from "./sections/Contact/Contact";
+import Experience from "./sections/Experience/Experience";
+import Hero from "./sections/Hero/Hero";
+import Projects from "./sections/Projects/Projects";
+import Stack from "./sections/Stack/Stack";
 
 function App() {
-  useEffect(() => {
-    axios.get("https://api.ipify.org?format=json").then((response) => {
-      const visitorIp = response.data.ip;
-      const myIp = "181.171.113.252";
-
-      if (visitorIp !== myIp) {
-        const mensaje = {
-          content: `Un visitante con la IP ${visitorIp} ha accedido a tu portfolio web.`,
-          username: "Alerta de Acceso",
-        };
-
-        axios.post(import.meta.env.VITE_DS_WEBHOOK, mensaje);
-      }
-    });
-  }, []);
+  const { t } = useTranslation();
 
   return (
-    <ThemeContextProvider>
-      <ScrollContextProvider>
-        <ProjectContextProvider>
-          <Nav />
-          <AbouteMe />
-          <Experience />
-          <WebProjects />
-          <MobileProjects />
-          <Certifications />
-          <Stack />
-          <Footer />
-          <ToTopArrow />
-        </ProjectContextProvider>
-      </ScrollContextProvider>
-    </ThemeContextProvider>
+    <MotionConfig reducedMotion="user">
+      <a className="skip-link" href="#contenido">
+        {t("a11y.skipToContent")}
+      </a>
+      <Nav />
+      <main id="contenido">
+        <Hero />
+        <Experience />
+        <Projects />
+        <Certifications />
+        <Stack />
+        <Contact />
+      </main>
+      <Footer />
+    </MotionConfig>
   );
 }
 

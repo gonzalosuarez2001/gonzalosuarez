@@ -1,240 +1,342 @@
 {
+  "meta": {
+    "title": "Gonzalo Suarez · Software Developer",
+    "description": "Gonzalo Suarez · Software Developer. Web and mobile apps, AI integrations and cloud deployments."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content"
+  },
+  "common": {
+    "contactMe": "Contact me",
+    "downloadCv": "Download CV",
+    "present": "present",
+    "stack": "Stack"
+  },
   "nav": {
+    "label": "Main",
     "home": "Home",
     "experience": "Experience",
     "projects": "Projects",
+    "stack": "Stack",
     "certifications": "Certifications",
-    "technologies": "Technologies"
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLanguage": "Cambiar a español"
   },
-  "aboutMe": {
-    "title": {
-      "1": "Hi there! I'm Gonzalo",
-      "2": "Software Developer",
-      "3": [
-        "Full Stack",
-        "Cloud",
-        "AI"
-      ]
-    },
-    "contact": "Contact Me",
-    "download": "Download CV"
+  "hero": {
+    "role": "Co-founder of ADINI · Software Developer at ABN",
+    "title": "I take ideas from zero to production.",
+    "lead": "I build web and mobile apps, add AI where it truly helps, and make sure they run in the cloud reliably and automatically.",
+    "video": {
+      "label": "How I work, stage by stage",
+      "steps": {
+        "analysis": "Analysis",
+        "development": "Build",
+        "ai": "AI",
+        "deploy": "Deploy"
+      },
+      "captions": {
+        "analysis": "I understand the problem and define the solution together with the client.",
+        "development": "I build complete web applications: interface, APIs and database.",
+        "ai": "I integrate AI connected to the business's real data.",
+        "deploy": "I deploy it to the cloud with CI/CD and keep it running in production."
+      },
+      "analysis": {
+        "title": "Discovery",
+        "requirements": ["Users and roles", "Main flows", "Integrations"],
+        "flow": ["Need", "Requirements", "Solution"]
+      },
+      "development": {
+        "title": "Management dashboard",
+        "menu": ["Dashboard", "Orders", "Clients", "Billing"],
+        "kpis": [
+          { "label": "Orders", "value": "128" },
+          { "label": "Clients", "value": "42" },
+          { "label": "Billed", "value": "$3.4M" }
+        ],
+        "orders": ["South Hardware", "North Distributors", "Central Store"],
+        "statuses": {
+          "inProgress": "In progress",
+          "pending": "Pending",
+          "delivered": "Delivered"
+        },
+        "layers": [
+          { "title": "Frontend", "tools": "React · Next.js" },
+          { "title": "REST API", "tools": "Node.js · Express" },
+          { "title": "Database", "tools": "SQL · MongoDB" }
+        ]
+      },
+      "ai": {
+        "title": "Assistant",
+        "question": "How many orders are still pending?",
+        "toolCall": "get_orders(status: \"pending\")",
+        "answer": "There are 12 pending orders. 3 are due today and already prioritized.",
+        "source": "source · database"
+      },
+      "deploy": {
+        "pipeline": ["Commit", "Build", "Tests", "Deploy"],
+        "status": "In production",
+        "detail": "Google Cloud · CI/CD · active monitoring"
+      }
+    }
   },
   "experience": {
-    "title": "Work Experience",
-    "freelance": {
-      "title": "Co-Founder & Software Developer",
-      "subtitle": "ADINI - Software Development Studio",
-      "date": "March 2024 - ",
-      "dateSpan": "Present",
-      "text": [
-        "Co-founded a software development studio delivering custom web and mobile solutions for clients. Led functional analysis, software design, development, deployment, and infrastructure alongside the team.",
-        "Designed and developed enterprise resource planning (ERP) systems, administrative platforms, and mobile applications, integrating payment gateways, subscriptions, real-time notifications, and admin dashboards.",
-        "Implemented infrastructure and deployment automation using Docker, GitHub Actions (CI/CD), Linux servers, reverse proxies, and cloud services, managing development and production environments.",
-        "Collaborated with clients on requirements gathering, technical solution definition, and project planning, supporting the full software development lifecycle."
-      ]
-    },
-    "developer": {
-      "title": "Software Developer",
-      "subtitle": "Universidad Tecnológica Nacional",
-      "date": "February 2024 - ",
-      "dateSpan": "Present",
-      "text": [
-        "Designed and implemented software solutions for Universidad Tecnológica Nacional, taking part in the full development lifecycle of web, mobile, and microservice applications.",
-        "Centralized user, microservice, and API authentication and authorization through Keycloak, managing SSO, OAuth2/OpenID Connect, JWT, Client Credentials, and role and permission models.",
-        "Developed Generative AI solutions using RAG, semantic search over vector databases, and tool calling to query institutional information in real time.",
-        "Optimized email and notification delivery through asynchronous job queues with BullMQ and Redis, improving scalability and performance.",
-        "Integrated institutional systems and external services, including LDAP, SIU Guaraní, and REST APIs, ensuring secure and consistent information exchange."
-      ]
-    },
-    "analyst": {
-      "title": "Functional Analyst",
-      "subtitle": "Universidad Tecnológica Nacional",
-      "date": "April 2023 - January 2024",
-      "text": [
-        "Gathered and analyzed functional requirements together with clients and users, translating business needs into technical specifications.",
-        "Produced user stories, use cases, and UML diagrams to define features and guide software development.",
-        "Collaborated with development teams on the functional validation of solutions throughout the entire project lifecycle.",
-        "Executed functional testing (QA), identifying issues and verifying requirement compliance before each delivery."
-      ]
-    },
-    "support": {
-      "title": "Application Support",
-      "subtitle": "Universidad Tecnológica Nacional",
-      "date": "August 2022 - March 2023",
-      "text": [
-        "Analyzed and resolved incidents in university applications, performing diagnostics through administrative interfaces, logs, and database queries to identify the root cause of problems.",
-        "Managed user permissions, roles, and access in institutional applications, ensuring the correct configuration of privileges for each profile.",
-        "Provided technical support to internal users, handling incident reports, case tracking, and direct communication until resolution."
-      ]
+    "title": "Experience",
+    "lead": "I started in support, moved through functional analysis, and today I build applications with AI integrations, deploy them to the cloud and run them in production.",
+    "current": "Current",
+    "items": {
+      "abn": {
+        "company": "ABN",
+        "position": "Software Developer",
+        "description": "Digital marketing company",
+        "summary": "Software Developer",
+        "bullets": [
+          "I build software solutions for ABN, a digital marketing company, focused on automating and simplifying the Digital Media team's daily work.",
+          "I manage the infrastructure on Google Cloud Platform (GCP), handling deployments, server maintenance and the operation of applications in production.",
+          "I manage permissions and access for users and cloud services, ensuring a secure privilege setup for each role.",
+          "I define infrastructure as code (IaC), ensuring reproducible, versioned and consistent environments.",
+          "I implement and maintain CI/CD pipelines to automate application integration and deployment, reducing manual errors and delivery times."
+        ]
+      },
+      "adini": {
+        "company": "ADINI",
+        "position": "Co-founder & Developer",
+        "description": "Software development agency",
+        "summary": "Co-founder & Developer",
+        "bullets": [
+          "I co-founded an agency building custom web and mobile apps; together with the team I lead the functional analysis, design, development, deployment and infrastructure of every solution.",
+          "ERPs, admin platforms and mobile apps with payment gateways, subscriptions, real-time notifications and admin dashboards.",
+          "I automate deployments with Docker, GitHub Actions, Linux servers and reverse proxies, and manage the development and production environments.",
+          "I support clients through requirements gathering, technical definition and project planning."
+        ]
+      },
+      "utn": {
+        "company": "UTN",
+        "position": "Universidad Tecnológica Nacional",
+        "description": "Three roles, from support to development",
+        "summary": "Developer · Analyst · Support",
+        "roles": {
+          "developer": {
+            "title": "Software Developer",
+            "bullets": [
+              "Web apps, mobile apps and microservices for the university, across their whole lifecycle.",
+              "Centralized authentication with Keycloak for users, microservices and APIs: SSO, OAuth2 / OpenID Connect, JWT, Client Credentials, roles and permissions.",
+              "Generative AI with RAG, semantic search over vector databases and tool calling to query institutional data in real time.",
+              "Asynchronous queues with BullMQ and Redis for emails and notifications, plus integrations with LDAP, SIU Guaraní and REST APIs."
+            ]
+          },
+          "analyst": {
+            "title": "Functional Analyst",
+            "bullets": [
+              "Requirements gathering with clients and users, turned into user stories, use cases and UML diagrams.",
+              "Functional validation with the development team and QA testing before every release."
+            ]
+          },
+          "support": {
+            "title": "Application Support",
+            "bullets": [
+              "Incident diagnosis through admin interfaces, logs and database queries.",
+              "Role, permission and access management, following every case through to resolution."
+            ]
+          }
+        }
+      }
     }
   },
   "projects": {
-    "details": "Details",
-    "modal": {
-      "challengues": "Challenges",
-      "technologies": "Technologies",
-      "integrations": "Integrations",
-      "gallery": "Gallery"
+    "title": "Projects",
+    "lead": "Management systems, mobile apps, microservices and applied AI. Pick one to see the problem it solved and how I built it.",
+    "filterLabel": "Filter projects",
+    "categories": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile"
     },
-    "titles": {
-      "mobile": "Mobile Projects",
-      "web": "Web Projects"
-    },
-    "movil": {
-      "title": "Moviltrack",
-      "subtitle": "Enterprise Management System",
-      "text": "Administrative web application that allows managing a company's commercial operations. The system includes an analytical dashboard, project management, clients, suppliers, products, and services. It also features modules for quotations, purchase orders, delivery notes, expenses, and recurring billing.",
-      "challenges": [
-        "Managing two currencies (MXN and USD) along with different exchange rates for the system’s overall administration.",
-        "Implementing a real-time PDF generator adaptable to various types of documents.",
-        "Developing a system for creating automatic recurring charges.",
-        "Building a drag-and-drop system for customizable products used in quote creation.",
-        "Designing a dashboard for the different modules, with customizable charts, reports, and reminders."
-      ]
-    },
-    "planner": {
-      "title": "Organizer",
-      "subtitle": "Task and Note Organizer",
-      "text": "A web application designed to organize notes and tasks in a simple and efficient way. It allows you to create different types of notes and tasks, such as actionable, waiting, recurring, and scheduled items, each with specific features to adapt to different needs. It includes a notes editor with Markdown support that helps improve writing and content structure. The application also offers a reminder system that displays the tasks pending for the day.",
-      "challenges": [
-        "Implementing a text editor with Markdown support.",
-        "Designing a shared table structure with specific functionalities depending on the type of note or task."
-      ]
-    },
-    "toon": {
-      "title": "Toon Guesser",
-      "subtitle": "Character Guessing Game",
-      "text": "A web page where users can guess characters from various cartoons. The system displays a black-and-white pixelated image of a character, which gradually gains color and detail as the user makes guesses. A new character is released every day, offering a fresh challenge for users to solve.",
-      "challenges": [
-        "Design a canvas-based system to apply different levels of pixelation and coloring to the character's image.",
-        "Create a session state saving system without using a database or authentication.",
-        "Set up a cron job to randomly update characters, avoiding repetition from previous days as long as characters are available."
-      ]
-    },
-    "pap": {
-      "title": "Paso a Paso",
-      "subtitle": "Wholesale Web Page",
-      "text": "Web application developed for a wholesale company, enabling users to browse available products and add them to a cart for request purposes. Additionally, it includes an admin panel to manage products and configure general page settings.",
-      "challenges": [
-        "Implementing customization features for catalogs, categories, and products from the admin panel.",
-        "Developing a file management system to handle product images."
-      ]
-    },
-    "traducciones": {
-      "title": "Translations",
-      "subtitle": "Translation and Proofreading Microservice",
-      "text": "Microservice for a university portal, designed to translate and correct files. It manages the uploading and downloading of documents and includes specific roles for each user type. Additionally, it includes an email notification system to keep users informed.",
-      "challenges": [
-        "Design a microservice architecture in the backend, integrating Keycloak for authentication in communications through the API Gateway.",
-        "Develop a file management system for the various documents of each request.",
-        "Integrate Keycloak for user and role management."
-      ]
-    },
-    "difusiones": {
-      "title": "Diffusions",
-      "subtitle": "Bulk Email Sending Microservice",
-      "text": "Administrative web microservice designed for a university portal to manage and send mass email campaigns. The system includes recipient list management and a dashboard to monitor the status of each campaign. It also provides tracking capabilities to see which users have opened the emails. The email module features a rich-text editor, file attachments, and scheduling options for automated deliveries.",
-      "challenges": [
-        "Design a microservice architecture in the backend, integrating Keycloak for authentication in communications through the API Gateway.",
-        "Develop a rich text editor with the ability to attach files and schedule mailings.",
-        "Create a semaphore system for bulk email sending, optimizing performance and preventing blocks from the email service provider.",
-        "Establish a method to track who opened the mailing."
-      ]
-    },
-    "ripadmin": {
-      "title": "RIP Admin",
-      "subtitle": "RIP Alive Admin Panel",
-      "text": "Web application for managing the “RIP Alive” mobile app. It allows administrators to view user information, manage subscription and payment statuses, generate discount coupons, configure products, catalogs, and in-app events, among other functionalities.",
-      "challenges": [
-        "Develop features for creating and managing products, catalogs, and events within the mobile app.",
-        "Design a system for generating and managing discount coupons for users."
-      ]
-    },
-    "ripbene": {
-      "title": "RIP Beneficiaries",
-      "subtitle": "RIP Alive Beneficiaries Page",
-      "text": "A web application designed for beneficiaries assigned by a user in the RIP Alive app to access that user’s legacy information. Beneficiaries can view the people who have assigned them and request access to their data. The request is approved only if the account holder does not respond within the time period they configured, which is interpreted as a sign that the person has passed away. In that case, the beneficiary is granted access to the legacy information the holder previously recorded.",
-      "challenges": [
-        "Establish a method to link the beneficiary's account with the assignor accounts.",
-        "Design a system for requesting access to legacy information, with an approval flow based on the assignor's response time."
-      ]
-    },
-    "ripalive": {
-      "title": "RIP Alive",
-      "subtitle": "Personal Legacy Application",
-      "text": "Mobile application designed to allow users to save all their important information in case of death, to inform family members of their final wishes. Users can store details about what to do with their belongings, key contacts, investments, personal and health information, and more. The app includes a built-in subscription system and a store for purchasing products.",
-      "challenges": [
-        "Develop a system for subscription acquisition and management through Google Play and the App Store using RevenueCat.",
-        "Integrate a payment system for in-app product purchases using Stripe.",
-        "Create a real-time notification system to alert users about various events within the app.",
-        "Design a referral system with cashback to encourage the acquisition of new users."
-      ]
-    },
-    "credential": {
-      "title": "Credencial UTN + AI",
-      "subtitle": "Digital Credential Application with AI Chat",
-      "text": "Mobile application designed as a digital credential for a university. It features an AI chat with a RAG system to answer academic queries. It allows students to verify their enrollment status with a QR code and provides access to useful information, such as current courses, academic records, and a detailed schedule with class times.",
-      "challenges": [
-        "Develop an AI chat with a RAG system with a dual information retrieval mechanism: semantic search over documents indexed in a vector database and tool calling to the university database.",
-        "Design a student validation flow using a temporary, encrypted QR code.",
-        "Integrate authentication with Keycloak through an in-app browser.",
-        "Integrate the SIU-Guaraní API (Argentina's Academic Management System) to obtain real-time student data."
-      ]
+    "challenges": "Challenges solved",
+    "resultsCount_one": "Showing {{count}} project",
+    "resultsCount_other": "Showing {{count}} projects",
+    "screenshotAlt": "{{title}} screenshot",
+    "screenAlt": "{{title}} screen",
+    "otherScreenAlt": "Another {{title}} screen",
+    "items": {
+      "moviltrack": {
+        "title": "Moviltrack",
+        "kind": "Web · ERP",
+        "description": "Enterprise management system: projects, clients, suppliers, quotes, purchase orders, expenses and recurring billing in one place.",
+        "challenges": [
+          "Dual currency (MXN / USD) with different exchange rates across the whole system",
+          "Real-time PDF generation for every document type",
+          "Automatic recurring charges and a drag & drop quote builder"
+        ]
+      },
+      "ripalive": {
+        "title": "RIP Alive",
+        "kind": "Mobile + Web · Product",
+        "description": "Personal legacy app to keep your important information organized for your family, with subscriptions and a store. Includes an admin panel and a web portal for beneficiaries.",
+        "challenges": [
+          "Google Play and App Store subscriptions with RevenueCat, and payments with Stripe",
+          "Beneficiary access that unlocks only if the account holder doesn't respond within the period they set",
+          "Real-time notifications and referrals with cashback"
+        ]
+      },
+      "credential": {
+        "title": "Credencial UTN + AI",
+        "kind": "Mobile · Digital ID",
+        "description": "Digital ID for UTN students: QR validation, real-time academic information and an assistant that answers questions.",
+        "challenges": [
+          "RAG chat: semantic search over a vector database + tool calling to the university database",
+          "Student validation with a temporary, encrypted QR code",
+          "Keycloak login and SIU-Guaraní integration"
+        ]
+      },
+      "sicyt": {
+        "title": "SICYT",
+        "kind": "Web · Management system",
+        "description": "Projects and researchers system for UTN FRBA: research projects, teams, documents and researcher categorization in a single platform, with the regulations validated automatically.",
+        "challenges": [
+          "Rules engine versioned by year: each project is validated against the regulations of its start year, and every change is audited",
+          "Staged, batch-based recategorization process, from the Board of Directors to the Rector's Office, with the history of every step",
+          "Emails and notifications queued with BullMQ and dedicated workers, respecting each user's preferences"
+        ]
+      },
+      "difusiones": {
+        "title": "Diffusions",
+        "kind": "Web · Bulk email",
+        "description": "Bulk email service for a university portal: recipient lists, rich text editor, attachments, scheduled sends and tracking for every campaign.",
+        "challenges": [
+          "Semaphores for bulk sending without getting blocked by the email provider",
+          "Tracking who opened each campaign",
+          "Keycloak authentication through the API Gateway"
+        ]
+      },
+      "traducciones": {
+        "title": "Translations",
+        "kind": "Web · Translation management",
+        "description": "File translation and proofreading for a university portal: document upload and download, roles for each type of user and email alerts.",
+        "challenges": [
+          "Microservice architecture with Keycloak authentication through the API Gateway",
+          "File management for the documents of each request",
+          "Users and roles managed in Keycloak"
+        ]
+      },
+      "toon": {
+        "title": "Toon Guesser",
+        "kind": "Web · Game",
+        "description": "A game for guessing cartoon characters: every day there's a new one that starts pixelated in black and white and gains color and detail with each guess.",
+        "challenges": [
+          "Canvas-based image with different levels of pixelation and color depending on the guesses",
+          "Game state saved with no database or authentication",
+          "Cron job that picks the character of the day without repeating previous ones"
+        ]
+      },
+      "pap": {
+        "title": "Paso a Paso",
+        "kind": "Web · Wholesale catalog",
+        "description": "Website for a wholesale company: a product catalog with an inquiry cart and a panel to manage products and the site's general settings.",
+        "challenges": [
+          "Catalogs, categories and products customizable from the admin panel",
+          "File management for product images"
+        ]
+      },
+      "planner": {
+        "title": "Organizer",
+        "kind": "Web · Productivity",
+        "description": "Organizer for actionable, on-hold, recurring or scheduled notes and tasks, with a Markdown editor and reminders of what's due today.",
+        "challenges": [
+          "Text editor with Markdown support",
+          "Shared table structure, with specific features for each type of note or task"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack",
+    "lead": "The tools I work with at every stage.",
+    "toolsLabel": "{{group}} tools",
+    "groups": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Web and mobile interfaces, from design to implementation."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "APIs, microservices and background processing."
+      },
+      "data": {
+        "title": "Data",
+        "description": "Relational, document and vector databases."
+      },
+      "ai": {
+        "title": "Applied AI",
+        "description": "Assistants, agents and AI-assisted development."
+      },
+      "cloud": {
+        "title": "Cloud and DevOps",
+        "description": "Infrastructure, containers and automated deployments."
+      },
+      "integrations": {
+        "title": "Integrations and auth",
+        "description": "Authentication, payments, subscriptions and external services."
+      }
     }
   },
   "certifications": {
     "title": "Certifications",
-    "en": {
-      "title": "Diploma in Advanced English Studies",
-      "place": "Cambridge Institute",
-      "date": "1 Dic 2017"
+    "lead": "Courses and certifications that complement my education.",
+    "filterLabel": "Filter certifications",
+    "categories": {
+      "all": "All",
+      "development": "Development",
+      "databases": "Databases",
+      "infrastructure": "Infrastructure",
+      "languages": "Languages"
     },
-    "fullstack": {
-      "title": "Full Stack Diploma",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "19 May 2023"
-    },
-    "dbf": {
-      "title": "Database Fundamentals",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "30 Sep 2022"
-    },
-    "dbd": {
-      "title": "Database Diploma",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "27 Oct 2023"
-    },
-    "react": {
-      "title": "Development in React",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "30 Nov 2023"
-    },
-    "js": {
-      "title": "Development in JavaScript",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "16 Jun 2023"
-    },
-    "docker": {
-      "title": "Docker and Kubernetes",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "20 Sep 2024"
-    },
-    "bootcamp": {
-      "title": "Bootcamp UTN Credential",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "20 Mar 2024"
+    "view": "View",
+    "opensPdf": "(opens the PDF in a new tab)",
+    "imageAlt": "Certificate: {{title}}",
+    "resultsCount_one": "Showing {{count}} certification",
+    "resultsCount_other": "Showing {{count}} certifications",
+    "items": {
+      "docker": {
+        "title": "Docker and Kubernetes",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "bootcamp": {
+        "title": "Bootcamp UTN Credential",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "react": {
+        "title": "Development in React",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesDiploma": {
+        "title": "Database Diploma",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "javascript": {
+        "title": "Development in JavaScript",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "fullstack": {
+        "title": "Full Stack Diploma",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesFundamentals": {
+        "title": "Database Fundamentals",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "english": {
+        "title": "Diploma in Advanced English Studies",
+        "place": "Cambridge Institute"
+      }
     }
   },
-  "stack": {
-    "title": "Technology Stack",
-    "subtitle": {
-      "1": "Frontend",
-      "2": "Backend",
-      "3": "Tools",
-      "4": "Integrations"
-    }
+  "contact": {
+    "title": "Have a project in mind?",
+    "lead": "Tell me how I can help."
   },
   "footer": {
-    "title": "Developed by Gonzalo Suarez"
+    "credit": "Developed by Gonzalo Suarez"
   }
 }

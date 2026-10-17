@@ -1,240 +1,342 @@
 {
+  "meta": {
+    "title": "Gonzalo Suarez · Software Developer",
+    "description": "Gonzalo Suarez · Software Developer. Aplicaciones web y móviles, integraciones de IA y despliegues en la nube."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido"
+  },
+  "common": {
+    "contactMe": "Contactame",
+    "downloadCv": "Descargar CV",
+    "present": "hoy",
+    "stack": "Stack"
+  },
   "nav": {
+    "label": "Principal",
     "home": "Inicio",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "stack": "Stack",
     "certifications": "Certificaciones",
-    "technologies": "Tecnologías"
+    "contact": "Contacto",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "switchLanguage": "Switch to English"
   },
-  "aboutMe": {
-    "title": {
-      "1": "¡Hola! Soy Gonzalo",
-      "2": "Desarrollador de Software",
-      "3": [
-        "Full Stack",
-        "Cloud",
-        "IA"
-      ]
-    },
-    "contact": "Contáctame",
-    "download": "Descargar CV"
+  "hero": {
+    "role": "Cofundador de ADINI · Software Developer en ABN",
+    "title": "Llevo ideas de cero a producción.",
+    "lead": "Construyo aplicaciones web y móviles, les integro IA donde suma de verdad y me ocupo de que corran en la nube de forma estable y automatizada.",
+    "video": {
+      "label": "Cómo trabajo, etapa por etapa",
+      "steps": {
+        "analysis": "Análisis",
+        "development": "Desarrollo",
+        "ai": "IA",
+        "deploy": "Deploy"
+      },
+      "captions": {
+        "analysis": "Entiendo el problema y defino la solución junto al cliente.",
+        "development": "Desarrollo aplicaciones web completas: interfaz, APIs y base de datos.",
+        "ai": "Integro IA conectada a los datos reales del negocio.",
+        "deploy": "La despliego en la nube con CI/CD y la mantengo en producción."
+      },
+      "analysis": {
+        "title": "Relevamiento",
+        "requirements": ["Usuarios y roles", "Flujos principales", "Integraciones"],
+        "flow": ["Necesidad", "Requerimientos", "Solución"]
+      },
+      "development": {
+        "title": "Panel de gestión",
+        "menu": ["Dashboard", "Pedidos", "Clientes", "Facturación"],
+        "kpis": [
+          { "label": "Pedidos", "value": "128" },
+          { "label": "Clientes", "value": "42" },
+          { "label": "Facturado", "value": "$3,4M" }
+        ],
+        "orders": ["Ferretería Sur", "Distribuidora Norte", "Almacén Central"],
+        "statuses": {
+          "inProgress": "En curso",
+          "pending": "Pendiente",
+          "delivered": "Entregado"
+        },
+        "layers": [
+          { "title": "Frontend", "tools": "React · Next.js" },
+          { "title": "API REST", "tools": "Node.js · Express" },
+          { "title": "Base de datos", "tools": "SQL · MongoDB" }
+        ]
+      },
+      "ai": {
+        "title": "Asistente",
+        "question": "¿Cuántos pedidos quedan pendientes?",
+        "toolCall": "consultar_pedidos(estado: \"pendiente\")",
+        "answer": "Hay 12 pedidos pendientes. 3 vencen hoy y ya están priorizados.",
+        "source": "fuente · base de datos"
+      },
+      "deploy": {
+        "pipeline": ["Commit", "Build", "Tests", "Deploy"],
+        "status": "En producción",
+        "detail": "Google Cloud · CI/CD · monitoreo activo"
+      }
+    }
   },
   "experience": {
-    "title": "Experiencia Laboral",
-    "freelance": {
-      "title": "Cofundador & Desarrollador de Software",
-      "subtitle": "ADINI - Estudio de Desarrollo de Software",
-      "date": "Marzo 2024 - ",
-      "dateSpan": "Actualidad",
-      "text": [
-        "Cofundé un estudio de desarrollo de software dedicado a la creación de aplicaciones web y móviles a medida para clientes. Lideré junto al equipo el análisis funcional, diseño, desarrollo, despliegue e infraestructura de las soluciones.",
-        "Diseñé y desarrollé sistemas de gestión empresarial (ERP), plataformas administrativas y aplicaciones móviles, integrando pasarelas de pago, suscripciones, notificaciones en tiempo real y paneles de administración.",
-        "Implementé infraestructura y automatización de despliegues utilizando Docker, GitHub Actions (CI/CD), servidores Linux, proxies reversos y servicios en la nube, administrando entornos de desarrollo y producción.",
-        "Colaboré con clientes en el relevamiento de requerimientos, definición de soluciones técnicas y planificación de proyectos, acompañando el ciclo completo de desarrollo de software."
-      ]
-    },
-    "developer": {
-      "title": "Desarrollador de Software",
-      "subtitle": "Universidad Tecnológica Nacional",
-      "date": "Febrero 2024 - ",
-      "dateSpan": "Actualidad",
-      "text": [
-        "Diseñé e implementé soluciones de software para la Universidad Tecnológica Nacional, participando en todo el ciclo de vida del desarrollo de aplicaciones web, móviles y microservicios.",
-        "Centralicé la autenticación y autorización de usuarios, microservicios y APIs mediante Keycloak, administrando SSO, OAuth2/OpenID Connect, JWT, Client Credentials, y modelos de roles y permisos.",
-        "Desarrollé soluciones de IA Generativa utilizando RAG, búsqueda semántica sobre bases vectoriales y tool calling para consultar información institucional en tiempo real.",
-        "Optimicé procesos de envío de correos y notificaciones mediante colas de trabajo asíncronas con BullMQ y Redis, mejorando la escalabilidad y el rendimiento.",
-        "Integré sistemas institucionales y servicios externos, incluyendo LDAP, SIU Guaraní y APIs REST, garantizando el intercambio seguro y consistente de información."
-      ]
-    },
-    "analyst": {
-      "title": "Analista Funcional",
-      "subtitle": "Universidad Tecnológica Nacional",
-      "date": "Abril 2023 - Enero 2024",
-      "text": [
-        "Relevé y analicé requerimientos funcionales junto a clientes y usuarios, transformando necesidades de negocio en especificaciones técnicas.",
-        "Elaboré historias de usuario, casos de uso y diagramas UML para definir funcionalidades y guiar el desarrollo de software.",
-        "Colaboré con equipos de desarrollo en la validación funcional de soluciones durante todo el ciclo de vida del proyecto.",
-        "Ejecuté pruebas funcionales (QA), identificando incidencias y verificando el cumplimiento de los requisitos antes de cada entrega."
-      ]
-    },
-    "support": {
-      "title": "Soporte Aplicaciones",
-      "subtitle": "Universidad Tecnológica Nacional",
-      "date": "Agosto 2022 - Marzo 2023",
-      "text": [
-        "Analicé y resolví incidencias en aplicaciones universitarias, realizando diagnóstico desde interfaces administrativas, logs y consultas a bases de datos para identificar la causa raíz de los problemas.",
-        "Administré permisos, roles y accesos de usuarios en las aplicaciones institucionales, garantizando la correcta configuración de privilegios según cada perfil.",
-        "Brindé soporte técnico a usuarios internos, gestionando reportes de incidentes, seguimiento de casos y comunicación directa hasta su resolución."
-      ]
+    "title": "Experiencia",
+    "lead": "Empecé en soporte, pasé por análisis funcional y hoy desarrollo aplicaciones con integraciones de IA, las despliego en la nube y las opero en producción.",
+    "current": "Actual",
+    "items": {
+      "abn": {
+        "company": "ABN",
+        "position": "Software Developer",
+        "description": "Empresa de marketing digital",
+        "summary": "Software Developer",
+        "bullets": [
+          "Desarrollo soluciones de software para ABN, una empresa de marketing digital, enfocadas en automatizar y simplificar el trabajo diario del equipo de Digital Media.",
+          "Administro la infraestructura en Google Cloud Platform (GCP), gestionando despliegues, mantenimiento de servidores y la operación de las aplicaciones en producción.",
+          "Gestiono permisos y accesos de usuarios y servicios en la nube, garantizando una configuración segura de privilegios según cada rol.",
+          "Defino la infraestructura como código (IaC), asegurando entornos reproducibles, versionados y consistentes.",
+          "Implemento y mantengo pipelines de CI/CD para automatizar la integración y el despliegue de las aplicaciones, reduciendo errores manuales y tiempos de entrega."
+        ]
+      },
+      "adini": {
+        "company": "ADINI",
+        "position": "Cofundador & Desarrollador",
+        "description": "Agencia de desarrollo de software",
+        "summary": "Cofundador & Desarrollador",
+        "bullets": [
+          "Cofundé una agencia de aplicaciones web y móviles a medida; lidero con el equipo el análisis funcional, diseño, desarrollo, despliegue e infraestructura de cada solución.",
+          "ERPs, plataformas administrativas y apps móviles con pasarelas de pago, suscripciones, notificaciones en tiempo real y paneles de administración.",
+          "Automatizo despliegues con Docker, GitHub Actions, servidores Linux y proxies reversos, y administro los entornos de desarrollo y producción.",
+          "Acompaño a los clientes en el relevamiento de requerimientos, la definición técnica y la planificación de cada proyecto."
+        ]
+      },
+      "utn": {
+        "company": "UTN",
+        "position": "Universidad Tecnológica Nacional",
+        "description": "Tres roles, de soporte a desarrollo",
+        "summary": "Developer · Analista · Soporte",
+        "roles": {
+          "developer": {
+            "title": "Desarrollador de Software",
+            "bullets": [
+              "Aplicaciones web, móviles y microservicios para la universidad, en todo su ciclo de vida.",
+              "Autenticación centralizada con Keycloak para usuarios, microservicios y APIs: SSO, OAuth2 / OpenID Connect, JWT, Client Credentials, roles y permisos.",
+              "IA generativa con RAG, búsqueda semántica sobre bases vectoriales y tool calling para consultar información institucional en tiempo real.",
+              "Colas asíncronas con BullMQ y Redis para correos y notificaciones, e integraciones con LDAP, SIU Guaraní y APIs REST."
+            ]
+          },
+          "analyst": {
+            "title": "Analista Funcional",
+            "bullets": [
+              "Relevamiento de requerimientos con clientes y usuarios, traducidos a historias de usuario, casos de uso y diagramas UML.",
+              "Validación funcional junto al equipo de desarrollo y pruebas de QA antes de cada entrega."
+            ]
+          },
+          "support": {
+            "title": "Soporte de Aplicaciones",
+            "bullets": [
+              "Diagnóstico de incidencias desde interfaces administrativas, logs y consultas a bases de datos.",
+              "Gestión de roles, permisos y accesos, con seguimiento de cada caso hasta su resolución."
+            ]
+          }
+        }
+      }
     }
   },
   "projects": {
-    "details": "Detalles",
-    "modal": {
-      "challengues": "Desafíos",
-      "technologies": "Tecnologías",
-      "integrations": "Integraciones",
-      "gallery": "Galería"
+    "title": "Proyectos",
+    "lead": "Sistemas de gestión, apps móviles, microservicios e IA aplicada. Elegí uno para ver qué problema resolvía y cómo lo construí.",
+    "filterLabel": "Filtrar proyectos",
+    "categories": {
+      "all": "Todos",
+      "web": "Web",
+      "mobile": "Móvil"
     },
-    "titles": {
-      "mobile": "Proyectos Móviles",
-      "web": "Proyectos Web"
-    },
-    "movil": {
-      "title": "Moviltrack",
-      "subtitle": "Sistema de Gestión Empresarial",
-      "text": "Aplicación web administrativa que permite gestionar las operaciones comerciales de una empresa. El sistema cuenta con un panel de control analítico, gestión de proyectos, clientes, proveedores, productos y servicios. Incluye módulos para cotizaciones, órdenes de compra, recibos, gastos y facturación recurrente.",
-      "challenges": [
-        "Gestionar dos divisas (MXN y USD) junto con diferentes tipos de cambio para la administración general del sistema.",
-        "Implementar un generador de PDFs en tiempo real adaptable a distintos tipos de documentos.",
-        "Desarrollar un sistema de creación de cobros recurrentes automáticos.",
-        "Crear un sistema de Drag and Drop de productos personalizables para la creación de cotizaciones.",
-        "Diseñar un dashboard para los distintos módulos, con gráficos, informes y recordatorios personalizables."
-      ]
-    },
-    "planner": {
-      "title": "Organizador",
-      "subtitle": "Organizador de Tareas y Notas",
-      "text": "Aplicación web diseñada para organizar notas y tareas de manera simple y eficiente. Permite crear distintos tipos de notas y tareas, como ejecutables, en espera, recurrentes o programadas, cada una con funcionalidades específicas para adaptarse a diferentes necesidades. Incluye un editor de notas con soporte para Markdown que facilita una mejor redacción y estructuración del contenido. La aplicación también ofrece un sistema de recordatorios que muestra las tareas pendientes del día.",
-      "challenges": [
-        "Implementar un editor de texto con soporte para Markdown.",
-        "Diseñar una estructura de tablas compartida, con funcionalidades específicas según el tipo de nota o tarea."
-      ]
-    },
-    "toon": {
-      "title": "Toon Guesser",
-      "subtitle": "Juego de Adivinanza de Personajes",
-      "text": "Página web donde los usuarios pueden adivinar personajes de distintos dibujos animados. El sistema muestra una imagen pixelada en blanco y negro de un personaje, que va ganando color y detalle a medida que el usuario realiza sus intentos. Cada día se publica un nuevo personaje, ofreciendo un desafío fresco para resolver.",
-      "challenges": [
-        "Diseñar un sistema de imagen basado en canvas para aplicar distintos niveles de pixelado y coloración a la imagen del personaje.",
-        "Crear un sistema de guardado del estado de la sesión sin necesidad de base de datos ni autenticación.",
-        "Configurar un cron que actualice aleatoriamente los personajes, evitando repetir los de días anteriores siempre que queden personajes disponibles."
-      ]
-    },
-    "pap": {
-      "title": "Paso a Paso",
-      "subtitle": "Página Web Mayorista",
-      "text": "Aplicación web desarrollada para una empresa mayorista, permite visualizar los productos disponibles y añadirlos a un carrito para realizar consultas. Además, incluye un panel de administrador para gestionar productos y configurar aspectos generales de la página.",
-      "challenges": [
-        "Implementar funcionalidades de personalización de catálogos, categorías y productos desde el panel de administración.",
-        "Desarrollar un sistema de gestión de archivos para administrar las imágenes de los productos."
-      ]
-    },
-    "traducciones": {
-      "title": "Traducciones",
-      "subtitle": "Microservicio de Traducción y Corrección",
-      "text": "Microservicio para un portal universitario, diseñado para traducir y corregir archivos. Gestiona la carga y descarga de documentos y cuenta con roles específicos para cada tipo de usuario. Además, incluye un sistema de notificación por correo electrónico para mantener a los usuarios informados.",
-      "challenges": [
-        "Diseñar una arquitectura de microservicio en el backend, integrando Keycloak para la autenticación en las comunicaciones a través del API Gateway.",
-        "Desarrollar un sistema de gestión de archivos para los distintos documentos de cada solicitud.",
-        "Integrar Keycloak para la gestión de usuarios y roles."
-      ]
-    },
-    "difusiones": {
-      "title": "Difusiones",
-      "subtitle": "Microservicio de Envío Masivo de Correos",
-      "text": "Microservicio para un portal universitario, encargado del envío masivo de difusiones por correo electrónico. El sistema permite gestionar listas de destinatarios, monitorear el estado de cada difusión desde un panel de control y visualizar quién abrió los correos enviados. Además, incluye un editor de texto enriquecido, opción de adjuntar archivos y programación de envíos.",
-      "challenges": [
-        "Diseñar una arquitectura de microservicio en el backend, integrando Keycloak para la autenticación en las comunicaciones a través del API Gateway.",
-        "Desarrollar un editor de texto enriquecido con funcionalidad de adjuntar archivos y programar envíos.",
-        "Crear un sistema de semáforos para el envío masivo de correos, optimizando el rendimiento y evitando bloqueos por parte del proveedor de servicios de correo.",
-        "Establecer un método para detectar quién abrió la difusión."
-      ]
-    },
-    "ripadmin": {
-      "title": "RIP Admin",
-      "subtitle": "Panel de Administración RIP Alive",
-      "text": "Aplicación web para la gestión de la app móvil “RIP Alive”. Permite a los administradores visualizar información de los usuarios, gestionar estados de suscripción y pagos, generar cupones de descuento, configurar productos, catálogos y eventos de la app, entre otras funcionalidades.",
-      "challenges": [
-        "Desarrollar funcionalidades para la creación y gestión de productos, catálogos y eventos dentro de la aplicación móvil.",
-        "Diseñar un sistema para la generación y administración de cupones de descuento para los usuarios."
-      ]
-    },
-    "ripbene": {
-      "title": "RIP Beneficiarios",
-      "subtitle": "Página de Beneficiarios RIP Alive",
-      "text": "Aplicación web diseñada para que los beneficiarios asignados por un usuario en la app RIP Alive puedan acceder a la información de legado de este último. Los beneficiarios pueden visualizar a las personas que los han asignado y solicitar acceso a sus datos. La solicitud se aprueba únicamente si el titular no responde dentro del período de tiempo que haya configurado, interpretándose que la persona ha fallecido. En ese caso, el beneficiario obtiene acceso a la información de legado que el titular dejó registrada.",
-      "challenges": [
-        "Establecer un método para vincular la cuenta del beneficiario con los titulares que lo han asignado.",
-        "Diseñar un sistema de solicitudes de acceso a la información de legado, con un flujo de aprobación basado en el tiempo de respuesta del titular."
-      ]
-    },
-    "ripalive": {
-      "title": "RIP Alive",
-      "subtitle": "Aplicación de Legado Personal",
-      "text": "Aplicación móvil diseñada para permitir a los usuarios guardar su información importante en caso de fallecimiento, con el fin de informar a sus familiares sobre sus últimos deseos. Los usuarios pueden almacenar detalles sobre qué hacer con sus pertenencias, contactos clave, inversiones, información personal y de salud, entre otros. La app cuenta con un sistema de suscripción de pago y una tienda con productos.",
-      "challenges": [
-        "Implementar un sistema de adquisición y gestión de suscripciones a través de Google Play y App Store utilizando RevenueCat.",
-        "Integrar un sistema de pagos para la compra de productos dentro de la aplicación mediante Stripe.",
-        "Crear un sistema de notificaciones en tiempo real para alertar sobre distintos eventos dentro de la aplicación.",
-        "Diseñar un sistema de referidos con cashback para incentivar la incorporación de nuevos usuarios."
-      ]
-    },
-    "credential": {
-      "title": "Credencial UTN + IA",
-      "subtitle": "Aplicación de Credencial Digital con Chat IA",
-      "text": "Aplicación móvil diseñada como credencial digital para una universidad. Cuenta con un chat de IA con sistema RAG para responder consultas académicas. Permite a los estudiantes validarse como alumnos mediante un código QR y facilita el acceso a información útil, como las materias en curso, el historial académico y una agenda detallada con los horarios de cada asignatura.",
-      "challenges": [
-        "Desarrollar un chat de IA con sistema RAG con doble mecanismo de obtención de información: búsqueda semántica sobre documentos indexados en una base de datos vectorial y tool calling a la base de datos de la universidad.",
-        "Diseñar un flujo de validación de alumnos mediante un código QR temporal y encriptado.",
-        "Integrar autenticación con Keycloak a través de un navegador integrado en la aplicación.",
-        "Integrar la API de SIU-Guaraní (Sistema de Gestión Académica de Argentina) para obtener datos en tiempo real sobre los estudiantes."
-      ]
+    "challenges": "Desafíos resueltos",
+    "resultsCount_one": "Se muestra {{count}} proyecto",
+    "resultsCount_other": "Se muestran {{count}} proyectos",
+    "screenshotAlt": "Captura de {{title}}",
+    "screenAlt": "Pantalla de {{title}}",
+    "otherScreenAlt": "Otra pantalla de {{title}}",
+    "items": {
+      "moviltrack": {
+        "title": "Moviltrack",
+        "kind": "Web · ERP",
+        "description": "Sistema de gestión empresarial: proyectos, clientes, proveedores, cotizaciones, órdenes de compra, gastos y facturación recurrente en un solo lugar.",
+        "challenges": [
+          "Doble moneda (MXN / USD) con distintos tipos de cambio en todo el sistema",
+          "PDFs generados en tiempo real para cada tipo de documento",
+          "Cobros recurrentes automáticos y cotizador con drag & drop"
+        ]
+      },
+      "ripalive": {
+        "title": "RIP Alive",
+        "kind": "Móvil + Web · Producto",
+        "description": "App de legado personal para dejar organizada tu información importante para tu familia, con suscripciones y tienda. Incluye un panel de administración y un portal web para beneficiarios.",
+        "challenges": [
+          "Suscripciones en Google Play y App Store con RevenueCat, y pagos con Stripe",
+          "Acceso de beneficiarios que se habilita solo si el titular no responde en el plazo que configuró",
+          "Notificaciones en tiempo real y referidos con cashback"
+        ]
+      },
+      "credential": {
+        "title": "Credencial UTN + IA",
+        "kind": "Móvil · Credencial digital",
+        "description": "Credencial digital para estudiantes de la UTN: validación por QR, información académica en tiempo real y un asistente que responde consultas.",
+        "challenges": [
+          "Chat con RAG: búsqueda semántica en una base vectorial + tool calling a la base de la universidad",
+          "Validación de alumnos con un QR temporal y encriptado",
+          "Login con Keycloak e integración con SIU-Guaraní"
+        ]
+      },
+      "sicyt": {
+        "title": "SICYT",
+        "kind": "Web · Sistema de gestión",
+        "description": "Sistema de proyectos e investigadores de la UTN FRBA: proyectos de investigación, equipos, documentación y la categorización de investigadores en una sola plataforma, con el reglamento validado automáticamente.",
+        "challenges": [
+          "Motor de reglas versionado por año: cada proyecto se valida con el reglamento de su año de inicio y cada cambio queda auditado",
+          "Trámite de recategorización por etapas y por lotes, del Consejo Directivo al Rectorado, con el historial de cada movimiento",
+          "Mails y notificaciones en colas con BullMQ y workers dedicados, respetando las preferencias de cada usuario"
+        ]
+      },
+      "difusiones": {
+        "title": "Difusiones",
+        "kind": "Web · Envío masivo de correos",
+        "description": "Envío masivo de correos para un portal universitario: listas de destinatarios, editor enriquecido, adjuntos, envíos programados y seguimiento de cada difusión.",
+        "challenges": [
+          "Semáforos para envíos masivos sin bloqueos del proveedor de correo",
+          "Detección de quién abrió cada difusión",
+          "Autenticación con Keycloak a través del API Gateway"
+        ]
+      },
+      "traducciones": {
+        "title": "Traducciones",
+        "kind": "Web · Gestión de traducciones",
+        "description": "Traducción y corrección de archivos para un portal universitario: carga y descarga de documentos, roles para cada tipo de usuario y avisos por correo.",
+        "challenges": [
+          "Arquitectura de microservicio con autenticación de Keycloak a través del API Gateway",
+          "Gestión de los archivos de cada solicitud",
+          "Usuarios y roles administrados desde Keycloak"
+        ]
+      },
+      "toon": {
+        "title": "Toon Guesser",
+        "kind": "Web · Juego",
+        "description": "Juego para adivinar personajes de dibujos animados: cada día hay uno nuevo, que arranca pixelado en blanco y negro y gana color y detalle con cada intento.",
+        "challenges": [
+          "Imagen en canvas con distintos niveles de pixelado y color según los intentos",
+          "Estado de la partida guardado sin base de datos ni autenticación",
+          "Cron que elige el personaje del día sin repetir los anteriores"
+        ]
+      },
+      "pap": {
+        "title": "Paso a Paso",
+        "kind": "Web · Catálogo mayorista",
+        "description": "Sitio para una empresa mayorista: catálogo de productos con carrito de consultas y un panel para administrar los productos y la configuración general de la página.",
+        "challenges": [
+          "Catálogos, categorías y productos personalizables desde el panel de administración",
+          "Gestión de archivos para las imágenes de los productos"
+        ]
+      },
+      "planner": {
+        "title": "Organizador",
+        "kind": "Web · Productividad",
+        "description": "Organizador de notas y tareas ejecutables, en espera, recurrentes o programadas, con editor Markdown y recordatorios de lo pendiente del día.",
+        "challenges": [
+          "Editor de texto con soporte para Markdown",
+          "Estructura de tablas compartida, con funciones propias según el tipo de nota o tarea"
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack",
+    "lead": "Las herramientas con las que trabajo en cada etapa.",
+    "toolsLabel": "Herramientas de {{group}}",
+    "groups": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Interfaces web y móviles, del diseño a la implementación."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "APIs, microservicios y procesamiento en segundo plano."
+      },
+      "data": {
+        "title": "Datos",
+        "description": "Bases relacionales, documentales y vectoriales."
+      },
+      "ai": {
+        "title": "IA aplicada",
+        "description": "Asistentes, agentes y desarrollo asistido por IA."
+      },
+      "cloud": {
+        "title": "Cloud y DevOps",
+        "description": "Infraestructura, contenedores y despliegues automatizados."
+      },
+      "integrations": {
+        "title": "Integraciones y auth",
+        "description": "Autenticación, pagos, suscripciones y servicios externos."
+      }
     }
   },
   "certifications": {
     "title": "Certificaciones",
-    "en": {
-      "title": "Diploma en Estudios Superiores de Inglés",
-      "place": "Instituto Cambridge",
-      "date": "1 Dic 2017"
+    "lead": "Cursos y certificaciones que complementan mi formación.",
+    "filterLabel": "Filtrar certificaciones",
+    "categories": {
+      "all": "Todas",
+      "development": "Desarrollo",
+      "databases": "Bases de datos",
+      "infrastructure": "Infraestructura",
+      "languages": "Idiomas"
     },
-    "fullstack": {
-      "title": "Diplomatura Full Stack",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "19 May 2023"
-    },
-    "dbf": {
-      "title": "Fundamentos Bases de Datos",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "30 Sep 2022"
-    },
-    "dbd": {
-      "title": "Diplomatura Bases de Datos",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "27 Oct 2023"
-    },
-    "react": {
-      "title": "Desarrollo en React",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "30 Nov 2023"
-    },
-    "js": {
-      "title": "Desarrollo en JavaScript",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "16 Jun 2023"
-    },
-    "docker": {
-      "title": "Docker y Kubernetes",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "20 Sep 2024"
-    },
-    "bootcamp": {
-      "title": "Bootcamp Credencial UTN",
-      "place": "Universidad Tecnológica Nacional",
-      "date": "20 Mar 2024"
+    "view": "Ver",
+    "opensPdf": "(abre el PDF en una pestaña nueva)",
+    "imageAlt": "Certificado: {{title}}",
+    "resultsCount_one": "Se muestra {{count}} certificación",
+    "resultsCount_other": "Se muestran {{count}} certificaciones",
+    "items": {
+      "docker": {
+        "title": "Docker y Kubernetes",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "bootcamp": {
+        "title": "Bootcamp Credencial UTN",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "react": {
+        "title": "Desarrollo en React",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesDiploma": {
+        "title": "Diplomatura en Bases de Datos",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "javascript": {
+        "title": "Desarrollo en JavaScript",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "fullstack": {
+        "title": "Diplomatura Full Stack",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "databasesFundamentals": {
+        "title": "Fundamentos de Bases de Datos",
+        "place": "Universidad Tecnológica Nacional"
+      },
+      "english": {
+        "title": "Diploma en Estudios Superiores de Inglés",
+        "place": "Instituto Cambridge"
+      }
     }
   },
-  "stack": {
-    "title": "Stack Tecnológico",
-    "subtitle": {
-      "1": "Frontend",
-      "2": "Backend",
-      "3": "Herramientas",
-      "4": "Integraciones"
-    }
+  "contact": {
+    "title": "¿Tenés un proyecto en mente?",
+    "lead": "Contame en qué te puedo ayudar."
   },
   "footer": {
-    "title": "Desarrollado por Gonzalo Suarez"
+    "credit": "Desarrollado por Gonzalo Suarez"
   }
 }
