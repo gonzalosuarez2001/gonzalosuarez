@@ -71,9 +71,11 @@
         "description": "Digital marketing company",
         "summary": "Software Developer",
         "bullets": [
-          "I build internal tools that make the paid media team's work easier.",
-          "I manage the GCP infrastructure: deployments, server maintenance and permission management.",
-          "I define infrastructure as code and build the CI/CD pipelines."
+          "I build software solutions for ABN, a digital marketing company, focused on automating and simplifying the Digital Media team's daily work.",
+          "I manage the infrastructure on Google Cloud Platform (GCP), handling deployments, server maintenance and the operation of applications in production.",
+          "I manage permissions and access for users and cloud services, ensuring a secure privilege setup for each role.",
+          "I define infrastructure as code (IaC), ensuring reproducible, versioned and consistent environments.",
+          "I implement and maintain CI/CD pipelines to automate application integration and deployment, reducing manual errors and delivery times."
         ]
       },
       "adini": {

@@ -71,9 +71,11 @@
         "description": "Empresa de marketing digital",
         "summary": "Software Developer",
         "bullets": [
-          "Desarrollo herramientas internas que le simplifican el trabajo al equipo de paid media.",
-          "Administro la infraestructura en GCP: despliegues, mantenimiento de servidores y gestión de permisos.",
-          "Defino la infraestructura como código y armo los pipelines de CI/CD."
+          "Desarrollo soluciones de software para ABN, una empresa de marketing digital, enfocadas en automatizar y simplificar el trabajo diario del equipo de Digital Media.",
+          "Administro la infraestructura en Google Cloud Platform (GCP), gestionando despliegues, mantenimiento de servidores y la operación de las aplicaciones en producción.",
+          "Gestiono permisos y accesos de usuarios y servicios en la nube, garantizando una configuración segura de privilegios según cada rol.",
+          "Defino la infraestructura como código (IaC), asegurando entornos reproducibles, versionados y consistentes.",
+          "Implemento y mantengo pipelines de CI/CD para automatizar la integración y el despliegue de las aplicaciones, reduciendo errores manuales y tiempos de entrega."
         ]
       },
       "adini": {
