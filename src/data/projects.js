@@ -1,4 +1,4 @@
-export const projectCategories = ["all", "web", "mobile", "microservices", "ai"];
+export const projectCategories = ["all", "web", "mobile", "ai"];
 
 export const projects = [
   {
@@ -29,14 +29,14 @@ export const projects = [
   },
   {
     id: "difusiones",
-    categories: ["web", "microservices"],
+    categories: ["web"],
     media: { type: "web", image: "images/difu1.webp" },
     stack: ["React", "Node.js", "SQL", "Sequelize", "Docker", "Keycloak"],
     link: { href: "https://sia.frba.utn.edu.ar/", label: "sia.frba.utn.edu.ar" },
   },
   {
     id: "traducciones",
-    categories: ["web", "microservices"],
+    categories: ["web"],
     media: { type: "web", image: "images/traducciones1.webp" },
     stack: ["React", "Node.js", "SQL", "Sequelize", "Docker", "Keycloak"],
     link: { href: "https://sia.frba.utn.edu.ar/", label: "sia.frba.utn.edu.ar" },

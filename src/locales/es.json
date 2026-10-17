@@ -23,9 +23,6 @@
     "closeMenu": "Cerrar menú",
     "switchLanguage": "Switch to English"
   },
-  "tags": {
-    "iac": "Infraestructura como código"
-  },
   "hero": {
     "role": "Cofundador de ADINI · Software Developer en ABN",
     "title": "Llevo ideas de cero a producción.",
@@ -131,7 +128,6 @@
       "all": "Todos",
       "web": "Web",
       "mobile": "Móvil",
-      "microservices": "Microservicios",
       "ai": "IA"
     },
     "challenges": "Desafíos resueltos",

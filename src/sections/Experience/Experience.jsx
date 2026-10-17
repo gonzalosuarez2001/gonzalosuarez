@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../../components/Button/Button";
-import { ChipItem, ChipList } from "../../components/Chip/Chip";
 import ListDetail from "../../components/ListDetail/ListDetail";
 import Reveal from "../../components/Reveal/Reveal";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { CheckIcon } from "../../components/icons";
 import { experience } from "../../data/experience";
 import { useCvLink } from "../../hooks/useCvLink";
-import { tagKey, tagLabel } from "../../utils/tags";
 import styles from "./Experience.module.css";
 
 function yearRange(t, { startYear, endYear }) {
@@ -67,11 +65,6 @@ function ExperienceDetail({ t, company }) {
       ) : (
         <BulletList items={t(`${key}.bullets`, { returnObjects: true })} />
       )}
-      <ChipList label={t("common.stack")}>
-        {company.stack.map((tag) => (
-          <ChipItem key={tagKey(tag)}>{tagLabel(t, tag)}</ChipItem>
-        ))}
-      </ChipList>
     </div>
   );
 }
