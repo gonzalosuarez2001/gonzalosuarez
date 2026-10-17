@@ -44,10 +44,9 @@ export default function HeroVideo() {
   const { stageRef, scale, canvasWidth } = useStageScale();
   const [activeId, setActiveId] = useState(sceneIds[0]);
   const [cycle, setCycle] = useState(0);
-  const [hovered, setHovered] = useState(false);
   const [keyboardFocused, setKeyboardFocused] = useState(false);
   const autoplay = !reduceMotion;
-  const paused = hovered || keyboardFocused || !inView;
+  const paused = keyboardFocused || !inView;
   const activeIndex = sceneIds.indexOf(activeId);
   const Scene = scenes[activeId];
 
@@ -72,8 +71,6 @@ export default function HeroVideo() {
     <div
       ref={rootRef}
       className={`${styles.video} ${paused ? styles.paused : ""}`}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
       onFocus={handleFocus}
       onBlur={handleBlur}
     >
