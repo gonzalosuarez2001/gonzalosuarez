@@ -7,15 +7,10 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer id="contacto" className={`wrap ${styles.footer}`}>
-      <h2 className="visually-hidden">{t("footer.title")}</h2>
+    <footer className={`wrap ${styles.footer}`}>
       <div className={styles.inner}>
         <p className={styles.credit}>{t("footer.credit")}</p>
         <div className={styles.links}>
-          <a className={styles.email} href={`mailto:${contact.email}`}>
-            {contact.email}
-          </a>
-          <span className={styles.divider} aria-hidden="true" />
           <a className={styles.icon} href={contact.github} target="_blank" rel="noreferrer" aria-label="GitHub">
             <GithubIcon />
           </a>

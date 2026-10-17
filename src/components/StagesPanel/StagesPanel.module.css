@@ -87,6 +87,18 @@
   gap: 16px;
 }
 
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-area: 1 / 1;
+}
+
+.inactiveText {
+  visibility: hidden;
+}
+
 .description {
   color: var(--color-text-body);
   font-size: 15px;

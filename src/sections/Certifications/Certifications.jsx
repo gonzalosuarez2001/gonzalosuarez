@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import AutoHeight from "../../components/AutoHeight/AutoHeight";
 import Reveal from "../../components/Reveal/Reveal";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import SegmentedControl from "../../components/SegmentedControl/SegmentedControl";
@@ -38,38 +39,40 @@ export default function Certifications() {
       <p className="visually-hidden" role="status">
         {t("certifications.resultsCount", { count: visible.length })}
       </p>
-      <ul className={styles.grid}>
-        {visible.map((item, index) => {
-          const key = `certifications.items.${item.id}`;
-          const title = t(`${key}.title`);
-          return (
-            <Reveal as="li" key={`${category}-${item.id}`} delay={0.08 + index * 0.05} className={styles.item}>
-              <a className={styles.card} href={asset(item.pdf)} target="_blank" rel="noreferrer">
-                <div className={styles.thumb}>
-                  <img
-                    src={asset(item.image)}
-                    alt={t("certifications.imageAlt", { title })}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <div className={styles.body}>
-                  <h3 className={styles.title}>{title}</h3>
-                  <p className={styles.place}>{t(`${key}.place`)}</p>
-                  <div className={styles.footer}>
-                    <span className={styles.date}>{formatIssuedOn(item.issuedOn, i18n.resolvedLanguage)}</span>
-                    <span className={styles.view}>
-                      {t("certifications.view")}
-                      <ArrowUpRightIcon />
-                      <span className="visually-hidden">{t("certifications.opensPdf")}</span>
-                    </span>
+      <AutoHeight>
+        <ul className={styles.grid}>
+          {visible.map((item, index) => {
+            const key = `certifications.items.${item.id}`;
+            const title = t(`${key}.title`);
+            return (
+              <Reveal as="li" key={`${category}-${item.id}`} delay={0.08 + index * 0.05} className={styles.item}>
+                <a className={styles.card} href={asset(item.pdf)} target="_blank" rel="noreferrer">
+                  <div className={styles.thumb}>
+                    <img
+                      src={asset(item.image)}
+                      alt={t("certifications.imageAlt", { title })}
+                      loading="lazy"
+                      decoding="async"
+                    />
                   </div>
-                </div>
-              </a>
-            </Reveal>
-          );
-        })}
-      </ul>
+                  <div className={styles.body}>
+                    <h3 className={styles.title}>{title}</h3>
+                    <p className={styles.place}>{t(`${key}.place`)}</p>
+                    <div className={styles.footer}>
+                      <span className={styles.date}>{formatIssuedOn(item.issuedOn, i18n.resolvedLanguage)}</span>
+                      <span className={styles.view}>
+                        {t("certifications.view")}
+                        <ArrowUpRightIcon />
+                        <span className="visually-hidden">{t("certifications.opensPdf")}</span>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </Reveal>
+            );
+          })}
+        </ul>
+      </AutoHeight>
     </section>
   );
 }

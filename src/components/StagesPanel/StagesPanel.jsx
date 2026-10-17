@@ -60,6 +60,18 @@ function DeployVisual({ t }) {
   );
 }
 
+function StackedText({ activeId, children }) {
+  return (
+    <div className={styles.stacked}>
+      {stageIds.map((stageId) => (
+        <div key={stageId} className={stageId === activeId ? undefined : styles.inactiveText}>
+          {children(stageId)}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 const visuals = {
   development: DevelopmentVisual,
   ai: AiVisual,
@@ -145,12 +157,18 @@ export default function StagesPanel() {
           animate={{ opacity: 1, y: 0 }}
           transition={swapTransition}
         >
-          <p className={styles.description}>{t(`hero.stages.${activeId}.description`)}</p>
+          <StackedText activeId={activeId}>
+            {(stageId) => <p className={styles.description}>{t(`hero.stages.${stageId}.description`)}</p>}
+          </StackedText>
           <Visual t={t} />
-          <p className={styles.caption}>
-            <span>{t(`hero.stages.${activeId}.project`)}</span>
-            <span>{t(`hero.stages.${activeId}.stack`)}</span>
-          </p>
+          <StackedText activeId={activeId}>
+            {(stageId) => (
+              <p className={styles.caption}>
+                <span>{t(`hero.stages.${stageId}.project`)}</span>
+                <span>{t(`hero.stages.${stageId}.stack`)}</span>
+              </p>
+            )}
+          </StackedText>
         </motion.div>
       </div>
     </div>

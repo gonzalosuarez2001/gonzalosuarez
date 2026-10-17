@@ -27,7 +27,7 @@
     "iac": "Infrastructure as code"
   },
   "hero": {
-    "role": "Software Developer at ABN · Co-founder of ADINI",
+    "role": "Co-founder of ADINI · Software Developer at ABN",
     "title": "I take ideas from zero to production.",
     "lead": "I build web and mobile apps, add AI where it truly helps, and make sure they run in the cloud reliably and automatically.",
     "stages": {
@@ -142,10 +142,6 @@
     "screenshotAlt": "{{title}} screenshot",
     "screenAlt": "{{title}} screen",
     "otherScreenAlt": "Another {{title}} screen",
-    "cta": {
-      "title": "Have a project in mind?",
-      "lead": "Web, mobile, AI or infrastructure: tell me what you need."
-    },
     "items": {
       "moviltrack": {
         "title": "Moviltrack",
@@ -256,8 +252,11 @@
       }
     }
   },
+  "contact": {
+    "title": "Have a project in mind?",
+    "lead": "Web, mobile, AI or infrastructure: tell me what you need."
+  },
   "footer": {
-    "title": "Contact",
     "credit": "Developed by Gonzalo Suarez"
   }
 }

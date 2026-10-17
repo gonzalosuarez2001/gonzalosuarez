@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { handleTabsKeyDown } from "../../utils/tabsKeyboard";
 import { swapTransition } from "../../utils/motion";
+import AutoHeight from "../AutoHeight/AutoHeight";
 import styles from "./ListDetail.module.css";
 
 export default function ListDetail({
@@ -29,39 +30,41 @@ export default function ListDetail({
       <div className={`${styles.card} ${styles[size]}`} style={{ "--list-width": `${listWidth}px` }}>
         <div className={styles.list}>
           {heading && <p className={styles.heading}>{heading}</p>}
-          <div
-            role="tablist"
-            aria-label={label}
-            aria-orientation="vertical"
-            className={styles.tabs}
-            onKeyDown={(event) => handleTabsKeyDown(event, { ids, selectedId: selected.id, onSelect, tabIdFor })}
-          >
-            {items.map((item) => {
-              const isSelected = item.id === selected.id;
-              const { title, subtitle, badge, aside } = getTabContent(item);
-              return (
-                <button
-                  key={item.id}
-                  id={tabIdFor(item.id)}
-                  type="button"
-                  role="tab"
-                  className={styles.tab}
-                  aria-selected={isSelected}
-                  aria-controls={panelId}
-                  tabIndex={isSelected ? 0 : -1}
-                  onClick={() => onSelect(item.id)}
-                >
-                  <span className={styles.tabTop}>
-                    <span className={styles.dot} aria-hidden="true" />
-                    <span className={styles.tabTitle}>{title}</span>
-                    {badge && <span className={styles.badge}>{badge}</span>}
-                    {aside && <span className={styles.aside}>{aside}</span>}
-                  </span>
-                  {subtitle && <span className={styles.tabSubtitle}>{subtitle}</span>}
-                </button>
-              );
-            })}
-          </div>
+          <AutoHeight>
+            <div
+              role="tablist"
+              aria-label={label}
+              aria-orientation="vertical"
+              className={styles.tabs}
+              onKeyDown={(event) => handleTabsKeyDown(event, { ids, selectedId: selected.id, onSelect, tabIdFor })}
+            >
+              {items.map((item) => {
+                const isSelected = item.id === selected.id;
+                const { title, subtitle, badge, aside } = getTabContent(item);
+                return (
+                  <button
+                    key={item.id}
+                    id={tabIdFor(item.id)}
+                    type="button"
+                    role="tab"
+                    className={styles.tab}
+                    aria-selected={isSelected}
+                    aria-controls={panelId}
+                    tabIndex={isSelected ? 0 : -1}
+                    onClick={() => onSelect(item.id)}
+                  >
+                    <span className={styles.tabTop}>
+                      <span className={styles.dot} aria-hidden="true" />
+                      <span className={styles.tabTitle}>{title}</span>
+                      {badge && <span className={styles.badge}>{badge}</span>}
+                      {aside && <span className={styles.aside}>{aside}</span>}
+                    </span>
+                    {subtitle && <span className={styles.tabSubtitle}>{subtitle}</span>}
+                  </button>
+                );
+              })}
+            </div>
+          </AutoHeight>
         </div>
         <div
           id={panelId}
@@ -70,14 +73,16 @@ export default function ListDetail({
           tabIndex={0}
           className={`${styles.panel} ${panelClassName}`}
         >
-          <motion.div
-            key={selected.id}
-            initial={reduceMotion ? false : { opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={swapTransition}
-          >
-            {renderPanel(selected)}
-          </motion.div>
+          <AutoHeight>
+            <motion.div
+              key={selected.id}
+              initial={reduceMotion ? false : { opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={swapTransition}
+            >
+              {renderPanel(selected)}
+            </motion.div>
+          </AutoHeight>
         </div>
       </div>
     </div>

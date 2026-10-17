@@ -20,7 +20,7 @@ export default function Hero() {
             src={asset("images/me.webp")}
             alt=""
             width="256"
-            height="362"
+            height="256"
             fetchpriority="high"
           />
           <div className={styles.identityText}>

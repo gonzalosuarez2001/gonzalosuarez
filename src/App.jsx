@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import Certifications from "./sections/Certifications/Certifications";
+import Contact from "./sections/Contact/Contact";
 import Experience from "./sections/Experience/Experience";
 import Hero from "./sections/Hero/Hero";
 import Projects from "./sections/Projects/Projects";
@@ -21,6 +22,7 @@ function App() {
         <Experience />
         <Projects />
         <Certifications />
+        <Contact />
       </main>
       <Footer />
     </MotionConfig>
