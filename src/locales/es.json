@@ -132,11 +132,7 @@
       "microservices": "Microservicios",
       "ai": "IA"
     },
-    "featured": "Destacados",
     "challenges": "Desafíos resueltos",
-    "more": "Más proyectos",
-    "count_one": "{{count}} proyecto",
-    "count_other": "{{count}} proyectos",
     "resultsCount_one": "Se muestra {{count}} proyecto",
     "resultsCount_other": "Se muestran {{count}} proyectos",
     "screenshotAlt": "Captura de {{title}}",
@@ -173,9 +169,19 @@
           "Login con Keycloak e integración con SIU-Guaraní"
         ]
       },
+      "sicyt": {
+        "title": "SICYT",
+        "kind": "Web · Sistema de gestión",
+        "description": "Sistema de proyectos e investigadores de la UTN FRBA: proyectos de investigación, equipos, documentación y la categorización de investigadores en una sola plataforma, con el reglamento validado automáticamente.",
+        "challenges": [
+          "Motor de reglas versionado por año: cada proyecto se valida con el reglamento de su año de inicio y cada cambio queda auditado",
+          "Trámite de recategorización por etapas y por lotes, del Consejo Directivo al Rectorado, con el historial de cada movimiento",
+          "Mails y notificaciones en colas con BullMQ y workers dedicados, respetando las preferencias de cada usuario"
+        ]
+      },
       "difusiones": {
         "title": "Difusiones",
-        "kind": "Microservicio",
+        "kind": "Web · Microservicio",
         "description": "Envío masivo de correos para un portal universitario: listas de destinatarios, editor enriquecido, adjuntos, envíos programados y seguimiento de cada difusión.",
         "challenges": [
           "Semáforos para envíos masivos sin bloqueos del proveedor de correo",
@@ -183,21 +189,43 @@
           "Autenticación con Keycloak a través del API Gateway"
         ]
       },
+      "traducciones": {
+        "title": "Traducciones",
+        "kind": "Web · Microservicio",
+        "description": "Traducción y corrección de archivos para un portal universitario: carga y descarga de documentos, roles para cada tipo de usuario y avisos por correo.",
+        "challenges": [
+          "Arquitectura de microservicio con autenticación de Keycloak a través del API Gateway",
+          "Gestión de los archivos de cada solicitud",
+          "Usuarios y roles administrados desde Keycloak"
+        ]
+      },
       "toon": {
         "title": "Toon Guesser",
-        "description": "Un personaje nuevo cada día que se revela de a poco."
+        "kind": "Web · Juego",
+        "description": "Juego para adivinar personajes de dibujos animados: cada día hay uno nuevo, que arranca pixelado en blanco y negro y gana color y detalle con cada intento.",
+        "challenges": [
+          "Imagen en canvas con distintos niveles de pixelado y color según los intentos",
+          "Estado de la partida guardado sin base de datos ni autenticación",
+          "Cron que elige el personaje del día sin repetir los anteriores"
+        ]
       },
       "pap": {
         "title": "Paso a Paso",
-        "description": "Catálogo mayorista con carrito de consultas y panel de administración."
-      },
-      "traducciones": {
-        "title": "Traducciones",
-        "description": "Traducción y corrección de archivos con roles y avisos por mail."
+        "kind": "Web · Catálogo mayorista",
+        "description": "Sitio para una empresa mayorista: catálogo de productos con carrito de consultas y un panel para administrar los productos y la configuración general de la página.",
+        "challenges": [
+          "Catálogos, categorías y productos personalizables desde el panel de administración",
+          "Gestión de archivos para las imágenes de los productos"
+        ]
       },
       "planner": {
         "title": "Organizador",
-        "description": "Notas y tareas recurrentes o programadas, con editor Markdown."
+        "kind": "Web · Productividad",
+        "description": "Organizador de notas y tareas ejecutables, en espera, recurrentes o programadas, con editor Markdown y recordatorios de lo pendiente del día.",
+        "challenges": [
+          "Editor de texto con soporte para Markdown",
+          "Estructura de tablas compartida, con funciones propias según el tipo de nota o tarea"
+        ]
       }
     }
   },

@@ -132,11 +132,7 @@
       "microservices": "Microservices",
       "ai": "AI"
     },
-    "featured": "Featured",
     "challenges": "Challenges solved",
-    "more": "More projects",
-    "count_one": "{{count}} project",
-    "count_other": "{{count}} projects",
     "resultsCount_one": "Showing {{count}} project",
     "resultsCount_other": "Showing {{count}} projects",
     "screenshotAlt": "{{title}} screenshot",
@@ -173,9 +169,19 @@
           "Keycloak login and SIU-Guaraní integration"
         ]
       },
+      "sicyt": {
+        "title": "SICYT",
+        "kind": "Web · Management system",
+        "description": "Projects and researchers system for UTN FRBA: research projects, teams, documents and researcher categorization in a single platform, with the regulations validated automatically.",
+        "challenges": [
+          "Rules engine versioned by year: each project is validated against the regulations of its start year, and every change is audited",
+          "Staged, batch-based recategorization process, from the Board of Directors to the Rector's Office, with the history of every step",
+          "Emails and notifications queued with BullMQ and dedicated workers, respecting each user's preferences"
+        ]
+      },
       "difusiones": {
         "title": "Diffusions",
-        "kind": "Microservice",
+        "kind": "Web · Microservice",
         "description": "Bulk email service for a university portal: recipient lists, rich text editor, attachments, scheduled sends and tracking for every campaign.",
         "challenges": [
           "Semaphores for bulk sending without getting blocked by the email provider",
@@ -183,21 +189,43 @@
           "Keycloak authentication through the API Gateway"
         ]
       },
+      "traducciones": {
+        "title": "Translations",
+        "kind": "Web · Microservice",
+        "description": "File translation and proofreading for a university portal: document upload and download, roles for each type of user and email alerts.",
+        "challenges": [
+          "Microservice architecture with Keycloak authentication through the API Gateway",
+          "File management for the documents of each request",
+          "Users and roles managed in Keycloak"
+        ]
+      },
       "toon": {
         "title": "Toon Guesser",
-        "description": "A new character every day, revealed little by little."
+        "kind": "Web · Game",
+        "description": "A game for guessing cartoon characters: every day there's a new one that starts pixelated in black and white and gains color and detail with each guess.",
+        "challenges": [
+          "Canvas-based image with different levels of pixelation and color depending on the guesses",
+          "Game state saved with no database or authentication",
+          "Cron job that picks the character of the day without repeating previous ones"
+        ]
       },
       "pap": {
         "title": "Paso a Paso",
-        "description": "Wholesale catalog with an inquiry cart and an admin panel."
-      },
-      "traducciones": {
-        "title": "Translations",
-        "description": "File translation and proofreading with roles and email alerts."
+        "kind": "Web · Wholesale catalog",
+        "description": "Website for a wholesale company: a product catalog with an inquiry cart and a panel to manage products and the site's general settings.",
+        "challenges": [
+          "Catalogs, categories and products customizable from the admin panel",
+          "File management for product images"
+        ]
       },
       "planner": {
         "title": "Organizer",
-        "description": "Recurring or scheduled notes and tasks, with a Markdown editor."
+        "kind": "Web · Productivity",
+        "description": "Organizer for actionable, on-hold, recurring or scheduled notes and tasks, with a Markdown editor and reminders of what's due today.",
+        "challenges": [
+          "Text editor with Markdown support",
+          "Shared table structure, with specific features for each type of note or task"
+        ]
       }
     }
   },
