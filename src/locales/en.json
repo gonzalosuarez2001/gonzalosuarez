@@ -233,7 +233,7 @@
     "toolsLabel": "{{group}} tools",
     "groups": {
       "frontend": {
-        "title": "Frontend and mobile",
+        "title": "Frontend",
         "description": "Web interfaces and native apps for iOS and Android."
       },
       "backend": {
