@@ -17,6 +17,7 @@
     "home": "Home",
     "experience": "Experience",
     "projects": "Projects",
+    "stack": "Stack",
     "certifications": "Certifications",
     "contact": "Contact",
     "openMenu": "Open menu",
@@ -223,6 +224,37 @@
           "Text editor with Markdown support",
           "Shared table structure, with specific features for each type of note or task"
         ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack",
+    "lead": "The tools I work with at every stage: from the interface to the infrastructure, through data and AI.",
+    "toolsLabel": "{{group}}: {{count}} tools",
+    "groups": {
+      "frontend": {
+        "title": "Frontend and mobile",
+        "description": "Web interfaces and native apps for iOS and Android."
+      },
+      "backend": {
+        "title": "Backend",
+        "description": "APIs, microservices and background processing."
+      },
+      "data": {
+        "title": "Data",
+        "description": "Relational, document and vector databases."
+      },
+      "ai": {
+        "title": "Applied AI",
+        "description": "Assistants, agents and AI-assisted development."
+      },
+      "cloud": {
+        "title": "Cloud and DevOps",
+        "description": "Infrastructure, containers and automated deployments."
+      },
+      "integrations": {
+        "title": "Integrations and auth",
+        "description": "Authentication, payments, subscriptions and external services."
       }
     }
   },

@@ -7,6 +7,7 @@ import Contact from "./sections/Contact/Contact";
 import Experience from "./sections/Experience/Experience";
 import Hero from "./sections/Hero/Hero";
 import Projects from "./sections/Projects/Projects";
+import Stack from "./sections/Stack/Stack";
 
 function App() {
   const { t } = useTranslation();
@@ -21,6 +22,7 @@ function App() {
         <Hero />
         <Experience />
         <Projects />
+        <Stack />
         <Certifications />
         <Contact />
       </main>
