@@ -127,8 +127,7 @@
     "categories": {
       "all": "All",
       "web": "Web",
-      "mobile": "Mobile",
-      "ai": "AI"
+      "mobile": "Mobile"
     },
     "challenges": "Challenges solved",
     "resultsCount_one": "Showing {{count}} project",

@@ -1,4 +1,4 @@
-export const projectCategories = ["all", "web", "mobile", "ai"];
+export const projectCategories = ["all", "web", "mobile"];
 
 export const projects = [
   {
@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     id: "credential",
-    categories: ["mobile", "ai"],
+    categories: ["mobile"],
     media: { type: "mobile", images: ["images/credencial1.webp", "images/credencial4.webp"] },
     stack: ["React Native", "Expo", "Node.js", "Docker", "Ollama", "Keycloak"],
   },
