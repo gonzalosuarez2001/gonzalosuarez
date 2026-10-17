@@ -229,8 +229,8 @@
   },
   "stack": {
     "title": "Stack",
-    "lead": "Las herramientas con las que trabajo en cada etapa: desde la interfaz hasta la infraestructura, pasando por los datos y la IA.",
-    "toolsLabel": "{{group}}: {{count}} herramientas",
+    "lead": "Las herramientas con las que trabajo en cada etapa.",
+    "toolsLabel": "Herramientas de {{group}}",
     "groups": {
       "frontend": {
         "title": "Frontend y mobile",

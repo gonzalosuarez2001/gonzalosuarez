@@ -16,14 +16,9 @@ export default function Stack() {
           const title = t(`stack.groups.${group.id}.title`);
           return (
             <Reveal as="li" key={group.id} delay={0.08 + index * 0.06} className={styles.card}>
-              <div className={styles.cardHeader}>
-                <h3 className={styles.cardTitle}>{title}</h3>
-                <span className={styles.count} aria-hidden="true">
-                  {group.tools.length}
-                </span>
-              </div>
+              <h3 className={styles.cardTitle}>{title}</h3>
               <p className={styles.description}>{t(`stack.groups.${group.id}.description`)}</p>
-              <ChipList size="large" label={t("stack.toolsLabel", { group: title, count: group.tools.length })}>
+              <ChipList size="large" label={t("stack.toolsLabel", { group: title })}>
                 {group.tools.map((tool) => (
                   <ChipItem key={tool} size="large">
                     {tool}

@@ -229,8 +229,8 @@
   },
   "stack": {
     "title": "Stack",
-    "lead": "The tools I work with at every stage: from the interface to the infrastructure, through data and AI.",
-    "toolsLabel": "{{group}}: {{count}} tools",
+    "lead": "The tools I work with at every stage.",
+    "toolsLabel": "{{group}} tools",
     "groups": {
       "frontend": {
         "title": "Frontend and mobile",

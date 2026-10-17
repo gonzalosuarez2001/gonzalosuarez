@@ -23,23 +23,10 @@
   background: var(--color-surface);
 }
 
-.cardHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-}
-
 .cardTitle {
   font-size: 19px;
   font-weight: 600;
   letter-spacing: -0.02em;
-}
-
-.count {
-  color: var(--color-text-secondary);
-  font-size: var(--font-size-small);
-  font-variant-numeric: tabular-nums;
 }
 
 .description {
