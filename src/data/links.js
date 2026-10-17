@@ -13,7 +13,7 @@ export const sections = [
   { id: "inicio", labelKey: "nav.home" },
   { id: "experiencia", labelKey: "nav.experience" },
   { id: "proyectos", labelKey: "nav.projects" },
-  { id: "stack", labelKey: "nav.stack" },
   { id: "certificaciones", labelKey: "nav.certifications" },
+  { id: "stack", labelKey: "nav.stack" },
   { id: "contacto", labelKey: "nav.contact" },
 ];

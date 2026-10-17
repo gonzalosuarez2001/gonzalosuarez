@@ -22,8 +22,8 @@ function App() {
         <Hero />
         <Experience />
         <Projects />
-        <Stack />
         <Certifications />
+        <Stack />
         <Contact />
       </main>
       <Footer />
