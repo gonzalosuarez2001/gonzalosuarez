@@ -1,12 +1,10 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import Button from "../../components/Button/Button";
 import ListDetail from "../../components/ListDetail/ListDetail";
 import Reveal from "../../components/Reveal/Reveal";
 import SectionHeader from "../../components/SectionHeader/SectionHeader";
 import { CheckIcon } from "../../components/icons";
 import { experience } from "../../data/experience";
-import { useCvLink } from "../../hooks/useCvLink";
 import styles from "./Experience.module.css";
 
 function yearRange(t, { startYear, endYear }) {
@@ -71,16 +69,11 @@ function ExperienceDetail({ t, company }) {
 
 export default function Experience() {
   const { t } = useTranslation();
-  const cvLink = useCvLink();
   const [selectedId, setSelectedId] = useState(experience[0].id);
 
   return (
     <section id="experiencia" className={`section wrap ${styles.section}`} aria-labelledby="experiencia-title">
-      <SectionHeader id="experiencia-title" title={t("experience.title")} lead={t("experience.lead")}>
-        <Button variant="secondary" icon="download" {...cvLink}>
-          {t("common.downloadCv")}
-        </Button>
-      </SectionHeader>
+      <SectionHeader id="experiencia-title" title={t("experience.title")} lead={t("experience.lead")} />
       <Reveal delay={0.1}>
         <ListDetail
           id="experience"
