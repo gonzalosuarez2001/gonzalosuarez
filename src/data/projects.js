@@ -25,7 +25,6 @@ export const projects = [
     categories: ["web"],
     media: { type: "web", image: "images/sicyt.webp" },
     stack: ["React", "Tailwind", "Node.js", "MariaDB", "Sequelize", "BullMQ", "Keycloak", "Docker"],
-    link: { href: "https://stories.adini.com.ar/sicyt", label: "stories.adini.com.ar" },
   },
   {
     id: "difusiones",
