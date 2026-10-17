@@ -1,12 +1,12 @@
 export const experience = [
   {
-    id: "abn",
-    startYear: 2026,
+    id: "adini",
+    startYear: 2024,
     current: true,
   },
   {
-    id: "adini",
-    startYear: 2024,
+    id: "abn",
+    startYear: 2026,
     current: true,
   },
   {
